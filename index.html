@@ -7,7 +7,9 @@
 		<title>Hanbyeol Lee</title>
 		<link href="style.css" rel="stylesheet" type="text/css" />
 	</head>
+
 	<body>
+
 		<header class="header">
 			<div class="header-container">
 				<a class="logo" href="index.html">Hanbyeol Lee</a>
@@ -17,10 +19,12 @@
 				</div>
 			</div>
 		</header>
+
 		<div class="main">
 			<div class="graphics">graphics</div>
 			<div class="description">description</div>
 		</div>
+
 		<div class="hashtag">
 			<input type="radio" name="tabmenu" id="tab01" checked>
 			<label for="tab01">Featured</label>
@@ -35,12 +39,123 @@
 			<input type="radio" name="tabmenu" id="tab06">
 			<label for="tab06">Graphics</label>
 
-			<div class="conbox con01">탭 내용 01</div>
-			<div class="conbox con02">탭 내용 02</div>
-			<div class="conbox con03">탭 내용 03</div>
-			<div class="conbox con04">탭 내용 04</div>
-			<div class="conbox con05">탭 내용 05</div>
-			<div class="conbox con06">탭 내용 06</div>
+			<div class="conbox con01">
+				<div class="project-container">
+					<div class="project-item">
+						project01
+					</div>
+					<div class="project-item">
+						project02
+					</div>
+					<div class="project-item">
+						project03
+					</div>
+					<div class="project-item">
+						project04
+					</div>
+				</div>
+			</div>
+			<div class="conbox con02">
+				<div class="project-container">
+					<div class="project-item">
+						project05
+					</div>
+					<div class="project-item">
+						project06
+					</div>
+					<div class="project-item">
+						project07
+					</div>
+					<div class="project-item">
+						project08
+					</div>
+				</div>
+			</div>
+			<div class="conbox con03">
+				<div class="project-container">
+					<div class="project-item">
+						project09
+					</div>
+					<div class="project-item">
+						project10
+					</div>
+					<div class="project-item">
+						project11
+					</div>
+					<div class="project-item">
+						project12
+					</div>
+				</div>
+			</div>
+			<div class="conbox con04">
+				<div class="project-container">
+					<div class="project-item">
+						project13
+					</div>
+					<div class="project-item">
+						project14
+					</div>
+					<div class="project-item">
+						project15
+					</div>
+					<div class="project-item">
+						project16
+					</div>
+				</div>
+			</div>
+			<div class="conbox con05">
+				<div class="project-container">
+					<div class="project-item">
+						project17
+					</div>
+					<div class="project-item">
+						project18
+					</div>
+					<div class="project-item">
+						project19
+					</div>
+					<div class="project-item">
+						project20
+					</div>
+				</div>
+			</div>
+			<div class="conbox con06">
+				<div class="project-container">
+					<div class="project-item">
+						project21
+					</div>
+					<div class="project-item">
+						project22
+					</div>
+					<div class="project-item">
+						project23
+					</div>
+				</div>
+			</div>
 		</div>
+
+		<footer class="footer">
+			<div class="footer-container">
+				<section class="footer-logo">
+					<h2>Hanbyeol Lee</h2>
+				</section>
+				<section class="contact">
+					<h2>Contact</h2>
+					<a title="{{ site.email }}" href="mailto:{{ site.email }}">{{ site.email }}</a>
+				</section>
+				<section class="info">
+					<h2>Info</h2>
+					<ul>
+						<li><a title="CV" href="{{ site.cv }}" target="_blank">CV</a></li>
+						<li><a title="Scholar" href="{{ site.scholar }}" target="_blank">Google Scholar</a></li>
+						<li><a title="Study Log" href="{{ site.studylog }}" target="_blank">Study Log</a></li>
+					</ul>
+				</section>
+				<section class="footer-copyright">
+					© Hanbyeol Lee. 2021
+				</section>
+			</div>
+		</footer>
+
 	</body>
 </html>

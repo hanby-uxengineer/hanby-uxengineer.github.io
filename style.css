@@ -70,7 +70,6 @@ input[type="radio"]:checked + label {
 .conbox {
   margin-top: 20px;
   width: 100%;
-  height: 600px;
   display: none;
   border: 1px solid black;
   border-radius: 4px;
@@ -83,15 +82,43 @@ input[id="tab04"]:checked ~ .con04 {display: block;}
 input[id="tab05"]:checked ~ .con05 {display: block;}
 input[id="tab06"]:checked ~ .con06 {display: block;}
 
+.project-container {
+  display: flex;
+}
+
+.project-item {
+  width: 25%;
+  padding-bottom: 25%;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+  margin-top: 40px;
+  border-top: 1px solid black;
+}
+
+.footer-container {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+}
+
+section {
+  padding: 20px;
+  margin-right: 80px;
+}
+
 @media (max-width: 800px) {
-  .main {
-    flex-direction: column;
-  }
-  .graphics {
-    width: 100%;
-  }
-  .description {
-    width: 100%;
-    margin-top: 20px;
-  }
+  .main {flex-direction: column;}
+  .graphics {width: 100%;}
+  .description {width: 100%; margin-top: 20px;}
+  .project-container {flex-direction: column;}
+  .project-item {width: 100%; padding-bottom: 100%;}
+  .footer-container {flex-direction: column;}
 }
