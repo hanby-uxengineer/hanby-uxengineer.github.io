@@ -9,13 +9,11 @@
 	</head>
 	<body>
 		<header class="header">
-			<div class="container">
-				<div class="logo">Hanbyeol Lee</div>
+			<div class="header-container">
+				<a class="logo" href="index.html">Hanbyeol Lee</a>
 				<div class="menu">
-					<div class="menu-item">
-						<a href="01/index.html">Projects</a>
-					</div>
-					<div class="menu-item">About</div>
+					<a class="menu-item" href="index.html">Projects</a>
+					<a class="menu-item" href="about/index.html">About</a>
 				</div>
 			</div>
 		</header>
@@ -23,13 +21,26 @@
 			<div class="graphics">graphics</div>
 			<div class="description">description</div>
 		</div>
-		<div class="hashtag" style="text-align:left">
-	 		<input id="tab1" type="radio" name="tabs" checked>
-	 		<label for="tab1">첫번째 탭</label>
-	 		<input id="tab2" type="radio" name="tabs">
-	 		<label for="tab2">두번째 탭</label>
-	 		<section id="content1" style="margin-bottom:20px;">tab menu1의 내용</section>
-			<section id="content2" style="margin-bottom:20px;">tab menu2의 내용</section>
+		<div class="hashtag">
+			<input type="radio" name="tabmenu" id="tab01" checked>
+			<label for="tab01">Featured</label>
+			<input type="radio" name="tabmenu" id="tab02">
+			<label for="tab02">All</label>
+			<input type="radio" name="tabmenu" id="tab03">
+			<label for="tab03">HCI</label>
+			<input type="radio" name="tabmenu" id="tab04">
+			<label for="tab04">HRI</label>
+			<input type="radio" name="tabmenu" id="tab05">
+			<label for="tab05">UI/UX</label>
+			<input type="radio" name="tabmenu" id="tab06">
+			<label for="tab06">Graphics</label>
+
+			<div class="conbox con01">탭 내용 01</div>
+			<div class="conbox con02">탭 내용 02</div>
+			<div class="conbox con03">탭 내용 03</div>
+			<div class="conbox con04">탭 내용 04</div>
+			<div class="conbox con05">탭 내용 05</div>
+			<div class="conbox con06">탭 내용 06</div>
 		</div>
 	</body>
 </html>

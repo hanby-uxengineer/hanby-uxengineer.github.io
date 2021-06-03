@@ -1,4 +1,4 @@
-.container {
+.header-container {
   height: 100px;
   display: flex;
   align-items: center;
@@ -37,42 +37,51 @@
 }
 
 .hashtag {
-      min-width: 320px;
-      max-width: 800px;
-      padding: 10px;
-      border-radius: 7px;;
-      background: #ffffff;}
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
 
-  section {
-      display: none;
-      padding: 20px 0 0;
-      border-top: 1px solid #ddd;}
+input[type="radio"] {display: none;}
 
-  input {
-        display: none;}
+input[type="radio"] + label {
+  margin-top: 10px;
+  display: inline-block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background: #ccc;
+  color: #999;
+  border: 1px solid black;
+  border-radius: 30px;
+}
 
-  label {
-      display: inline-block;
-      padding: 15px 25px;
-      font-weight: 600;
-      color: #bbb;
-      border: 1px solid transparent;}
+input[type="radio"] + label:hover {
+  color: #2e9cdf;
+  cursor: pointer;
+}
 
-  label:hover {
-      color: #2e9cdf;
-      cursor: pointer;}
+input[type="radio"]:checked + label {
+  background: #aaa;
+  color: #000;
+}
 
-  /*input 클릭시, label 스타일*/
-  input:checked + label {
-        color: #555;
-        border: 1px solid #ddd;
-        border-top: 2px solid #2e9cdf;
-        border-bottom: 1px solid #ffffff;}
+.conbox {
+  margin-top: 20px;
+  width: 100%;
+  height: 600px;
+  display: none;
+  border: 1px solid black;
+  border-radius: 4px;
+}
 
-  #tab1:checked ~ #content1,
-  #tab2:checked ~ #content2,
-  #tab3:checked ~ #content3,
-  #tab4:checked ~ #content4 {display: block;}
+input[id="tab01"]:checked ~ .con01 {display: block;}
+input[id="tab02"]:checked ~ .con02 {display: block;}
+input[id="tab03"]:checked ~ .con03 {display: block;}
+input[id="tab04"]:checked ~ .con04 {display: block;}
+input[id="tab05"]:checked ~ .con05 {display: block;}
+input[id="tab06"]:checked ~ .con06 {display: block;}
 
 @media (max-width: 800px) {
   .main {
