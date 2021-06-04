@@ -109,6 +109,7 @@ input[id="tab09"]:checked ~ .con09 { display: block; }
 }
 
 img + label {
+  margin-left: 3px;
   font-size: 15pt;
   font-weight: bold;
   border-radius: 10px;
@@ -121,7 +122,8 @@ img {
   -webkit-border-radius: 10px;
 }
 
-.tags {
+.year {
+  margin-left: 3px;
   font-size: 10pt;
   color: gray;
 }
@@ -154,6 +156,7 @@ section {
   .project-container {flex-direction: column;}
   .project-item {width: 100%; padding-bottom: 100%;}
   .footer-container {flex-direction: column;}
+  .project-item {padding: 0px;}
 }
 
 @media (hover: hover) {
