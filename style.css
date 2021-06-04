@@ -35,7 +35,7 @@
 }
 
 .hashtag {
-  margin-top: 30px;
+  margin-top: 40px;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -45,24 +45,49 @@ input[type="radio"] {display: none;}
 input[type="radio"] + label {
   margin-top: 10px;
   display: inline-block;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 40px;
-  padding-right: 40px;
-  background: #ccc;
-  color: #999;
-  border: 1px solid black;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
   border-radius: 30px;
 }
 
+#tab01 + label { color: #3CB371; border: 5px solid #3CB371; }
+#tab02 + label { color: #3CB371; border: 5px solid #3CB371; }
+#tab03 + label { color: #B8D999; border: 5px solid #B8D999; }
+#tab04 + label { color: #B8D999; border: 5px solid #B8D999; }
+#tab05 + label { color: #B8D999; border: 5px solid #B8D999; }
+#tab06 + label { color: #B8D999; border: 5px solid #B8D999; }
+#tab07 + label { color: #8A87F0; border: 5px solid #8A87F0; }
+#tab08 + label { color: #8A87F0; border: 5px solid #8A87F0; }
+#tab09 + label { color: #8A87F0; border: 5px solid #8A87F0; }
+
+#tab01:checked + label { color: white; background: #3CB371; }
+#tab02:checked + label { color: white; background: #3CB371; }
+#tab03:checked + label { color: white; background: #B8D999; }
+#tab04:checked + label { color: white; background: #B8D999; }
+#tab05:checked + label { color: white; background: #B8D999; }
+#tab06:checked + label { color: white; background: #B8D999; }
+#tab07:checked + label { color: white; background: #8A87F0; }
+#tab08:checked + label { color: white; background: #8A87F0; }
+#tab09:checked + label { color: white; background: #8A87F0; }
+
+#tab01 + label:hover { color: white; background: #B0D8BB; }
+#tab02 + label:hover { color: white; background: #B0D8BB; }
+#tab03 + label:hover { color: white; background: #DCECCC; }
+#tab04 + label:hover { color: white; background: #DCECCC; }
+#tab05 + label:hover { color: white; background: #DCECCC; }
+#tab06 + label:hover { color: white; background: #DCECCC; }
+#tab07 + label:hover { color: white; background: #C4C3F8; }
+#tab08 + label:hover { color: white; background: #C4C3F8; }
+#tab09 + label:hover { color: white; background: #C4C3F8; }
+
 input[type="radio"] + label:hover {
-  color: #2e9cdf;
   cursor: pointer;
 }
 
 input[type="radio"]:checked + label {
   background: #aaa;
-  color: #000;
 }
 
 .conbox {
@@ -79,6 +104,9 @@ input[id="tab03"]:checked ~ .con03 { display: block; }
 input[id="tab04"]:checked ~ .con04 { display: block; }
 input[id="tab05"]:checked ~ .con05 { display: block; }
 input[id="tab06"]:checked ~ .con06 { display: block; }
+input[id="tab07"]:checked ~ .con07 { display: block; }
+input[id="tab08"]:checked ~ .con08 { display: block; }
+input[id="tab09"]:checked ~ .con09 { display: block; }
 
 .project-container {
   display: flex;
