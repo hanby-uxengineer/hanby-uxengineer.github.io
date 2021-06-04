@@ -84,8 +84,6 @@ input[type="radio"]:checked + label {
   margin-top: 20px;
   width: 100%;
   display: none;
-  border: 1px solid black;
-  border-radius: 4px;
 }
 
 input[id="tab01"]:checked ~ .con01 { display: block; }
@@ -104,9 +102,28 @@ input[id="tab09"]:checked ~ .con09 { display: block; }
 
 .project-item {
   width: 25%;
-  padding-bottom: 25%;
-  border: 1px solid black;
-  border-radius: 4px;
+}
+
+.project-item-container {
+  padding: 10px;
+}
+
+img + label {
+  font-size: 15pt;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+img {
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
+.tags {
+  font-size: 10pt;
+  color: gray;
 }
 
 .footer {
