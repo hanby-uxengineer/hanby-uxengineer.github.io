@@ -1,631 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>Hanbyeol Lee / This or That</title>
-	<meta name="author" content="Hanbyeol Lee">
-	<meta name="description" content="      포인팅은 언어적, 비언어적 형태로 다양하게 표현될 수 있다.BackgroundDesign Question: “소셜 로봇은 포인팅을 통해 어떻게 사람들과 효과적으로 의사소통할 수 있을까?”우리는 같은 공간에 있는 사람과 대화할 때 주변의 사물, 장소 등이 자주 주제가 되고, 제스처나 지시어를 사용해 위치 정보를 공유한다.로봇은 컴퓨터나 인공지능 스피커와 달리 언어적 의사소통뿐만 아니라 비언어적 의사소통을 가능하게 하는 물리적 형태를 가지고 있다.하지만, HRI 측면에서 로봇의 포인팅 연구는 아래와 같이 제한이 있었다.1) Locative Deixis직시어1는 대화에서 자주 사용된다. 특히, 위치격 직시어(예시: 이거, 저거)는 주변에 있는 특정 대상을 청자 또는 독자가 이해할 수 있도록 언어를 사용해서 참조할 때 사용된다. 하지만, 소셜 로봇은 언어적 의사소통에 있어 대부분 서술적 직시어(예시: 왼쪽에서 두 번째)를 사용한다.       직시어는 위치격 직시어와 서술적 직시어로 나뉠 수 있다.2) Pointing Gesture포인팅 제스처는 유아가 첫 단어를 말하기 전 배우는 의사소통 기술 중 하나다1. 사람들은 복잡한 서술을 생략하기 위해 팔, 머리, 눈, 입술, 코와 같은 다양한 신체 부위를 사용하여 포인팅 제스처를 취한다2. 하지만, 대부분의 로봇 포인팅 제스처에 대한 연구는 손가락으로 가리키는 것으로 제한되었다.      사람은 다양한 신체 부위를 사용하여 포인팅 제스처를 취할 수 있다.3) Head Pointing사람은 머리를 움직여서 특정 대상을 가리키기도 한다. HRI 연구에 따르면 로봇이 머리를 움직여서 가리키는 것은 인간의 행동과 비슷한 효과를 나타낸다3. 사람은 시선과 돌출된 코를 통해 포인팅 제스처를 취할 수 있는 반면에, 소셜 로봇의 머리는 대부분 평면 디스플레이를 사용하기 때문에 정확한 포인팅이 가능한지 알 수 없다.      사람은 시선과 돌출된 코를 통해 포인팅 제스처를 쉽게 취할 수 있다.Goal1) Research Question“소셜 로봇의 언어적, 비언어적 포인팅 표현은 어떻게 디자인될 수 있으며, 가장 효과적인 인터랙션은 무엇인가?”2) Research Design소셜 로봇의 포인팅 관련 발화 및 제스처를 다양한 조건으로 프로토타이핑한 후, 상황에 따라 로봇의 표현에 대한 사용자의 인식을 조사한다.Study Design로봇은 사용자에게 언어뿐만 아니라 포인팅 제스처를 통해 물체의 위치를 알릴 수 있다. 또한, 포인팅 제스처는 시선(eye pointing) 확장이다4. 즉, 시선은 포인팅 제스처의 기본이다.1) Independent Variables실험 조건은 다음과 같이 총 8가지로 설정하였다.  언어 유형:          a. 지시적(deictic)      b. 서술적(descriptive)        코 포인팅:          a. 코가 있는(with nose)      b. 코가 없는(without nose)        시선:          a. 눈이 있는(with eyes)      b. 눈이 없는(without eyes)            독립 변수: 언어 유형(2가지) X 코 포인팅(2가지) X 시선(2가지)2) Dependent Variables각 실험 조건에 대해서 공통적으로 아래 4가지를 측정하였다.측정을 통해, 사용자가 각 로봇의 표현 방식에 따라 사용자에게 위치 정보를 얼마나 효과적으로, 사회적으로, 자연스럽게 제공하는지 확인하였다. 또한, 로봇에 대한 전반적인 인상을 알아보기위해 제품 평가를 조사하였다.  효율성(perceived effectiveness)5  사교성(perceived sociability)6  자연스러움(perceived naturalness)5  제품 평가(product evaluation)7, 8전시 안내 상황에서는 아래 2가지를 추가적으로 측정하였다.  유능함(perceived competency)6  신뢰성(perceived trustworthiness)6        4가지 공통 측정과 2가지 추가 측정에 대한 아이템3) Prototype DevelopmentWizard of Oz 기법2 실험을 위한 로봇을 디자인하고 개발하였다.  로봇 프로토타입은 ROS 기반 모바일 로봇인 TurtleBot33를 기반으로 방향을 변경하면서 이동할 수 있다.  블루투스 통신으로 로봇의 언어 타입을 제어할 수 있다.  Raspberry Pi와 연결된 모니터를 통해 로봇의 시선을 제어할 수 있다.  로봇의 움직임은 블루투스 통신을 통해 조이스틱 컨트롤러를 통해 수동으로 제어된다.      사용한 소프트웨어: Solidworks, Raspberry Pi, Processing4) Recruitment연구실 조사(in-lab study)로 진행되었으며, 혼합 설계(mixed design)하였다.  언어 유형: within design - 피실험자는 두 가지 언어 유형을 모두 경험한다. (무작위 순서)  코 포인팅: within design - 피실험자는 두 가지 코 포인팅을 모두 경험한다. (무작위 순서)  시선: between design - 피실험자는 한 가지 시선을 경험한다.피실험자: 48명 (23세~37세, 여성 26명, 남성 22명)Experiments로봇이 사용자와 상호작용하는 상황에 따라, 2가지의 실험을 진행하였다.  자리 안내(seat guide): 로봇이 사용자에게 명령문을 사용하는 상황  전시 안내(exhibition guide): 로봇이 사용자에게 평서문을 사용하는 상황1) Seat Guide로봇은 피실험자를 맞이하고 앉을 자리로 안내한다. 피실험자는 연구실에 배치된 5개의 의자 중 로봇이 포인팅 하는 의자에 앉도록 요청받았다.      로봇이 포인팅 하는 의자에 앉은 피실험자피실험자는 무작위 순서로 총 4번의 착석 요청을 받았으며, 각 착석 이후에 로봇의 인상을 평가했다. 로봇의 언어 및 제스처 표현 예는 다음과 같다.    2) Exhibition Guide피실험자는 안내 로봇을 통해 로봇 쇼룸에 전시된 로봇에 대한 설명을 듣는다. 안내 로봇은 전시된 5개의 로봇을 하나씩 포인팅 하면서 설명하고, 피실험자는 메모지에 안내 로봇이 포인팅 한 순서대로 메모한다.      안내 로봇이 포인팅 하는 로봇에 대한 설명을 메모하고 있는 피실험자피실험자는 무작위 순서로 총 4번의 조건을 경험했으며, 각 조건 이후에 로봇의 인상을 평가했다. 로봇의 언어 및 제스처 표현 예는 다음과 같다.    Results실험을 통해 각 조건의 로봇이 사용자의 인식에 미치는 영향을 조사하기 위해 이원 반복측정 분산분석(two-way RM ANOVA)을 수행했다.1) Seat Guide로봇의 효율성, 사교성, 자연스러움 및 제품 평가 측정은 크론바 알파 값 0.6 이상으로, 모든 문항에 대해 유의한 결과가 나왔다.      각 측정에 대한 신뢰도 분석 후 크론바 알파 값각 측정의 유의한 주 효과(main effect)는 다음과 같다.  코 포인팅이 효율성에 미치는 주 효과는 유의미했다. (F(1,46) = 21.171, p &lt; 0.0005)  코 포인팅이 사교성에 미치는 주 효과는 유의미했다. (F(1,46) = 3.870, p = 0.055)  언어 유형이 제품 평가에 미치는 주 효과는 유의미했다. (marginally significant, F(1,46) = 2.955, p = 0.092)  코 포인팅이 제품 평가에 미치는 주 효과는 유의미했다. (F(1,46) = 7.736, p = 0.008)주 효과에서 피실험자의 인식은 다음과 같다.  자리 안내 상황에서, 코가 있는 로봇이 코가 없는 로봇보다 더 효율적이라고 인식했다. Mwithnose = 5.32, SD = 0.15 vs. Mwithoutnose = 4.54, SD = 0.19)  자리 안내 상황에서, 코가 있는 로봇이 코가 없는 로봇보다 더 사교적이라고 인식했다. Mwithnose = 4.68, SD = 0.16 vs. Mwithoutnose = 4.41, SD = 0.17)  자리 안내 상황에서, 서술적인 발화를 하는 로봇이 지시적인 발화를 하는 로봇보다 더 긍정적이라고 인식했다. Mdeictic = 4.70, SD = 0.17 vs. Mdescriptive = 5.00, SD = 0.15)  자리 안내 상황에서, 코가 있는 로봇이 코가 없는 로봇보다 더 긍정적이라고 인식했다. Mwithnose = 5.01, SD = 0.15 vs. Mwithoutnose = 4.70, SD = 0.15)        자리 안내 상황에서의 주 효과위치 정보 인식의 정확성은 다음과 같다. (피실험자가 안내 로봇이 의도한 자리에 앉은 확률)      자리 안내 상황에서의 정확성2) Exhibition Guide로봇의 효율성, 사교성, 자연스러움, 제품 평가, 유능함 및 신뢰성 측정은 크론바 알파 값 0.6 이상으로, 모든 문항에 대해 유의한 결과가 나왔다.      각 측정에 대한 신뢰도 분석 후 크론바 알파 값각 측정의 유의한 주 효과(main effect)는 다음과 같다.  언어 유형이 효율성에 미치는 주 효과는 유의미했다. (F(1,46) = 94.242, p &lt; 0.0005)  코 포인팅이 효율성에 미치는 주 효과는 유의미했다. (F(1,46) = 53.908, p &lt; 0.0005)  언어 유형이 사교성에 미치는 주 효과는 유의미했다. (F(1,46) = 54.904, p &lt; 0.0005)  코 포인팅이 사교성에 미치는 주 효과는 유의미했다. (F(1,46) = 8.595, p = 0.005)  언어 유형이 자연스러움에 미치는 주 효과는 유의미했다. (F(1,46) = 35.353, p &lt; 0.0005)  코 포인팅이 자연스러움에 미치는 주 효과는 유의미했다. (F(1,46) = 35.160, p = 0.005)  언어 유형이 제품 평가에 미치는 주 효과는 유의미했다. (F(1,46) = 56.358, p &lt; 0.0005)  코 포인팅이 제품 평가에 미치는 주 효과는 유의미했다. (F(1,46) = 14.507, p &lt; 0.0005)  언어 유형이 유능함에 미치는 주 효과는 유의미했다. (F(1,46) = 18.574, p &lt; 0.0005)  코 포인팅이 유능함에 미치는 주 효과는 유의미했다. (F(1,46) = 8.184, p = 0.006)  언어 유형이 신뢰성에 미치는 주 효과는 유의미했다. (F(1,46) = 43.864, p &lt; 0.0005)  코 포인팅이 신뢰성에 미치는 주 효과는 유의미했다. (F(1,46) = 8.799, p = 0.005)주 효과에서 피실험자의 인식은 다음과 같다.  전시 안내 상황에서, 서술적인 발화를 하는 로봇이 지시적인 발화를 하는 로봇보다 더 효율적이라고 인식했다. Mdeictic = 4.29, SD = 0.17 vs. Mdescriptive = 5.63, SD = 0.12)  전시 안내 상황에서, 코가 있는 로봇이 코가 없는 로봇보다 더 효율적이라고 인식했다. Mwithnose = 5.43, SD = 0.15 vs. Mwithoutnose = 4.48, SD = 0.14)  전시 안내 상황에서, 서술적인 발화를 하는 로봇이 지시적인 발화를 하는 로봇보다 더 사교적이라고 인식했다. Mdeictic = 4.33, SD = 0.13 vs. Mdescriptive = 4.99, SD = 0.14)  전시 안내 상황에서, 코가 있는 로봇이 코가 없는 로봇보다 더 사교적이라고 인식했다. Mwithnose = 4.82, SD = 0.14 vs. Mwithoutnose = 4.50, SD = 0.13)  전시 안내 상황에서, 서술적인 발화를 하는 로봇이 지시적인 발화를 하는 로봇보다 더 자연스럽다고 인식했다. Mdeictic = 3.95, SD = 0.15 vs. Mdescriptive = 4.73, SD = 0.16)  전시 안내 상황에서, 코가 있는 로봇이 코가 없는 로봇보다 더 자연스럽다고 인식했다. Mwithnose = 4.68, SD = 0.16 vs. Mwithoutnose = 4.00, SD = 0.15)  전시 안내 상황에서, 서술적인 발화를 하는 로봇이 지시적인 발화를 하는 로봇보다 더 긍정적이라고 인식했다. Mdeictic = 4.44, SD = 0.14 vs. Mdescriptive = 5.14, SD = 0.12)  전시 안내 상황에서, 코가 있는 로봇이 코가 없는 로봇보다 더 긍정적이라고 인식했다. Mwithnose = 5.00, SD = 0.14 vs. Mwithoutnose = 4.59, SD = 0.13)  전시 안내 상황에서, 서술적인 발화를 하는 로봇이 지시적인 발화를 하는 로봇보다 더 유능하다고 인식했다. Mdeictic = 4.37, SD = 0.19 vs. Mdescriptive = 4.87, SD = 0.17)  전시 안내 상황에서, 코가 있는 로봇이 코가 없는 로봇보다 더 유능하다고 인식했다. Mwithnose = 4.76, SD = 0.17 vs. Mwithoutnose = 4.48, SD = 0.18)  전시 안내 상황에서, 서술적인 발화를 하는 로봇이 지시적인 발화를 하는 로봇보다 더 신뢰할 수 있다고 인식했다. Mdeictic = 4.53, SD = 0.17 vs. Mdescriptive = 5.28, SD = 0.15)  전시 안내 상황에서, 코가 있는 로봇이 코가 없는 로봇보다 더 신뢰할 수 있다고 인식했다. Mwithnose = 5.09, SD = 0.17 vs. Mwithoutnose = 4.72, SD = 0.16)        전시 안내 상황에서의 유의한 주 효과각 측정의 유의한 교호작용 효과(interaction effect)는 다음과 같다.  사교성에 대한 언어 유형과 코 포인팅 사이에 유의한 교호작용 효과가 존재한다. (F(1,46) = 4.213, p = 0.046)  자연스러움에 대한 코 포인팅과 시선 사이에 유의한 교호작용 효과가 존재한다. (marginally significant, F(1,46) = 2.914, p = 0.095)  제품 평가에 대한 언어 유형과 시선 사이에 유의한 교호작용 효과가 존재한다. (F(1,46) = 4.150, p = 0.047)교호작용 효과에서 피실험자의 인식은 다음과 같다.  전시 안내 상황에서, 로봇의 언어 유형이 지시적일 때, 코가 있는 로봇이 코가 없는 로봇보다 더 사교적이라고 인식했다. (Mwithnose = 4.58, SD = 1.03 vs. Mwithoutnose = 4.08, SD = 1.05, t = 3.500, df = 47, p = 0.001)  전시 안내 상황에서, 로봇의 눈이 있을 때, 코가 있는 로봇이 코가 없는 로봇보다 더 자연스럽다고 인식했다. (Mwithnose = 4.61, SD = 1.35 vs. Mwithoutnose = 3.73, SD = 1.41, t = 5.770, df = 47, p = 0.001)  전시 안내 상황에서, 로봇의 눈이 없을 때, 코가 있는 로봇이 코가 없는 로봇보다 더 자연스럽다고 인식했다. (Mwithnose = 4.75, SD = 1.12 vs. Mwithoutnose = 4.26, SD = 1.12, t = 3.264, df = 47, p = 0.004)  전시 안내 상황에서, 로봇의 눈이 있을 때, 서술적인 발화를 하는 로봇이 지시적인 발화를 하는 로봇보다 더 긍정적이라고 인식했다. (Mdeictic = 4.31, SD = 1.25 vs. Mdescriptive = 5.20, SD = 1.04, t = 5.895, df = 47, p = 0.0005)  전시 안내 상황에서, 로봇의 눈이 없을 때, 서술적인 발화를 하는 로봇이 지시적인 발화를 하는 로봇보다 더 긍정적이라고 인식했다. (Mdeictic = 4.57, SD = 0.96 vs. Mdescriptive = 5.08, SD = 0.86, t = 5.002, df = 47, p = 0.0005)      전시 안내 상황에서의 유의한 교호작용 효과위치 정보 인식의 정확성의 유의한 주 효과(main effect)는 다음과 같다. (피실험자가 안내 로봇이 설명한 로봇의 순서를 맞출 확률)  언어 유형이 정확성에 미치는 주 효과는 유의미했다. (F(1,46) = 8.452, p = 0.006)  코 포인팅이 정확성에 미치는 주 효과는 유의미했다. (F(1,46) = 4.699, p = 0.035)  시선이 정확성에 미치는 주 효과는 유의미했다. (F(1,46) = 7.614, p = 0.008)위치 정보 인식의 정확성의 주 효과에서 피실험자의 인식은 다음과 같다.  전시 안내 상황에서, 지시적인 발화를 하는 로봇보다 서술적인 발화를 하는 로봇을 통해 피실험자가 전시된 로봇의 위치를 더 정확하게 인식할 수 있었다. Mdeictic = 9.58, SD = 0.11 vs. Mdescriptive = 9.91, SD = 0.04)  전시 안내 상황에서, 코가 없는 로봇보다 코가 있는 로봇을 통해 피실험자가 전시된 로봇의 위치를 더 정확하게 인식할 수 있었다. Mwithnose = 9.88, SD = 0.06 vs. Mwithoutnose = 9.62, SD = 0.11)  전시 안내 상황에서, 눈이 있는 로봇보다 눈이 없는 로봇을 통해 피실험자가 전시된 로봇의 위치를 더 정확하게 인식할 수 있었다. Mwitheyes = 9.58, SD = 0.08 vs. Mwithouteyes = 9.91, SD = 0.08)      전시 안내 상황에서 위치 정보 인식의 정확성의 유의한 주 효과위치 정보 인식의 정확성의 유의한 교호작용 효과(interaction effect)는 다음과 같다.  정확성에 대한 언어 유형과 코 포인팅 사이에 유의한 교호작용 효과가 존재한다. (F(1,46) = 5.914, p = 0.019)위치 정보 인식의 정확성의 교호작용 효과에서 피실험자의 인식은 다음과 같다.  전시 안내 상황에서, 로봇의 언어 유형이 지시적일 때, 코가 없는 로봇보다 코가 있는 로봇을 통해 피실험자가 전시된 로봇의 위치를 더 정확하게 인식할 수 있었다. (Mwithnose = 9.85, SD = 0.62 vs. Mwithoutnose = 9.31, SD = 1.45, t = 2.349, df = 47, p = 0.023)      전시 안내 상황에서 위치 정보 인식의 정확성의 유의한 교호작용 효과Conclusion1) Interpretation of Results결과에 대한 해석은 다음과 같다.  사람들은 명령문과 평서문 포인팅 상황에 상관없이 서술적 언어 유형과 코 포인팅을 사용하여 위치 정보를 제공하는 것을 전반적으로 선호하였다.  위치 정보 인식의 정확성은 언어 유형이 중요하다. 자리 안내 상황에서는 피실험자와 로봇이 마주보고 있었기 때문에 왼쪽과 오른쪽을 반대로 생각하는 사람들이 존재했다.2) Design Implications본 연구는 다음과 같은 영향을 줄 수 있다.  인간의 사회적 상호작용 연구에 기여할 수 있다.  인간 연구에서는 코를 탈부착할 수 없지만, 인공물인 로봇에서는 코의 영향에 관한 연구가 가능하다.  로봇의 발화 스타일 디자인 연구에 기여할 수 있다.  서술적 언어 유형에서는 사용자와 기준점을 일치시켜야 하며, 마주봐야 하는 경우에는 지시적 언어 유형으로 제공되어야 한다.  로봇의 디자인 개선에 기여할 수 있다.  로봇이 제공한 정보가 사용자에게 치명적인 영향을 미치지 않는 경우, 사용자가 더 선호하는 서술적 언어 유형으로 제공하도록 디자인되어야 한다.      사용자와 로봇이 기준점이 같은 경우와 다른 경우3) Limitation본 연구의 한계점은 다음과 같다.  본 연구는 단일 환경을 설정했지만, 사용자와 로봇 사이의 거리를 고려하여 보다 다양하고 자연스러운 실험 환경에서 연구를 수행할 수 있다.  본 연구는 위치 정보 인식의 정확성을 측정했지만, 사용자가 위치를 인식하는데 걸린 시간을 측정해서 각 조건의 유효성을 알아볼 수 있다.PublicationThis or That: The Effect of Robot’s Deictic Expression on User’s Perception  2020 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)References1. Pointing: Where Language, Culture, and Cognition Meet (2003) by Sotaro Kita ↩2. The Role of Gesture in Communication and Thinking (1999) by Susan Goldin-Meadow in Trends in Cognitive Sciences ↩3. We Are Not Contortionists: Coupled Adaptive Learning for Head and Body Orientation Estimation in Surveillance Video (2012) by Cheng Chen and Jean-Marc Odobez in IEEE Conference on Computer Vision and Pattern Recognition ↩4. Becoming Human: From Pointing Gestures to Syntax (2011) by Teresa Bejarano ↩5. Robot Deictics: How Gesture and Context Shape Referential Communication (2014) by Allison Sauppé and Bilge Mutlu in ACM/IEEE HRI ↩6. Rhetorical Robots: Making Robots More Effective Speakers Using Linguistic Cues of Expertise (2013) by Sean Andrist, Erin Spannan and Bilge Mutlu in ACM/IEEE HRI ↩7. Adoption of New and Really New Products: The Effects of Self-Regulation Systems and Risk Salience (2007) by Michal Herzenstein, Steven S. Posavac and J. Joško Brakus in Journal of Marketing Research ↩8. The Role of Imagination-Focused Visualization on New Product Evaluation (1989) by Min Zhao, Steve Hoeffler and Darren W. Dahl in Journal of Marketing Research ↩Footnotes1. 문맥상 단어가 사용된 맥락, 시간, 공간, 청자와 화자 따위의 발화 상황을 고려해야만 의미 파악이 되는 지시 표현. (예시: '나', '너'와 같은 인칭 대명사나 '이곳', '여기', '저기' 같은 지시어) [출처: 네이버 국어사전] ↩2. Wizard of Oz 기법: 개발되지 않은 서비스를 실제 서비스처럼 착각하게 만들어 테스트를 진행하는 방법 ↩ 3. ROBOTIS TurtleBot3 ↩">
-	<meta name="keywords" content="HRI, Social Robot">
-	<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="robots" content="index,follow">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/assets/css/style.css">
-
-<!-- favicon -->
-<link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon.ico/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon.ico/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon.ico/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon.ico/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon.ico/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon.ico/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon.ico/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon.ico/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon.ico/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="/assets/favicon.ico/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon.ico/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon.ico/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon.ico/favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
-
-</head>
-<body>
-	<header class="header">
-	<div class="container">
-		<h1 class="logo">
-			<a title="Hanbyeol Lee" href="/">Hanbyeol Lee</a>
-		</h1>
-	</div>
-</header>
-	<main class="content">
-		<section class="project">
-			<div class="container">
-				<article>
-					
-						<img src="/assets/images/projects/this_or_that/main.jpg" alt="" />
-					
-					<br><br>
-					<!-- <span class="h2">Project Title</span> -->
-					<h1>
-						<p><font size="6em">This or That</font></p>
-					</h1>
-					<p>The Effect of Robot’s Deictic Expression on User’s Perception</p>
-					<br>
-					<!--
-					<h1>
-						<a href="" target="_blank" title="This or That" rel="nofollow">This or That</a>
-					</h1>
-					-->
-					<span class="h2">Duration</span>
-					<p>2019.12 ~ 2020.02 (3개월)</p>
-					<span class="h2">Project Type</span>
-					<p>Human-Robot Interaction 연구 프로젝트</p>
-					<font size="2em" color="gray">KIST AIㆍ로봇연구소 지능로봇연구단</font>
-					<!-- <span class="h2">Organization</span>
-					<a href=""><u></u></a> -->
-					<span class="h2">Role</span>
-					<p>프로젝트 기획, 제품 디자인, 인터랙션 디자인, 프로토타입 개발, 사용자 조사, 데이터 분석 (기여도 30%)</p>
-					<font size="2em" color="gray">Dr. Dahyun Kang (KIST): 프로젝트 기획, 문헌 조사, 인터랙션 디자인, 사용자 조사, 데이터 분석</font>
-					<br><font size="2em" color="gray">Dr. Eun Ho Kim (KITECH): 프로젝트 기획, 인터랙션 디자인</font>
-					<br><font size="2em" color="gray">Dr. Sonya S. Kwak (KIST): 프로젝트 지도</font>
-					<!-- <span class="h2">Task</span>
-					<p></p> -->
-					<span class="h2">Tools</span>
-					<p>SolidWorks, Turtle Bot, Raspberry Pi</p>
-					<span class="h2">Output</span>
-					<p>IEEE/RSJ IROS 2020 학회 논문</p>
-					<br>
-					<!--
-					<div class="project-meta">
-						<span class="h2">Technologies</span>
-						<p></p>
-						<span class="h2">Agency</span>
-						<p><a title="" href="" target="_blank" rel="nofollow"></a></p>
-						<span class="h2">Duration</span>
-						<p></p>
-					</div>
-				-->
-					<hr />
-<p><br /></p>
-<p align="center">
-  <img src="/assets/images/projects/this_or_that/intro.png" />
-  <br />
-  <font size="2em" color="gray">포인팅은 언어적, 비언어적 형태로 다양하게 표현될 수 있다.</font>
-</p>
-<p><br /><br /></p>
-
-<font size="6em">Background</font>
-<p><br /></p>
-
-<p>Design Question: “<span style="background-color:#EBEBEB">소셜 로봇</span>은 <span style="background-color:#EBEBEB">포인팅</span>을 통해 어떻게 사람들과 효과적으로 의사소통할 수 있을까?”
-<br /><br /></p>
-
-<p>우리는 같은 공간에 있는 사람과 대화할 때 주변의 사물, 장소 등이 자주 주제가 되고, <span style="background-color:#EBEBEB">제스처</span>나 <span style="background-color:#EBEBEB">지시어</span>를 사용해 위치 정보를 공유한다.
-로봇은 컴퓨터나 인공지능 스피커와 달리 <span style="background-color:#EBEBEB">언어적 의사소통</span>뿐만 아니라 <span style="background-color:#EBEBEB">비언어적 의사소통</span>을 가능하게 하는 물리적 형태를 가지고 있다.<br />
-<br />
-하지만, HRI 측면에서 로봇의 포인팅 연구는 아래와 같이 <span style="background-color:#EBEBEB">제한</span>이 있었다.<br />
-<br /><br /></p>
-
-<font size="5em">1) Locative Deixis</font>
-<p><br /></p>
-
-<p>직시어<sup id="F01"><a href="#footnote_1"><span style="color:MediumSeaGreen">1</span></a></sup>는 대화에서 자주 사용된다. 특히, <span style="background-color:#EBEBEB">위치격 직시어(예시: 이거, 저거)</span>는 주변에 있는 특정 대상을 청자 또는 독자가 이해할 수 있도록 언어를 사용해서 참조할 때 사용된다. 하지만, 소셜 로봇은 언어적 의사소통에 있어 대부분 <span style="background-color:#EBEBEB">서술적 직시어(예시: 왼쪽에서 두 번째)</span>를 사용한다. <br />
-<br /></p>
-
-<p align="center">
-  <img src="/assets/images/projects/this_or_that/bg1.png" />
-  <br />
-  <font size="2em" color="gray">직시어는 위치격 직시어와 서술적 직시어로 나뉠 수 있다.</font>
-</p>
-<p><br /><br /></p>
-
-<font size="5em">2) Pointing Gesture</font>
-<p><br /></p>
-
-<p>포인팅 제스처는 유아가 첫 단어를 말하기 전 배우는 의사소통 기술 중 하나다<sup id="R01"><a href="#reference_1"><span style="color:gray">1</span></a></sup>. 사람들은 <span style="background-color:#EBEBEB">복잡한 서술을 생략</span>하기 위해 팔, 머리, 눈, 입술, 코와 같은 <span style="background-color:#EBEBEB">다양한 신체 부위</span>를 사용하여 포인팅 제스처를 취한다<sup id="R02"><a href="#reference_2"><span style="color:gray">2</span></a></sup>. 하지만, 대부분의 로봇 포인팅 제스처에 대한 연구는 <span style="background-color:#EBEBEB">손가락</span>으로 가리키는 것으로 제한되었다.<br />
-<br /></p>
-
-<p align="center">
-  <img src="/assets/images/projects/this_or_that/bg2.png" />
-  <br />
-  <font size="2em" color="gray">사람은 다양한 신체 부위를 사용하여 포인팅 제스처를 취할 수 있다.</font>
-</p>
-<p><br /><br /></p>
-
-<font size="5em">3) Head Pointing</font>
-<p><br /></p>
-
-<p>사람은 <span style="background-color:#EBEBEB">머리</span>를 움직여서 특정 대상을 가리키기도 한다. HRI 연구에 따르면 로봇이 머리를 움직여서 가리키는 것은 인간의 행동과 <span style="background-color:#EBEBEB">비슷한 효과</span>를 나타낸다<sup id="R03"><a href="#reference_3"><span style="color:gray">3</span></a></sup>. 사람은 <span style="background-color:#EBEBEB">시선</span>과 <span style="background-color:#EBEBEB">돌출된 코</span>를 통해 포인팅 제스처를 취할 수 있는 반면에, 소셜 로봇의 머리는 대부분 평면 디스플레이를 사용하기 때문에 정확한 포인팅이 가능한지 알 수 없다.<br />
-<br /></p>
-
-<p align="center">
-  <img src="/assets/images/projects/this_or_that/bg3.png" />
-  <br />
-  <font size="2em" color="gray">사람은 시선과 돌출된 코를 통해 포인팅 제스처를 쉽게 취할 수 있다.</font>
-</p>
-<p><br /><br /><br /><br /><br /><br /></p>
-
-<font size="6em">Goal</font>
-<p><br /></p>
-
-<font size="5em">1) Research Question</font>
-<p><br /></p>
-
-<p>“소셜 로봇의 <span style="background-color:#EBEBEB">언어적, 비언어적 포인팅 표현</span>은 어떻게 디자인될 수 있으며, 가장 효과적인 <span style="background-color:#EBEBEB">인터랙션</span>은 무엇인가?”<br />
-<br /><br /></p>
-
-<font size="5em">2) Research Design</font>
-<p><br /></p>
-
-<p>소셜 로봇의 포인팅 관련 <span style="background-color:#EBEBEB">발화</span> 및 <span style="background-color:#EBEBEB">제스처</span>를 다양한 조건으로 프로토타이핑한 후, <span style="background-color:#EBEBEB">상황</span>에 따라 로봇의 표현에 대한 사용자의 인식을 조사한다.<br />
-<br /><br /><br /><br /><br /><br /></p>
-
-<font size="6em">Study Design</font>
-<p><br /></p>
-
-<p>로봇은 사용자에게 <span style="background-color:#EBEBEB">언어</span>뿐만 아니라 <span style="background-color:#EBEBEB">포인팅 제스처</span>를 통해 물체의 위치를 알릴 수 있다. 또한, 포인팅 제스처는 <span style="background-color:#EBEBEB">시선(eye pointing)</span> 확장이다<sup id="R04"><a href="#reference_4"><span style="color:gray">4</span></a></sup>. 즉, 시선은 포인팅 제스처의 기본이다.<br />
-<br /><br /></p>
-
-<font size="5em">1) Independent Variables</font>
-<p><br /></p>
-
-<p>실험 조건은 다음과 같이 총 8가지로 설정하였다.</p>
-
-<ol>
-  <li><span style="background-color:#EBEBEB">언어 유형</span>:
-    <ul>
-      <li>a. 지시적(deictic)</li>
-      <li>b. 서술적(descriptive)<br />
-<br /></li>
-    </ul>
-  </li>
-  <li><span style="background-color:#EBEBEB">코 포인팅</span>:
-    <ul>
-      <li>a. 코가 있는(with nose)</li>
-      <li>b. 코가 없는(without nose)<br />
-<br /></li>
-    </ul>
-  </li>
-  <li><span style="background-color:#EBEBEB">시선</span>:
-    <ul>
-      <li>a. 눈이 있는(with eyes)</li>
-      <li>b. 눈이 없는(without eyes)<br />
-<br /></li>
-    </ul>
-  </li>
-</ol>
-
-<p align="center">
-  <img src="/assets/images/projects/this_or_that/sd1.png" />
-  <br />
-  <font size="2em" color="gray">독립 변수: 언어 유형(2가지) X 코 포인팅(2가지) X 시선(2가지)</font>
-</p>
-<p><br /><br /></p>
-
-<font size="5em">2) Dependent Variables</font>
-<p><br />
-각 실험 조건에 대해서 공통적으로 아래 4가지를 측정하였다.
-측정을 통해, 사용자가 각 로봇의 표현 방식에 따라 사용자에게 위치 정보를 얼마나 <span style="background-color:#EBEBEB">효과적</span>으로, <span style="background-color:#EBEBEB">사회적</span>으로, <span style="background-color:#EBEBEB">자연스럽게</span> 제공하는지 확인하였다. 또한, 로봇에 대한 <span style="background-color:#EBEBEB">전반적인 인상</span>을 알아보기위해 제품 평가를 조사하였다.</p>
-
-<ol>
-  <li><span style="background-color:#EBEBEB">효율성</span>(perceived effectiveness)<sup id="R05"><a href="#reference_5"><span style="color:gray">5</span></a></sup></li>
-  <li><span style="background-color:#EBEBEB">사교성</span>(perceived sociability)<sup id="R06"><a href="#reference_6"><span style="color:gray">6</span></a></sup></li>
-  <li><span style="background-color:#EBEBEB">자연스러움</span>(perceived naturalness)<sup id="R05"><a href="#reference_5"><span style="color:gray">5</span></a></sup></li>
-  <li><span style="background-color:#EBEBEB">제품 평가</span>(product evaluation)<sup id="R07"><a href="#reference_7"><span style="color:gray">7,</span></a></sup><sup id="R08"><a href="#reference_8"><span style="color:gray"> 8</span></a></sup><br />
-<br /></li>
-</ol>
-
-<p>전시 안내 상황에서는 아래 2가지를 추가적으로 측정하였다.</p>
-<ol>
-  <li><span style="background-color:#EBEBEB">유능함</span>(perceived competency)<sup id="R06"><a href="#reference_6"><span style="color:gray">6</span></a></sup></li>
-  <li><span style="background-color:#EBEBEB">신뢰성</span>(perceived trustworthiness)<sup id="R06"><a href="#reference_6"><span style="color:gray">6</span></a></sup><br />
-<br /></li>
-</ol>
-
-<p align="center">
-  <img src="/assets/images/projects/this_or_that/dv.png" />
-</p>
-<p><br /></p>
-<p align="center">
-  <img src="/assets/images/projects/this_or_that/dv2.png" />
-  <br />
-  <font size="2em" color="gray">4가지 공통 측정과 2가지 추가 측정에 대한 아이템</font>
-</p>
-<p><br /><br /></p>
-
-<font size="5em">3) Prototype Development</font>
-<p><br /></p>
-
-<p><span style="background-color:#EBEBEB">Wizard of Oz 기법</span><sup id="F02"><a href="#footnote_2"><span style="color:MediumSeaGreen">2</span></a></sup> 실험을 위한 로봇을 디자인하고 개발하였다.</p>
-
-<ol>
-  <li>로봇 프로토타입은 ROS 기반 모바일 로봇인 TurtleBot3<sup id="F03"><a href="#footnote_3"><span style="color:MediumSeaGreen">3</span></a></sup>를 기반으로 방향을 변경하면서 이동할 수 있다.</li>
-  <li>블루투스 통신으로 로봇의 언어 타입을 제어할 수 있다.</li>
-  <li>Raspberry Pi와 연결된 모니터를 통해 로봇의 시선을 제어할 수 있다.</li>
-  <li>로봇의 움직임은 블루투스 통신을 통해 조이스틱 컨트롤러를 통해 수동으로 제어된다.<br />
-<br /></li>
-</ol>
-
-<p align="center">
-  <img src="/assets/images/projects/this_or_that/sd2.png" />
-  <br />
-  <font size="2em" color="gray">사용한 소프트웨어: Solidworks, Raspberry Pi, Processing</font>
-</p>
-<p><br /><br /></p>
-
-<font size="5em">4) Recruitment</font>
-<p><br /></p>
-
-<p><span style="background-color:#EBEBEB">연구실 조사(in-lab study)</span>로 진행되었으며, <span style="background-color:#EBEBEB">혼합 설계(mixed design)</span>하였다.</p>
-<ol>
-  <li><span style="background-color:#EBEBEB">언어 유형</span>: within design - 피실험자는 <span style="background-color:#EBEBEB">두 가지</span> 언어 유형을 모두 경험한다. (무작위 순서)</li>
-  <li><span style="background-color:#EBEBEB">코 포인팅</span>: within design - 피실험자는 <span style="background-color:#EBEBEB">두 가지</span> 코 포인팅을 모두 경험한다. (무작위 순서)</li>
-  <li><span style="background-color:#EBEBEB">시선</span>: between design - 피실험자는 <span style="background-color:#EBEBEB">한 가지</span> 시선을 경험한다.</li>
-</ol>
-
-<p>피실험자: 48명 (23세~37세, 여성 26명, 남성 22명)</p>
-
-<p><br /><br /><br /><br /><br /><br /></p>
-
-<font size="6em">Experiments</font>
-<p><br /></p>
-
-<p>로봇이 사용자와 상호작용하는 상황에 따라, <span style="background-color:#EBEBEB">2가지</span>의 실험을 진행하였다.</p>
-
-<ol>
-  <li><span style="background-color:#EBEBEB">자리 안내</span>(seat guide): 로봇이 사용자에게 <span style="background-color:#EBEBEB">명령문</span>을 사용하는 상황</li>
-  <li><span style="background-color:#EBEBEB">전시 안내</span>(exhibition guide): 로봇이 사용자에게 <span style="background-color:#EBEBEB">평서문</span>을 사용하는 상황
-<br /><br /></li>
-</ol>
-
-<font size="5em">1) Seat Guide</font>
-<p><br /></p>
-
-<p>로봇은 피실험자를 맞이하고 앉을 자리로 안내한다. 피실험자는 연구실에 배치된 5개의 의자 중 로봇이 <span style="background-color:#EBEBEB">포인팅 하는 의자에 앉도록 요청</span>받았다.<br />
-<br /></p>
-
-<p align="center">
-  <img src="/assets/images/projects/this_or_that/sg1.png" />
-  <br />
-  <font size="2em" color="gray">로봇이 포인팅 하는 의자에 앉은 피실험자</font>
-</p>
-<p><br /></p>
-
-<p>피실험자는 무작위 순서로 총 <span style="background-color:#EBEBEB">4번의 착석</span> 요청을 받았으며, 각 착석 이후에 로봇의 <span style="background-color:#EBEBEB">인상을 평가</span>했다. 로봇의 언어 및 제스처 표현 예는 다음과 같다.<br />
-<br /></p>
-
-<p align="center">
-  <img src="/assets/images/projects/this_or_that/sg2.png" />
-</p>
-<p><br /></p>
-
-<p align="center">
-  <img src="/assets/images/projects/this_or_that/sg3.png" />
-</p>
-<p><br /><br /><br /></p>
-
-<font size="5em">2) Exhibition Guide</font>
-<p><br /></p>
-
-<p>피실험자는 안내 로봇을 통해 <span style="background-color:#EBEBEB">로봇 쇼룸에 전시된 로봇에 대한 설명</span>을 듣는다. 안내 로봇은 전시된 5개의 로봇을 하나씩 포인팅 하면서 설명하고, 피실험자는 메모지에 안내 로봇이 <span style="background-color:#EBEBEB">포인팅 한 순서대로 메모</span>한다.<br />
-<br /></p>
-
-<p align="center">
-  <img src="/assets/images/projects/this_or_that/eg1.png" />
-  <br />
-  <font size="2em" color="gray">안내 로봇이 포인팅 하는 로봇에 대한 설명을 메모하고 있는 피실험자</font>
-</p>
-<p><br /></p>
-
-<p>피실험자는 무작위 순서로 총 <span style="background-color:#EBEBEB">4번의 조건을</span> 경험했으며, 각 조건 이후에 로봇의 <span style="background-color:#EBEBEB">인상을 평가</span>했다. 로봇의 언어 및 제스처 표현 예는 다음과 같다.<br />
-<br /></p>
-
-<p align="center">
-  <img src="/assets/images/projects/this_or_that/eg2.png" />
-</p>
-<p><br /></p>
-
-<p align="center">
-  <img src="/assets/images/projects/this_or_that/eg3.png" />
-</p>
-<p><br /><br /><br /><br /><br /><br /></p>
-
-<font size="6em">Results</font>
-<p><br /></p>
-
-<p>실험을 통해 각 조건의 로봇이 사용자의 인식에 미치는 영향을 조사하기 위해 <span style="background-color:#EBEBEB">이원 반복측정 분산분석(two-way RM ANOVA)</span>을 수행했다.<br />
-<br /><br /></p>
-
-<font size="5em">1) Seat Guide</font>
-<p><br /></p>
-
-<p>로봇의 효율성, 사교성, 자연스러움 및 제품 평가 측정은 크론바 알파 값 0.6 이상으로, 모든 문항에 대해 <span style="background-color:#EBEBEB">유의</span>한 결과가 나왔다.<br />
-<br /></p>
-
-<p align="center">
-  <img src="/assets/images/projects/this_or_that/results1.png" />
-  <br />
-  <font size="2em" color="gray">각 측정에 대한 신뢰도 분석 후 크론바 알파 값</font>
-</p>
-<p><br /></p>
-
-<p>각 측정의 유의한 <span style="background-color:#EBEBEB">주 효과(main effect)</span>는 다음과 같다.</p>
-<ol>
-  <li><span style="background-color:#EBEBEB">코 포인팅</span>이 <span style="background-color:#EBEBEB">효율성</span>에 미치는 주 효과는 유의미했다. <font size="2em">(<i>F</i><sub>(1,46)</sub> = 21.171, <i>p</i> &lt; 0.0005)</font></li>
-  <li><span style="background-color:#EBEBEB">코 포인팅</span>이 <span style="background-color:#EBEBEB">사교성</span>에 미치는 주 효과는 유의미했다. <font size="2em">(<i>F</i><sub>(1,46)</sub> = 3.870, <i>p</i> = 0.055)</font></li>
-  <li><span style="background-color:#EBEBEB">언어 유형</span>이 <span style="background-color:#EBEBEB">제품 평가</span>에 미치는 주 효과는 유의미했다. <font size="2em">(marginally significant, <i>F</i><sub>(1,46)</sub> = 2.955, <i>p</i> = 0.092)</font></li>
-  <li><span style="background-color:#EBEBEB">코 포인팅</span>이 <span style="background-color:#EBEBEB">제품 평가</span>에 미치는 주 효과는 유의미했다. <font size="2em">(<i>F</i><sub>(1,46)</sub> = 7.736, <i>p</i> = 0.008)</font><br />
-<br /></li>
-</ol>
-
-<p><span style="background-color:#EBEBEB">주 효과</span>에서 피실험자의 인식은 다음과 같다.</p>
-<ol>
-  <li><span style="background-color:#EBEBEB">자리 안내</span> 상황에서, <span style="background-color:#EBEBEB">코가 있는</span> 로봇이 코가 없는 로봇보다 더 <span style="background-color:#EBEBEB">효율적</span>이라고 인식했다. <font size="2em"><i>M</i><sub>withnose</sub> = 5.32, <i>SD</i> = 0.15 vs. <i>M</i><sub>withoutnose</sub> = 4.54, <i>SD</i> = 0.19)</font></li>
-  <li><span style="background-color:#EBEBEB">자리 안내</span> 상황에서, <span style="background-color:#EBEBEB">코가 있는</span> 로봇이 코가 없는 로봇보다 더 <span style="background-color:#EBEBEB">사교적</span>이라고 인식했다. <font size="2em"><i>M</i><sub>withnose</sub> = 4.68, <i>SD</i> = 0.16 vs. <i>M</i><sub>withoutnose</sub> = 4.41, <i>SD</i> = 0.17)</font></li>
-  <li><span style="background-color:#EBEBEB">자리 안내</span> 상황에서, <span style="background-color:#EBEBEB">서술적</span>인 발화를 하는 로봇이 지시적인 발화를 하는 로봇보다 더 <span style="background-color:#EBEBEB">긍정적</span>이라고 인식했다. <font size="2em"><i>M</i><sub>deictic</sub> = 4.70, <i>SD</i> = 0.17 vs. <i>M</i><sub>descriptive</sub> = 5.00, <i>SD</i> = 0.15)</font></li>
-  <li><span style="background-color:#EBEBEB">자리 안내</span> 상황에서, <span style="background-color:#EBEBEB">코가 있는</span> 로봇이 코가 없는 로봇보다 더 <span style="background-color:#EBEBEB">긍정적</span>이라고 인식했다. <font size="2em"><i>M</i><sub>withnose</sub> = 5.01, <i>SD</i> = 0.15 vs. <i>M</i><sub>withoutnose</sub> = 4.70, <i>SD</i> = 0.15)</font><br />
-<br /></li>
-</ol>
-
-<p align="center">
-  <img src="/assets/images/projects/this_or_that/results3.png" />
-</p>
-<p><br /></p>
-<p align="center">
-  <img src="/assets/images/projects/this_or_that/results4.png" />
-  <br />
-  <font size="2em" color="gray">자리 안내 상황에서의 주 효과</font>
-</p>
-<p><br /><br /></p>
-
-<p><span style="background-color:#EBEBEB">위치 정보 인식의 정확성</span>은 다음과 같다. (피실험자가 안내 로봇이 의도한 자리에 앉은 확률)<br />
-<br /></p>
-
-<p align="center">
-  <img src="/assets/images/projects/this_or_that/results5.png" />
-  <br />
-  <font size="2em" color="gray">자리 안내 상황에서의 정확성</font>
-</p>
-<p><br /><br /></p>
-
-<font size="5em">2) Exhibition Guide</font>
-<p><br /></p>
-
-<p>로봇의 효율성, 사교성, 자연스러움, 제품 평가, 유능함 및 신뢰성 측정은 크론바 알파 값 0.6 이상으로, 모든 문항에 대해 <span style="background-color:#EBEBEB">유의</span>한 결과가 나왔다.<br />
-<br /></p>
-
-<p align="center">
-  <img src="/assets/images/projects/this_or_that/results2.png" />
-  <br />
-  <font size="2em" color="gray">각 측정에 대한 신뢰도 분석 후 크론바 알파 값</font>
-</p>
-<p><br /></p>
-
-<p>각 측정의 유의한 <span style="background-color:#EBEBEB">주 효과(main effect)</span>는 다음과 같다.</p>
-<ol>
-  <li><span style="background-color:#EBEBEB">언어 유형</span>이 <span style="background-color:#EBEBEB">효율성</span>에 미치는 주 효과는 유의미했다. <font size="2em">(<i>F</i><sub>(1,46)</sub> = 94.242, <i>p</i> &lt; 0.0005)</font></li>
-  <li><span style="background-color:#EBEBEB">코 포인팅</span>이 <span style="background-color:#EBEBEB">효율성</span>에 미치는 주 효과는 유의미했다. <font size="2em">(<i>F</i><sub>(1,46)</sub> = 53.908, <i>p</i> &lt; 0.0005)</font></li>
-  <li><span style="background-color:#EBEBEB">언어 유형</span>이 <span style="background-color:#EBEBEB">사교성</span>에 미치는 주 효과는 유의미했다. <font size="2em">(<i>F</i><sub>(1,46)</sub> = 54.904, <i>p</i> &lt; 0.0005)</font></li>
-  <li><span style="background-color:#EBEBEB">코 포인팅</span>이 <span style="background-color:#EBEBEB">사교성</span>에 미치는 주 효과는 유의미했다. <font size="2em">(<i>F</i><sub>(1,46)</sub> = 8.595, <i>p</i> = 0.005)</font></li>
-  <li><span style="background-color:#EBEBEB">언어 유형</span>이 <span style="background-color:#EBEBEB">자연스러움</span>에 미치는 주 효과는 유의미했다. <font size="2em">(<i>F</i><sub>(1,46)</sub> = 35.353, <i>p</i> &lt; 0.0005)</font></li>
-  <li><span style="background-color:#EBEBEB">코 포인팅</span>이 <span style="background-color:#EBEBEB">자연스러움</span>에 미치는 주 효과는 유의미했다. <font size="2em">(<i>F</i><sub>(1,46)</sub> = 35.160, <i>p</i> = 0.005)</font></li>
-  <li><span style="background-color:#EBEBEB">언어 유형</span>이 <span style="background-color:#EBEBEB">제품 평가</span>에 미치는 주 효과는 유의미했다. <font size="2em">(<i>F</i><sub>(1,46)</sub> = 56.358, <i>p</i> &lt; 0.0005)</font></li>
-  <li><span style="background-color:#EBEBEB">코 포인팅</span>이 <span style="background-color:#EBEBEB">제품 평가</span>에 미치는 주 효과는 유의미했다. <font size="2em">(<i>F</i><sub>(1,46)</sub> = 14.507, <i>p</i> &lt; 0.0005)</font></li>
-  <li><span style="background-color:#EBEBEB">언어 유형</span>이 <span style="background-color:#EBEBEB">유능함</span>에 미치는 주 효과는 유의미했다. <font size="2em">(<i>F</i><sub>(1,46)</sub> = 18.574, <i>p</i> &lt; 0.0005)</font></li>
-  <li><span style="background-color:#EBEBEB">코 포인팅</span>이 <span style="background-color:#EBEBEB">유능함</span>에 미치는 주 효과는 유의미했다. <font size="2em">(<i>F</i><sub>(1,46)</sub> = 8.184, <i>p</i> = 0.006)</font></li>
-  <li><span style="background-color:#EBEBEB">언어 유형</span>이 <span style="background-color:#EBEBEB">신뢰성</span>에 미치는 주 효과는 유의미했다. <font size="2em">(<i>F</i><sub>(1,46)</sub> = 43.864, <i>p</i> &lt; 0.0005)</font></li>
-  <li><span style="background-color:#EBEBEB">코 포인팅</span>이 <span style="background-color:#EBEBEB">신뢰성</span>에 미치는 주 효과는 유의미했다. <font size="2em">(<i>F</i><sub>(1,46)</sub> = 8.799, <i>p</i> = 0.005)</font><br />
-<br /></li>
-</ol>
-
-<p><span style="background-color:#EBEBEB">주 효과</span>에서 피실험자의 인식은 다음과 같다.</p>
-<ol>
-  <li><span style="background-color:#EBEBEB">전시 안내</span> 상황에서, <span style="background-color:#EBEBEB">서술적</span>인 발화를 하는 로봇이 지시적인 발화를 하는 로봇보다 더 <span style="background-color:#EBEBEB">효율적</span>이라고 인식했다. <font size="2em"><i>M</i><sub>deictic</sub> = 4.29, <i>SD</i> = 0.17 vs. <i>M</i><sub>descriptive</sub> = 5.63, <i>SD</i> = 0.12)</font></li>
-  <li><span style="background-color:#EBEBEB">전시 안내</span> 상황에서, <span style="background-color:#EBEBEB">코가 있는</span> 로봇이 코가 없는 로봇보다 더 <span style="background-color:#EBEBEB">효율적</span>이라고 인식했다. <font size="2em"><i>M</i><sub>withnose</sub> = 5.43, <i>SD</i> = 0.15 vs. <i>M</i><sub>withoutnose</sub> = 4.48, <i>SD</i> = 0.14)</font></li>
-  <li><span style="background-color:#EBEBEB">전시 안내</span> 상황에서, <span style="background-color:#EBEBEB">서술적</span>인 발화를 하는 로봇이 지시적인 발화를 하는 로봇보다 더 <span style="background-color:#EBEBEB">사교적</span>이라고 인식했다. <font size="2em"><i>M</i><sub>deictic</sub> = 4.33, <i>SD</i> = 0.13 vs. <i>M</i><sub>descriptive</sub> = 4.99, <i>SD</i> = 0.14)</font></li>
-  <li><span style="background-color:#EBEBEB">전시 안내</span> 상황에서, <span style="background-color:#EBEBEB">코가 있는</span> 로봇이 코가 없는 로봇보다 더 <span style="background-color:#EBEBEB">사교적</span>이라고 인식했다. <font size="2em"><i>M</i><sub>withnose</sub> = 4.82, <i>SD</i> = 0.14 vs. <i>M</i><sub>withoutnose</sub> = 4.50, <i>SD</i> = 0.13)</font></li>
-  <li><span style="background-color:#EBEBEB">전시 안내</span> 상황에서, <span style="background-color:#EBEBEB">서술적</span>인 발화를 하는 로봇이 지시적인 발화를 하는 로봇보다 더 <span style="background-color:#EBEBEB">자연스럽다</span>고 인식했다. <font size="2em"><i>M</i><sub>deictic</sub> = 3.95, <i>SD</i> = 0.15 vs. <i>M</i><sub>descriptive</sub> = 4.73, <i>SD</i> = 0.16)</font></li>
-  <li><span style="background-color:#EBEBEB">전시 안내</span> 상황에서, <span style="background-color:#EBEBEB">코가 있는</span> 로봇이 코가 없는 로봇보다 더 <span style="background-color:#EBEBEB">자연스럽다</span>고 인식했다. <font size="2em"><i>M</i><sub>withnose</sub> = 4.68, <i>SD</i> = 0.16 vs. <i>M</i><sub>withoutnose</sub> = 4.00, <i>SD</i> = 0.15)</font></li>
-  <li><span style="background-color:#EBEBEB">전시 안내</span> 상황에서, <span style="background-color:#EBEBEB">서술적</span>인 발화를 하는 로봇이 지시적인 발화를 하는 로봇보다 더 <span style="background-color:#EBEBEB">긍정적</span>이라고 인식했다. <font size="2em"><i>M</i><sub>deictic</sub> = 4.44, <i>SD</i> = 0.14 vs. <i>M</i><sub>descriptive</sub> = 5.14, <i>SD</i> = 0.12)</font></li>
-  <li><span style="background-color:#EBEBEB">전시 안내</span> 상황에서, <span style="background-color:#EBEBEB">코가 있는</span> 로봇이 코가 없는 로봇보다 더 <span style="background-color:#EBEBEB">긍정적</span>이라고 인식했다. <font size="2em"><i>M</i><sub>withnose</sub> = 5.00, <i>SD</i> = 0.14 vs. <i>M</i><sub>withoutnose</sub> = 4.59, <i>SD</i> = 0.13)</font></li>
-  <li><span style="background-color:#EBEBEB">전시 안내</span> 상황에서, <span style="background-color:#EBEBEB">서술적</span>인 발화를 하는 로봇이 지시적인 발화를 하는 로봇보다 더 <span style="background-color:#EBEBEB">유능</span>하다고 인식했다. <font size="2em"><i>M</i><sub>deictic</sub> = 4.37, <i>SD</i> = 0.19 vs. <i>M</i><sub>descriptive</sub> = 4.87, <i>SD</i> = 0.17)</font></li>
-  <li><span style="background-color:#EBEBEB">전시 안내</span> 상황에서, <span style="background-color:#EBEBEB">코가 있는</span> 로봇이 코가 없는 로봇보다 더 <span style="background-color:#EBEBEB">유능</span>하다고 인식했다. <font size="2em"><i>M</i><sub>withnose</sub> = 4.76, <i>SD</i> = 0.17 vs. <i>M</i><sub>withoutnose</sub> = 4.48, <i>SD</i> = 0.18)</font></li>
-  <li><span style="background-color:#EBEBEB">전시 안내</span> 상황에서, <span style="background-color:#EBEBEB">서술적</span>인 발화를 하는 로봇이 지시적인 발화를 하는 로봇보다 더 <span style="background-color:#EBEBEB">신뢰</span>할 수 있다고 인식했다. <font size="2em"><i>M</i><sub>deictic</sub> = 4.53, <i>SD</i> = 0.17 vs. <i>M</i><sub>descriptive</sub> = 5.28, <i>SD</i> = 0.15)</font></li>
-  <li><span style="background-color:#EBEBEB">전시 안내</span> 상황에서, <span style="background-color:#EBEBEB">코가 있는</span> 로봇이 코가 없는 로봇보다 더 <span style="background-color:#EBEBEB">신뢰</span>할 수 있다고 인식했다. <font size="2em"><i>M</i><sub>withnose</sub> = 5.09, <i>SD</i> = 0.17 vs. <i>M</i><sub>withoutnose</sub> = 4.72, <i>SD</i> = 0.16)</font><br />
-<br /></li>
-</ol>
-
-<p align="center">
-  <img src="/assets/images/projects/this_or_that/results6.png" />
-</p>
-<p><br /></p>
-<p align="center">
-  <img src="/assets/images/projects/this_or_that/results7.png" />
-  <br />
-  <font size="2em" color="gray">전시 안내 상황에서의 유의한 주 효과</font>
-</p>
-<p><br /><br /></p>
-
-<p>각 측정의 유의한 <span style="background-color:#EBEBEB">교호작용 효과(interaction effect)</span>는 다음과 같다.</p>
-<ol>
-  <li><span style="background-color:#EBEBEB">사교성</span>에 대한 <span style="background-color:#EBEBEB">언어 유형</span>과 <span style="background-color:#EBEBEB">코 포인팅</span> 사이에 유의한 교호작용 효과가 존재한다. <font size="2em">(<i>F</i><sub>(1,46)</sub> = 4.213, <i>p</i> = 0.046)</font></li>
-  <li><span style="background-color:#EBEBEB">자연스러움</span>에 대한 <span style="background-color:#EBEBEB">코 포인팅</span>과 <span style="background-color:#EBEBEB">시선</span> 사이에 유의한 교호작용 효과가 존재한다. <font size="2em">(marginally significant, <i>F</i><sub>(1,46)</sub> = 2.914, <i>p</i> = 0.095)</font></li>
-  <li><span style="background-color:#EBEBEB">제품 평가</span>에 대한 <span style="background-color:#EBEBEB">언어 유형</span>과 <span style="background-color:#EBEBEB">시선</span> 사이에 유의한 교호작용 효과가 존재한다. <font size="2em">(<i>F</i><sub>(1,46)</sub> = 4.150, <i>p</i> = 0.047)</font><br />
-<br /></li>
-</ol>
-
-<p><span style="background-color:#EBEBEB">교호작용 효과</span>에서 피실험자의 인식은 다음과 같다.</p>
-<ol>
-  <li><span style="background-color:#EBEBEB">전시 안내</span> 상황에서, 로봇의 언어 유형이 <span style="background-color:#EBEBEB">지시적</span>일 때, <span style="background-color:#EBEBEB">코가 있는</span> 로봇이 코가 없는 로봇보다 더 <span style="background-color:#EBEBEB">사교적</span>이라고 인식했다. <font size="2em">(<i>M</i><sub>withnose</sub> = 4.58, <i>SD</i> = 1.03 vs. <i>M</i><sub>withoutnose</sub> = 4.08, <i>SD</i> = 1.05, <i>t</i> = 3.500, df = 47, <i>p</i> = 0.001)</font></li>
-  <li><span style="background-color:#EBEBEB">전시 안내</span> 상황에서, 로봇의 <span style="background-color:#EBEBEB">눈이 있을</span> 때, <span style="background-color:#EBEBEB">코가 있는</span> 로봇이 코가 없는 로봇보다 더 <span style="background-color:#EBEBEB">자연스럽다</span>고 인식했다. <font size="2em">(<i>M</i><sub>withnose</sub> = 4.61, <i>SD</i> = 1.35 vs. <i>M</i><sub>withoutnose</sub> = 3.73, <i>SD</i> = 1.41, <i>t</i> = 5.770, df = 47, <i>p</i> = 0.001)</font></li>
-  <li><span style="background-color:#EBEBEB">전시 안내</span> 상황에서, 로봇의 <span style="background-color:#EBEBEB">눈이 없을</span> 때, <span style="background-color:#EBEBEB">코가 있는</span> 로봇이 코가 없는 로봇보다 더 <span style="background-color:#EBEBEB">자연스럽다</span>고 인식했다. <font size="2em">(<i>M</i><sub>withnose</sub> = 4.75, <i>SD</i> = 1.12 vs. <i>M</i><sub>withoutnose</sub> = 4.26, <i>SD</i> = 1.12, <i>t</i> = 3.264, df = 47, <i>p</i> = 0.004)</font></li>
-  <li><span style="background-color:#EBEBEB">전시 안내</span> 상황에서, 로봇의 <span style="background-color:#EBEBEB">눈이 있을</span> 때, <span style="background-color:#EBEBEB">서술적</span>인 발화를 하는 로봇이 지시적인 발화를 하는 로봇보다 더 <span style="background-color:#EBEBEB">긍정적</span>이라고 인식했다. <font size="2em">(<i>M</i><sub>deictic</sub> = 4.31, <i>SD</i> = 1.25 vs. <i>M</i><sub>descriptive</sub> = 5.20, <i>SD</i> = 1.04, <i>t</i> = 5.895, df = 47, <i>p</i> = 0.0005)</font></li>
-  <li><span style="background-color:#EBEBEB">전시 안내</span> 상황에서, 로봇의 <span style="background-color:#EBEBEB">눈이 없을</span> 때, <span style="background-color:#EBEBEB">서술적</span>인 발화를 하는 로봇이 지시적인 발화를 하는 로봇보다 더 <span style="background-color:#EBEBEB">긍정적</span>이라고 인식했다. <font size="2em">(<i>M</i><sub>deictic</sub> = 4.57, <i>SD</i> = 0.96 vs. <i>M</i><sub>descriptive</sub> = 5.08, <i>SD</i> = 0.86, <i>t</i> = 5.002, df = 47, <i>p</i> = 0.0005)</font><br />
-<br /></li>
-</ol>
-
-<p align="center">
-  <img src="/assets/images/projects/this_or_that/results8.png" />
-  <br />
-  <font size="2em" color="gray">전시 안내 상황에서의 유의한 교호작용 효과</font>
-</p>
-<p><br /><br /></p>
-
-<p><span style="background-color:#EBEBEB">위치 정보 인식의 정확성</span>의 유의한 <span style="background-color:#EBEBEB">주 효과(main effect)</span>는 다음과 같다. (피실험자가 안내 로봇이 설명한 로봇의 순서를 맞출 확률)</p>
-<ol>
-  <li><span style="background-color:#EBEBEB">언어 유형</span>이 <span style="background-color:#EBEBEB">정확성</span>에 미치는 주 효과는 유의미했다. <font size="2em">(<i>F</i><sub>(1,46)</sub> = 8.452, <i>p</i> = 0.006)</font></li>
-  <li><span style="background-color:#EBEBEB">코 포인팅</span>이 <span style="background-color:#EBEBEB">정확성</span>에 미치는 주 효과는 유의미했다. <font size="2em">(<i>F</i><sub>(1,46)</sub> = 4.699, <i>p</i> = 0.035)</font></li>
-  <li><span style="background-color:#EBEBEB">시선</span>이 <span style="background-color:#EBEBEB">정확성</span>에 미치는 주 효과는 유의미했다. <font size="2em">(<i>F</i><sub>(1,46)</sub> = 7.614, <i>p</i> = 0.008)</font><br />
-<br /></li>
-</ol>
-
-<p><span style="background-color:#EBEBEB">위치 정보 인식의 정확성</span>의 <span style="background-color:#EBEBEB">주 효과</span>에서 피실험자의 인식은 다음과 같다.</p>
-<ol>
-  <li><span style="background-color:#EBEBEB">전시 안내</span> 상황에서, 지시적인 발화를 하는 로봇보다 <span style="background-color:#EBEBEB">서술적</span>인 발화를 하는 로봇을 통해 피실험자가 전시된 로봇의 위치를 더 <span style="background-color:#EBEBEB">정확하게</span> 인식할 수 있었다. <font size="2em"><i>M</i><sub>deictic</sub> = 9.58, <i>SD</i> = 0.11 vs. <i>M</i><sub>descriptive</sub> = 9.91, <i>SD</i> = 0.04)</font></li>
-  <li><span style="background-color:#EBEBEB">전시 안내</span> 상황에서, 코가 없는 로봇보다 <span style="background-color:#EBEBEB">코가 있는</span> 로봇을 통해 피실험자가 전시된 로봇의 위치를 더 <span style="background-color:#EBEBEB">정확하게</span> 인식할 수 있었다. <font size="2em"><i>M</i><sub>withnose</sub> = 9.88, <i>SD</i> = 0.06 vs. <i>M</i><sub>withoutnose</sub> = 9.62, <i>SD</i> = 0.11)</font></li>
-  <li><span style="background-color:#EBEBEB">전시 안내</span> 상황에서, 눈이 있는 로봇보다 <span style="background-color:#EBEBEB">눈이 없는</span> 로봇을 통해 피실험자가 전시된 로봇의 위치를 더 <span style="background-color:#EBEBEB">정확하게</span> 인식할 수 있었다. <font size="2em"><i>M</i><sub>witheyes</sub> = 9.58, <i>SD</i> = 0.08 vs. <i>M</i><sub>withouteyes</sub> = 9.91, <i>SD</i> = 0.08)</font><br />
-<br /></li>
-</ol>
-
-<p align="center">
-  <img src="/assets/images/projects/this_or_that/results9.png" />
-  <br />
-  <font size="2em" color="gray">전시 안내 상황에서 위치 정보 인식의 정확성의 유의한 주 효과</font>
-</p>
-<p><br /><br /></p>
-
-<p><span style="background-color:#EBEBEB">위치 정보 인식의 정확성</span>의 유의한 <span style="background-color:#EBEBEB">교호작용 효과(interaction effect)</span>는 다음과 같다.</p>
-<ol>
-  <li><span style="background-color:#EBEBEB">정확성</span>에 대한 <span style="background-color:#EBEBEB">언어 유형</span>과 <span style="background-color:#EBEBEB">코 포인팅</span> 사이에 유의한 교호작용 효과가 존재한다. <font size="2em">(<i>F</i><sub>(1,46)</sub> = 5.914, <i>p</i> = 0.019)</font><br />
-<br /></li>
-</ol>
-
-<p><span style="background-color:#EBEBEB">위치 정보 인식의 정확성</span>의 <span style="background-color:#EBEBEB">교호작용 효과</span>에서 피실험자의 인식은 다음과 같다.</p>
-<ol>
-  <li><span style="background-color:#EBEBEB">전시 안내</span> 상황에서, 로봇의 언어 유형이 <span style="background-color:#EBEBEB">지시적</span>일 때, 코가 없는 로봇보다 <span style="background-color:#EBEBEB">코가 있는</span> 로봇을 통해 피실험자가 전시된 로봇의 위치를 더 <span style="background-color:#EBEBEB">정확하게</span> 인식할 수 있었다. <font size="2em">(<i>M</i><sub>withnose</sub> = 9.85, <i>SD</i> = 0.62 vs. <i>M</i><sub>withoutnose</sub> = 9.31, <i>SD</i> = 1.45, <i>t</i> = 2.349, df = 47, <i>p</i> = 0.023)</font><br />
-<br /></li>
-</ol>
-
-<p align="center">
-  <img src="/assets/images/projects/this_or_that/results10.png" />
-  <br />
-  <font size="2em" color="gray">전시 안내 상황에서 위치 정보 인식의 정확성의 유의한 교호작용 효과</font>
-</p>
-<p><br /><br /><br /><br /><br /><br /></p>
-
-<font size="6em">Conclusion</font>
-<p><br /></p>
-
-<font size="5em">1) Interpretation of Results</font>
-<p><br /></p>
-
-<p>결과에 대한 해석은 다음과 같다.</p>
-<ol>
-  <li>사람들은 명령문과 평서문 포인팅 상황에 상관없이 <span style="background-color:#EBEBEB">서술적</span> 언어 유형과 <span style="background-color:#EBEBEB">코 포인팅</span>을 사용하여 위치 정보를 제공하는 것을 전반적으로 선호하였다.</li>
-  <li><span style="background-color:#EBEBEB">위치 정보 인식의 정확성</span>은 <span style="background-color:#EBEBEB">언어 유형</span>이 중요하다. 자리 안내 상황에서는 피실험자와 로봇이 <span style="background-color:#EBEBEB">마주보고</span> 있었기 때문에 <span style="background-color:#EBEBEB">왼쪽과 오른쪽을 반대로</span> 생각하는 사람들이 존재했다.<br />
-<br /><br /></li>
-</ol>
-
-<font size="5em">2) Design Implications</font>
-<p><br /></p>
-
-<p>본 연구는 다음과 같은 영향을 줄 수 있다.</p>
-<ol>
-  <li>인간의 <span style="background-color:#EBEBEB">사회적 상호작용</span> 연구에 기여할 수 있다.  인간 연구에서는 코를 탈부착할 수 없지만, 인공물인 로봇에서는 코의 영향에 관한 연구가 가능하다.</li>
-  <li><span style="background-color:#EBEBEB">로봇의 발화 스타일</span> 디자인 연구에 기여할 수 있다.  서술적 언어 유형에서는 사용자와 기준점을 일치시켜야 하며, 마주봐야 하는 경우에는 지시적 언어 유형으로 제공되어야 한다.</li>
-  <li><span style="background-color:#EBEBEB">로봇의 디자인 개선</span>에 기여할 수 있다.  로봇이 제공한 정보가 사용자에게 치명적인 영향을 미치지 않는 경우, 사용자가 더 선호하는 서술적 언어 유형으로 제공하도록 디자인되어야 한다.<br />
-<br /></li>
-</ol>
-
-<p align="center">
-  <img src="/assets/images/projects/this_or_that/conclusion.png" />
-  <br />
-  <font size="2em" color="gray">사용자와 로봇이 기준점이 같은 경우와 다른 경우</font>
-</p>
-<p><br /><br /></p>
-
-<font size="5em">3) Limitation</font>
-<p><br /></p>
-
-<p>본 연구의 한계점은 다음과 같다.</p>
-<ol>
-  <li>본 연구는 단일 환경을 설정했지만, 사용자와 로봇 사이의 거리를 고려하여 보다 다양하고 자연스러운 실험 환경에서 연구를 수행할 수 있다.</li>
-  <li>본 연구는 위치 정보 인식의 정확성을 측정했지만, 사용자가 위치를 인식하는데 걸린 시간을 측정해서 각 조건의 유효성을 알아볼 수 있다.<br />
-<br /><br /><br /><br /><br /><br /></li>
-</ol>
-
-<font size="6em">Publication</font>
-<p><br /></p>
-
-<p><a href="https://ieeexplore.ieee.org/document/9341067"><u>This or That: The Effect of Robot’s Deictic Expression on User’s Perception</u> <br /> <font size="2em"><u>2020 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</u></font></a>
-<br /><br /><br /><br /><br /><br /></p>
-
-<hr />
-
-<p><strong>References</strong><br />
-<a name="reference_1"><font size="2em" color="gray">1.</font></a> <a href="https://books.google.co.kr/books?hl=ko&amp;lr=&amp;id=JlN4AgAAQBAJ&amp;oi=fnd&amp;pg=PP1&amp;dq=Pointing:+Where+Language,+Culture,+and+Cognition+Meet&amp;ots=pP_hGHknJb&amp;sig=fk5eCywXFbZW79pPA4QPUP5An-Q#v=onepage&amp;q=Pointing%3A%20Where%20Language%2C%20Culture%2C%20and%20Cognition%20Meet&amp;f=false"><font size="2em"><u>Pointing: Where Language, Culture, and Cognition Meet</u></font></a><font size="2em"> (2003) by Sotaro Kita</font> <a href="#R01">↩</a><br />
-<a name="reference_2"><font size="2em" color="gray">2.</font></a> <a href="http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=51D1CBC4966CC0EDAAF34593B83E30F3?doi=10.1.1.462.5492&amp;rep=rep1&amp;type=pdf"><font size="2em"><u>The Role of Gesture in Communication and Thinking</u></font></a><font size="2em"> (1999) by Susan Goldin-Meadow in Trends in Cognitive Sciences</font> <a href="#R02">↩</a><br />
-<a name="reference_3"><font size="2em" color="gray">3.</font></a> <a href="https://ieeexplore.ieee.org/document/6247845"><font size="2em"><u>We Are Not Contortionists: Coupled Adaptive Learning for Head and Body Orientation Estimation in Surveillance Video</u></font></a><font size="2em"> (2012) by Cheng Chen and Jean-Marc Odobez in IEEE Conference on Computer Vision and Pattern Recognition</font> <a href="#R03">↩</a><br />
-<a name="reference_4"><font size="2em" color="gray">4.</font></a> <a href="https://books.google.co.kr/books?hl=ko&amp;lr=&amp;id=jK5nk7iDgSYC&amp;oi=fnd&amp;pg=PT1&amp;dq=Becoming+Human:+From+Pointing+Gestures+to+Syntax&amp;ots=DpGBCF5PdV&amp;sig=_Q7GH-Ar1iBDJupb8caNUO2sg98#v=onepage&amp;q=Becoming%20Human%3A%20From%20Pointing%20Gestures%20to%20Syntax&amp;f=false"><font size="2em"><u>Becoming Human: From Pointing Gestures to Syntax</u></font></a><font size="2em"> (2011) by Teresa Bejarano</font> <a href="#R04">↩</a><br />
-<a name="reference_5"><font size="2em" color="gray">5.</font></a> <a href="https://ieeexplore.ieee.org/abstract/document/8542607"><font size="2em"><u>Robot Deictics: How Gesture and Context Shape Referential Communication</u></font></a><font size="2em"> (2014) by Allison Sauppé and Bilge Mutlu in ACM/IEEE HRI</font> <a href="#R05">↩</a><br />
-<a name="reference_6"><font size="2em" color="gray">6.</font></a> <a href="https://ieeexplore.ieee.org/abstract/document/6483608"><font size="2em"><u>Rhetorical Robots: Making Robots More Effective Speakers Using Linguistic Cues of Expertise</u></font></a><font size="2em"> (2013) by Sean Andrist, Erin Spannan and Bilge Mutlu in ACM/IEEE HRI</font> <a href="#R06">↩</a><br />
-<a name="reference_7"><font size="2em" color="gray">7.</font></a> <a href="https://doi.org/10.1509%2Fjmkr.44.2.251"><font size="2em"><u>Adoption of New and Really New Products: The Effects of Self-Regulation Systems and Risk Salience</u></font></a><font size="2em"> (2007) by Michal Herzenstein, Steven S. Posavac and J. Joško Brakus in Journal of Marketing Research</font> <a href="#R07">↩</a><br />
-<a name="reference_8"><font size="2em" color="gray">8.</font></a> <a href="https://doi.org/10.1509%2Fjmkr.46.1.46"><font size="2em"><u>The Role of Imagination-Focused Visualization on New Product Evaluation</u></font></a><font size="2em"> (1989) by Min Zhao, Steve Hoeffler and Darren W. Dahl in Journal of Marketing Research</font> <a href="#R08">↩</a></p>
-
-<p><br /></p>
-
-<p><strong>Footnotes</strong><br />
-<a name="footnote_1"><font size="2em" color="MediumSeaGreen">1.</font></a> <a href="https://ko.dict.naver.com/#/entry/koko/2416902403024234bfed8ca7887a3441"><font size="2em">문맥상 단어가 사용된 맥락, 시간, 공간, 청자와 화자 따위의 발화 상황을 고려해야만 의미 파악이 되는 지시 표현. (예시: '나', '너'와 같은 인칭 대명사나 '이곳', '여기', '저기' 같은 지시어) <u>[출처: 네이버 국어사전]</u></font></a> <a href="#F01">↩</a><br />
-<a name="footnote_2"><font size="2em" color="MediumSeaGreen">2.</font></a> <font size="2em">Wizard of Oz 기법: 개발되지 않은 서비스를 실제 서비스처럼 착각하게 만들어 테스트를 진행하는 방법</font> <a href="#F02">↩</a> <br />
-<a name="footnote_3"><font size="2em" color="MediumSeaGreen">3.</font></a> <a href="https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/"><font size="2em"><u>ROBOTIS TurtleBot3</u></font></a> <a href="#F03">↩</a></p>
-
-<p><br /><br /><br /></p>
-
-				</article>
-				<!--
-				<aside>
-					<ul>
-						
-						<li>
-							<img src="/assets/images/projects/this_or_that/main.jpg" alt="" />
-						</li>
-						
-					</ul>
-				</aside>
-			-->
-			</div>
-		</section>
-		<!--
-		<section class="project-navigation">
-			<div class="container">
-				
-				
-			</div>
-		</section>
-		-->
-	</main>
-	<footer class="footer">
-	<div class="container">
-		<section class="contact">
-			<h2>Contact</h2>
-			<a title="hanby.ixd@gmail.com" href="mailto:hanby.ixd@gmail.com">hanby.ixd@gmail.com</a>
-		</section>
-		<section class="info">
-			<h2>Info</h2>
-			<ul>
-				<li><a title="CV" href="https://drive.google.com/file/d/1LSWyGow6RW6OpuX-SsTMibbC_1EhydMj/view?usp=sharing" target="_blank">CV</a></li>
-				<li><a title="Scholar" href="https://scholar.google.com/citations?user=J2aMC2gAAAAJ&hl=ko" target="_blank">Google Scholar</a></li>
-				<li><a title="Study Log" href="https://hanby-ixd.tistory.com" target="_blank">Study Log</a></li>
-			</ul>
-		</section>
-	</div>
-</footer>
-
-	<script src="/assets/scripts/vendor/jquery-1.12.4.min.js"></script>
-	<script src="/assets/scripts/vendor/scrollreveal.min.js"></script>
-	<script src="/assets/scripts/vendor/sticky-kit.min.js"></script>
-	<script src="/assets/scripts/project.js"></script>
-</body>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <!-- 웹에 공유되어있는 라이브러리 불러오기 -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.1/p5.js"></script>
+    </head>
+    <body>
+			<script>
+				var shapeR = 0.0;
+				var dx = 0.0;
+				var dy = 0.0;
+				var radius = 200.0;
+				var freq = 20.0;
+				var amp = 20.0;
+				var ampRate = 0.0;
+				var angleStep = 0.0005;
+
+				var colorR, colorG, colorB;
+
+				var shapeSelectFlag = 0;
+				var ampFlag = 0;
+
+				function setup()
+				{
+				createCanvas(windowWidth, windowHeight);
+				smooth();
+
+				colorR = random(150, 255);
+				colorG = random(150, 255);
+				colorB = random(150, 255);
+
+				shapeSelectFlag = 1;
+				}
+
+				function draw()
+				{
+				background(255);
+				noStroke();
+
+				fill(colorR, colorG, colorB);
+				if(shapeSelectFlag == 1)	selectShape();
+				}
+
+				function selectShape()
+				{
+				var angle = 0.0;
+				translate(windowWidth/2.0, windowHeight/2.0);
+				rotate(shapeR);
+				beginShape();
+				while (angle <= 2.0*PI)
+				{
+					dx = (radius + sin(angle * freq) * (amp+ampRate)) * cos(angle);
+					dy = (radius + sin(angle * freq) * (amp+ampRate)) * sin(angle);
+
+					angle += angleStep;
+
+					vertex(dx, dy);
+				}
+				endShape(CLOSE);
+
+				shapeR += 0.003;
+
+				if (ampRate > -1 && ampFlag == 0) ampRate += 0.3;
+				if (ampRate > 10 && ampFlag == 0) ampFlag = 1;
+				if (ampRate < 11 && ampFlag == 1) ampRate -= 0.3;
+				if (ampRate < 0 && ampFlag == 1) ampFlag = 0;
+				}
+
+				function mouseDragged()
+				{
+				if(mouseX > pmouseX) amp++;
+				if(mouseX < pmouseX) amp--;
+				if(mouseY > pmouseY) freq++;
+				if(mouseY < pmouseY) freq--;
+				}
+			</script>
+    </body>
 </html>

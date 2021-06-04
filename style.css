@@ -24,8 +24,6 @@
 .graphics {
   width: 50%;
   height: 20em;
-  border: 1px solid black;
-  border-radius: 4px;
   margin-right: 20px;
 }
 
@@ -75,12 +73,12 @@ input[type="radio"]:checked + label {
   border-radius: 4px;
 }
 
-input[id="tab01"]:checked ~ .con01 {display: block;}
-input[id="tab02"]:checked ~ .con02 {display: block;}
-input[id="tab03"]:checked ~ .con03 {display: block;}
-input[id="tab04"]:checked ~ .con04 {display: block;}
-input[id="tab05"]:checked ~ .con05 {display: block;}
-input[id="tab06"]:checked ~ .con06 {display: block;}
+input[id="tab01"]:checked ~ .con01 { display: block; }
+input[id="tab02"]:checked ~ .con02 { display: block; }
+input[id="tab03"]:checked ~ .con03 { display: block; }
+input[id="tab04"]:checked ~ .con04 { display: block; }
+input[id="tab05"]:checked ~ .con05 { display: block; }
+input[id="tab06"]:checked ~ .con06 { display: block; }
 
 .project-container {
   display: flex;
