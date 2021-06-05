@@ -122,6 +122,11 @@ img {
   -webkit-border-radius: 10px;
 }
 
+img:hover {
+    transform:scale(1.01, 1.01);  /* 가로2배 새로 1.5배 로 커짐 */
+    transition: transform.5s;  /* 커지는 시간 */
+}
+
 .year {
   margin-left: 3px;
   font-size: 10pt;
@@ -138,13 +143,15 @@ img {
 
 .footer-container {
   margin-top: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
   display: flex;
 }
 
 .footer-item {
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
   margin-bottom: 20px;
   margin-right: 80px;
 }
@@ -176,5 +183,5 @@ img {
   #tab07 + label:hover { color: white; background: #C4C3F8; }
   #tab08 + label:hover { color: white; background: #C4C3F8; }
   #tab09 + label:hover { color: white; background: #C4C3F8; }
-  a:hover {color: #3CB371; }
+  a:hover {color: #3CB371;}
 }

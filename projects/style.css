@@ -103,13 +103,15 @@ section {
 
 .footer-container {
   margin-top: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
   display: flex;
 }
 
 .footer-item {
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
   margin-bottom: 20px;
   margin-right: 80px;
 }
@@ -125,4 +127,8 @@ section {
 	.section-nav { display: none; }
 	main { display: flex; width: 90%;}
 	.footer-container {flex-direction: column;}
+}
+
+@media (hover: hover) {
+  a:hover {color: #3CB371;}
 }
