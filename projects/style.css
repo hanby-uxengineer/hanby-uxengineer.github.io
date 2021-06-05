@@ -117,7 +117,9 @@ section {
 }
 
 .copyright {
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
   margin-bottom: 20px;
   margin-right: 80px;
   padding-top: 110px;
