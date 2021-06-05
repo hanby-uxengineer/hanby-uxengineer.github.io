@@ -98,6 +98,7 @@ input[id="tab09"]:checked ~ .con09 { display: block; }
 
 .project-container {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .project-item {
