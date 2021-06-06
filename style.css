@@ -30,6 +30,10 @@
   font-size: 12px;
 }
 
+h3 {
+  line-height: 90%;
+}
+
 .main {
   display: flex;
   margin-left: 30px;
@@ -200,5 +204,6 @@ img:hover {
   #tab07 + label:hover { color: white; background: #C4C3F8; }
   #tab08 + label:hover { color: white; background: #C4C3F8; }
   #tab09 + label:hover { color: white; background: #C4C3F8; }
+  .language:hover {background: lightgray;}
   a:hover {color: #3CB371;}
 }
