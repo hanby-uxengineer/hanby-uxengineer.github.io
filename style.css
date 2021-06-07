@@ -19,15 +19,14 @@
 
 .language {
   margin-left: 10px;
-  font-size: 14px;
+  font-size: 12px;
   padding-top: 2px;
   padding-bottom: 2px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 30px;
+  padding-left: 7px;
+  padding-right: 7px;
+  border-radius: 20px;
   background: black;
   color: white;
-  font-size: 12px;
 }
 
 h3 {
@@ -173,15 +172,17 @@ img:hover {
   padding-right: 20px;
   margin-bottom: 20px;
   margin-right: 80px;
+  font-size: 14px;
 }
 
 .copyright {
+  margin-left: auto;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-right: 20px;
   margin-bottom: 20px;
-  margin-right: 80px;
   padding-top: 110px;
+  font-size: 14px;
 }
 
 @media (max-width: 800px) {
@@ -192,6 +193,7 @@ img:hover {
   .project-item {width: 100%; padding-bottom: 100%;}
   .footer-container {flex-direction: column;}
   .project-item {padding: 0px;}
+  .copyright {margin-left: 0;}
 }
 
 @media (hover: hover) {

@@ -19,15 +19,14 @@
 
 .language {
   margin-left: 10px;
-  font-size: 14px;
+  font-size: 12px;
   padding-top: 2px;
   padding-bottom: 2px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 30px;
+  padding-left: 7px;
+  padding-right: 7px;
+  border-radius: 20px;
   background: black;
   color: white;
-  font-size: 12px;
 }
 
 h3 {
@@ -36,7 +35,7 @@ h3 {
 
 #main01 {
 	background: url("../assets/image/01_SmartSpeaker/main.png") no-repeat center;
-	height: 400px;
+	height: 300px;
 }
 
 .main-container {
@@ -52,8 +51,9 @@ main > nav {
 
 /* 3. ScrollSpy active styles (see JS tab for activation) */
 .section-nav li.active > a {
-	color: #333;
-	font-weight: 500;
+	color: black;
+	font-weight: 600;
+	font-size: 14px;
 }
 
 /* Sidebar Navigation */
@@ -62,6 +62,7 @@ main > nav {
 	margin-left: 40px;
 	padding-left: 0;
 	border-left: 1px solid #efefef;
+	font-size: 14px;
 }
 
 .section-nav a {
@@ -133,21 +134,24 @@ section {
   padding-right: 20px;
   margin-bottom: 20px;
   margin-right: 80px;
+  font-size: 14px;
 }
 
 .copyright {
+  margin-left: auto;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-right: 20px;
   margin-bottom: 20px;
-  margin-right: 80px;
   padding-top: 110px;
+  font-size: 14px;
 }
 
 @media (max-width: 800px) {
 	.section-nav { display: none; }
 	main { display: flex; width: 90%;}
 	.footer-container {flex-direction: column;}
+	.copyright {margin-left: 0;}
 }
 
 @media (hover: hover) {
