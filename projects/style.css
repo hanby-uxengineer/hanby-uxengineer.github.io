@@ -29,17 +29,27 @@
   color: white;
 }
 
-h3 {
-  line-height: 90%;
+#main01 {
+	background: url("../assets/image/01_SmartSpeaker/main.jpg") no-repeat center;
+	height: 400px;
 }
 
-#main01 {
-	background: url("../assets/image/01_SmartSpeaker/main.png") no-repeat center;
-	height: 300px;
+.img-wrapper {
+	margin-bottom: 40px;
 }
+
+img {width: 100%;}
 
 .main-container {
 	margin-top: 20px;
+}
+
+.project-info {
+	margin-top: 40px;
+	border-radius: 20px;
+	padding: 20px;
+	border: 2px solid #efefef;
+	margin-bottom: 50px;
 }
 
 /* 2. Make nav sticky */
@@ -75,7 +85,8 @@ main > nav {
 
 .section-nav a:hover,
 .section-nav a:focus {
-	color: #666;
+	font-weight: 600;
+	color: #3CB371;
 }
 
 /** Poor man's reset **/
@@ -92,10 +103,10 @@ li {
 	margin-left: 1rem;
 }
 
-h1 {
-	font-weight: 600;
-	line-height: 100%;
-}
+h1 {font-weight: 600; line-height: 100%;}
+h2 {line-height: 90%;}
+h4 {font-size: 18px; font-weight: 600; line-height: 0%;}
+h5 {font-size: 16px; font-weight: 400; }
 
 /** page layout **/
 main {
