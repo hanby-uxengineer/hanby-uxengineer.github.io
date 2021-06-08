@@ -39,12 +39,25 @@ img {width: 100%;}
 	margin-top: 20px;
 }
 
+#Information {
+	margin-top: 5rem;
+}
+
 .project-info {
-	margin-top: 40px;
 	border-radius: 20px;
 	padding: 20px;
 	border: 2px solid #efefef;
-	margin-bottom: 50px;
+}
+
+.quotation {
+	border-radius: 20px;
+	padding: 20px;
+	background: #efefef;
+	margin-bottom: 5rem;
+}
+
+.references {
+	width: 100%;
 }
 
 /* 2. Make nav sticky */
@@ -116,7 +129,7 @@ main {
 
 /** enlarge the sections for this demo, so that we have a long scrollable page **/
 section {
-	margin-bottom: 20rem;
+	margin-bottom: 5rem;
 }
 
 .footer {
