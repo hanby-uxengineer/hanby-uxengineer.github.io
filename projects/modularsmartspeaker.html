@@ -106,15 +106,17 @@
 
         <section id="background">
           <h2>Background</h2>
-          <p>스마트 스피커는 대화형 AI가 탑재된 음성 기반 스피커이다. 페르소나, 보이스 종류, NLP 엔진 등과 같이 다양한 AI의 특성을 통해 스마트 스피커의 개성을 표현할 수 있으며,
-                이는 사용자의 인식과 만족도에 영향을 줄 수 있다.</p>
-          <p>하지만, 사용자는 스마트 스피커를 사용하기 전까지 AI 특성을 파악하기 어렵다. 그에 비해, 스마트 스피커의 외형은 사용자가 바로 인지할 수 있는 요소 중 하나이다.
-          </p>
-          <div class="quotation">
-              <b>Design Question:</b> “AI의 특성이 외형적으로 표현된다면, 스마트 스피커는 어떻게 디자인될 수 있을까?”
-          </div>
+          <section>
+            <p>스마트 스피커는 대화형 AI가 탑재된 음성 기반 스피커이다. 페르소나, 보이스 종류, NLP 엔진 등과 같이 다양한 AI의 특성을 통해 스마트 스피커의 개성을 표현할 수 있으며,
+                  이는 사용자의 인식과 만족도에 영향을 줄 수 있다.</p>
+            <p>하지만, 사용자는 스마트 스피커를 사용하기 전까지 AI 특성을 파악하기 어렵다. 그에 비해, 스마트 스피커의 외형은 사용자가 바로 인지할 수 있는 요소 중 하나이다.
+            </p>
+            <div class="quotation">
+                <b>Design Question:</b> “AI의 특성이 외형적으로 표현된다면, 스마트 스피커는 어떻게 디자인될 수 있을까?”
+            </div>
+          </section>
           <section id="background-ai">
-            <h3>AI 페르소나: 말투</h3>
+            <h3>AI Persona: Verbal Communication</h3>
             <p>대화형 AI를 디자인하기 위해서 제일 처음으로 고려되는 부분은 AI 페르소나이다.
             CASA(Computers are Social Actors) 패러다임<sup id="R01"><a href="#refer01">1</a></sup>에 의하면, 대화형 인터페이스와 같은 컴퓨터의 의인화는 사용자가 컴퓨터를 사회적 행위자로 인식하게 만든다.
             사용자는 스마트 스피커를 사회적 행위자로 인식함에 따라, 인간-인간 상호작용의 사회적 규범을 인간-컴퓨터 상호작용에 적용하여 스마트 스피커와 특정 관계를 형성하기를 기대한다<sup id="R02"><a href="#refer02">2</a></sup>.</p>
@@ -128,75 +130,172 @@
             </div>
           </section>
           <section id="background-texture">
-            <h3>외형적 요소: 텍스처</h3>
+            <h3>Appearance: Texture</h3>
             <p>사용자가 스마트 스피커를 통해 인식할 수 있는 또 다른 특성으로는 외형적 요소인 형태, 색상, 텍스처(재질) 등을 들 수 있다.
             다양한 외형적 요소 중 텍스처는 컴퓨터나 로봇의 의인화 관련 연구에 많이 적용되고 있으며 다음과 같은 특성이 있다.</p>
             <li>텍스처는 직접적이고 직관적이며 감정 정보를 전달하는 데 적합하다<sup id="R04"><a href="#refer04">4</a></sup>.</li>
             <li>텍스처는 정서적 소통을 더욱 풍부하게 만들고 특정 감정을 유발할 수 있다<sup id="R04"><a href="#refer04">4</a></sup>.</li>
-            <p>텍스처를 통한 촉감의 5가지 형용사 척도 중, 서로 직교하는 2가지 주요 축은 <b>smooth-rough</b>와 <b>hard-soft(flexible)</b>이다<sup id="R05"><a href="#refer05">5</a></sup>.
+            <p>텍스처를 통한 촉감의 5가지 형용사 척도 중, 서로 직교하는 2가지 주요 축은 <b>soft(flexible)-hard</b>와 <b>smooth-hard</b>이다<sup id="R05"><a href="#refer05">5</a></sup>.
             이 두 축은 텔레프레젠스 로봇의 텍스처와 사회적 관계에 관한 인간-로봇 상호작용 실험에서도 의인화와 비의인화 촉감의 기준이 되었다<sup id="R06"><a href="#refer06">6</a></sup>.</p>
             <div class="img-wrapper">
               <img src="../assets/image/01_SmartSpeaker/02.png">
-              <p style="font-size:12px; color: gray; text-align: center;">촉감의 주요 형용사 척도 (smooth-rough / hard-soft)</p>
+              <p style="font-size:12px; color: gray; text-align: center;">촉감의 주요 형용사 척도 (soft-hard / smooth-rough)</p>
             </div>
           </section>
         </section>
 
-    		<section id="request-response">
-    			<h2>Request &amp; Response</h2>
-    			<p>…</p>
+    		<section id="studydesign">
+    			<h2>Study Design</h2>
+            <section>
+              <div class="quotation">
+                  <b>Research Question:</b> “스마트 스피커의 말투와 텍스처가 사용자의 인식에 어떤 영향을 줄 수 있을까?”
+              </div>
+              <p>스마트 스피커의 말투와 텍스처를 모듈화하여 프로토타이핑한 후, 사용자 인식에 대한 정량 조사를 진행한다.</p>
+              <div class="img-wrapper">
+                <img src="../assets/image/01_SmartSpeaker/03.png">
+                <p style="font-size:12px; color: gray; text-align: center;">{말투: (존댓말-반말)} X {텍스처: (soft-hard축, smooth-rough축)}</p>
+              </div>
+            </section>
+            <section id="studydesign-iv">
+              <h3>Independent Varialbes</h3>
+      			  <p>독립 변수는 말투 요소 2가지와 텍스처 요소 4가지로 설정하였다.</p>
+              <p>
+                <b>말투</b>
+                <li>assistant-like: 존댓말</li>
+                <li>companion-like: 반말</li>
+              </p>
+              <p>
+              <b>텍스처</b>
+                <li>soft+smooth: 부드러운 천</li>
+                <li>soft+rough: 거친 천</li>
+                <li>hard+smooth: 부드러운 플라스틱</li>
+                <li>hard+rough: 거친 플라스틱</li>
+              </p>
+              <div class="img-wrapper">
+                <img src="../assets/image/01_SmartSpeaker/04.png">
+                <p style="font-size:12px; color: gray; text-align: center;">독립 변수: 발화(2가지) X 촉각(4가지)</p>
+              </div>
+            </section>
+            <section id="studydesign-prototyping">
+              <h3>Prototyping</h3>
+      			  <p>Wizard of Oz 기법 실험을 위한 모듈형 스마트 스피커의 전원부와 텍스처 모듈을 디자인하고 개발하였다.</p>
+              <p>
+                <b>사용한 소프트웨어</b>
+                <li>3D 모델링: SolidWorks</li>
+                <li>하드웨어: Arduino</li>
+              </p>
+              <div class="img-wrapper">
+                <img src="../assets/image/01_SmartSpeaker/05.png">
+                <p style="font-size:12px; color: gray; text-align: center;">제품 프로토타입: 전원부 X 텍스처 모듈</p>
+              </div>
+              <details>
+                <summary style="cursor:pointer">detail</summary>
+                <p>
+                  <li>모듈형 스마트 스피커는 전원부와 촉각 모듈로 나뉠 수 있으며, 촉각 모듈은 전원부 위에 올려놓을 수 있다.</li>
+                  <li>촉각 모듈은 부드러운 천, 거친 천, 부드러운 플라스틱, 거친 플라스틱으로 이루어졌으며, 총 4가지이다.</li>
+                  <li>촉각 모듈을 쉽게 탈부착할 수 있도록 전원부와 촉각 모듈 모서리에 네오디움 자석이 붙어있다.</li>
+                  <li>전원부에는 아두이노, 블루투스 모듈, 스피커, 버튼, LED가 포함되어 있다.</li>
+                </p>
+              </details>
+            </section>
+            <section id="studydesign-script">
+              <h3>Script Design</h3>
+              <p>피험자는 최근 유행하는 음식, 노래, TV 프로그램에 대해 질문하고, 스마트 스피커는 다음과 같은 스크립트로 답변한다.</p>
+              <p>
+                <b>사용한 소프트웨어</b>
+                <li>음성 녹음: Clova Dubbing</li>
+              </p>
+               <div class="img-wrapper">
+                 <img src="../assets/image/01_SmartSpeaker/06.png">
+                 <p style="font-size:12px; color: gray; text-align: center;">스마트 스피커의 스크립트 설계</p>
+               </div>
+            </section>
+            <section id="studydesign-participants">
+              <h3>Participants</h3>
+      			     <p>피험자를 모집하여 연구실 조사(in-lab study)로 실험이 진행되었다.</p>
+                 <p>
+                   <li>피험자: 48명 (23세~39세 / 여성 23명, 남성 25명)</li>
+                 </p>
+                 <details>
+                   <summary style="cursor:pointer">detail</summary>
+                   <p>
+                     <b>혼합 설계 (mixed design)</b>
+                   </p>
+                   <p>
+                     <li>말투: between design - 피험자는 한 가지 발화만 경험한다.</li>
+                     <li>텍스처: within design - 피험자는 네 가지 촉각을 모두 경험한다. (무작위 순서)</li>
+                  </p>
+                 </summary>
+               </detail>
+            </section>
+            <section id="studydesign-procedure">
+              <h3>Procedure</h3>
+      			  <p>텍스처 모듈은 모든 피험자에게 무작위 순서로 배정되어있으며 실험 과정은 다음과 같다.</p>
+              <p>
+                <li>피험자는 왼쪽 촉각 모듈부터 전원부 위에 올려놓는다.</li>
+                <li>촉각 모듈을 전원부 위에 놓으면 스마트 스피커의 인사가 시작된다.</li>
+                <li>피험자는 음식, 노래, TV 프로그램에 대해 스마트 스피커에 질문한다. </li>
+                <li>피험자는 한 가지 촉각 모듈을 경험한 후, 해당 스마트 스피커의 인상 평가를 진행한다.</li>
+                <li>나머지 촉각 모듈에 대해서도 위와 같이 반복한다.</li>
+              </p>
+              <div class="img-wrapper">
+                <img src="../assets/image/01_SmartSpeaker/07.png">
+                <p style="font-size:12px; color: gray; text-align: center;">피험자는 무작위 순서로 배정된 텍스처 모듈을 모두 경험한다.</p>
+              </div>
+            </section>
+            <section id="studydesign-dv">
+              <h3>Measurments</h3>
+      			    <p>각 실험 조건에 대해서 아래 3가지를 측정하였다. 측정을 통해, 피험자가 각 조건의 스마트 스피커를 얼마나 유용하게 생각했는지, 얼마나 사회적인 존재로 인지했는지, 얼마나 서비스에 대해 만족하는지 확인하였다.</p>
+                <p>
+                  <li>유용성 (perceived usefulness)<sup id="R07"><a href="#refer07">7</a></sup></li>
+                  <li>사교성(perceived sociability)<sup id="R07"><a href="#refer07">7</a></sup></li>
+                  <li>서비스 평가(service evaluation)<sup id="R08"><a href="#refer08">8</a></sup></li>
+                </p>
+                <details>
+                  <summary style="cursor:pointer">detail</summary>
+                  <div class="img-wrapper">
+                    <img src="../assets/image/01_SmartSpeaker/05.png">
+                    <p style="font-size:12px; color: gray; text-align: center;">제품 프로토타입: 전원부 X 텍스처 모듈</p>
+                  </div>
+                </summary>
+              </detail>
+            </section>
     		</section>
-    		<section id="authentication">
-    			<h2>Authentication</h2>
-    			<p>…</p>
-    		</section>
-    		<section id="endpoints">
-    			<h2>Endpoints</h2>
-    			<section id="endpoints--root">
-    				<h3>Root</h3>
+
+    		<section id="results">
+    			<h2>Results</h2>
+    			<section id="results-usefulness">
+    				<h3>Usefulness</h3>
     				<p>…</p>
     			</section>
-    			<section id="endpoints--cities-overview">
-    				<h3>Cities Overview</h3>
+    			<section id="results-sociability">
+    				<h3>Sociability</h3>
     				<p>…</p>
     			</section>
-    			<section id="endpoints--city-detail">
-    				<h3>City Detail</h3>
-    				<p>…</p>
-    			</section>
-    			<section id="endpoints--city-config">
-    				<h3>City Config</h3>
-    				<p>…</p>
-    			</section>
-    			<section id="endpoints--city-spots-overview">
-    				<h3>City Spots Overview</h3>
-    				<p>…</p>
-    			</section>
-    			<section id="endpoints--city-spot-detail">
-    				<h3>City Spot Detail</h3>
-    				<p>…</p>
-    			</section>
-    			<section id="endpoints--city-icons-overview">
-    				<h3>City Icons Overview</h3>
-    				<p>…</p>
-    			</section>
-    			<section id="endpoints--city-icon-detail">
-    				<h3>City Icon Detail</h3>
+    			<section id="results-service">
+    				<h3>Service Evaluation</h3>
     				<p>…</p>
     			</section>
     		</section>
-    		<section id="links">
-    			<h2>Links</h2>
-    			<p>…</p>
+
+        <section id="conclusion">
+    			<h2>Conclustion</h2>
+    			<section id="conclusion-implication">
+    				<h3>Implication</h3>
+    				<p>…</p>
+    			</section>
+    			<section id="conclusion-limitation">
+    				<h3>Limitation & Futurework</h3>
+    				<p>…</p>
+    			</section>
     		</section>
-    		<section id="expanders">
-    			<h2>Expanders</h2>
-    			<p>…</p>
-    		</section>
-    		<section id="filters">
-    			<h2>Filters</h2>
-    			<p>…</p>
-    		</section>
+
+        <section id="videolink">
+    			<h2>Video Link</h2>
+          <div class="video-container">
+            <iframe width="100%" src="https://www.youtube.com/embed/0Tf_RTPqyZs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </section>
 
         <div class="references">
           <h3>References</h3>
@@ -205,7 +304,7 @@
           <p style="font-size:12px"><a name="refer03">[3] <a href="https://doi.org/10.1016/j.chb.2012.10.001"><u><b>Am I Acceptable to You? Effect of a Robot’s Verbal Language Forms on People’s Social Distance from Robots</b></u></a> (2013) by Yunkyung Kim, Sonya S. Kwak and Myung-suk Kim in Computers in Human Behavior <a href="#R03"><b>↩</b></a></p>
           <p style="font-size:12px"><a name="refer04">[4] <a href="https://dl.acm.org/doi/abs/10.1145/2702613.2732768"><u><b>Emotion Evoked by Texture and Application to Emotional Communication</b></u></a> (2015) by Yurika Ebe and Hiroyuki Umemuro in ACM CHI <a href="#R04"><b>↩</b></a></p>
           <p style="font-size:12px"><a name="refer05">[5] <a href="https://link.springer.com/article/10.3758/BF03212154"><u><b>Individual Differences in Perceptual Space for Tactile Textures: Evidence from Multidimensional Scaling</b></u></a> (2000) by Mark Hollins, Sliman Bensmaïa, Kristie Karlof and Forrest Young in Perception & Psychophysics <a href="#R05"><b>↩</b></a></p>
-          <p style="font-size:12px"><a name="refer06">[6] <a href="https://ieeexplore.ieee.org/document/8673144"><u><b>The Effect of Tactility and Socio-relational Context on Social Presence and User Satisfaction</b></u></a> (2019) by Dahyun Kang in ACM/IEEE HRI <a href="#R06"><b>↩</b></a></p>
+          <p style="font-size:12px"><a name="refer06">[6] <a href="https://ieeexplore.ieee.org/document/8673144"><u><b>The Effect of Tactility and Socio-Relational Context on Social Presence and User Satisfaction</b></u></a> (2019) by Dahyun Kang in ACM/IEEE HRI <a href="#R06"><b>↩</b></a></p>
         </div>
 
     	</div>
@@ -215,27 +314,34 @@
           <li><a href="#information">Information</a></li>
     			<li><a href="#background">Background</a>
             <ul>
-              <li class=""><a href="#background-ai">AI 페르소나: 말투</a></li>
-              <li class=""><a href="#background-texture">외형적 요소: 텍스처</a></li>
+              <li class=""><a href="#background-ai">AI Persona: VC</a></li>
+              <li class=""><a href="#background-texture">Appearance: Texture</a></li>
             </ul>
           </li>
-    			<li><a href="#request-response">Request &amp; Response</a></li>
-    			<li><a href="#authentication">Authentication</a></li>
-    			<li><a href="#endpoints">Endpoints</a>
+    			<li><a href="#studydesign">Study Design</a>
+            <ul>
+              <li class=""><a href="#studydesign-iv">Independent Varialbes</a></li>
+              <li class=""><a href="#studydesign-prototyping">Prototyping</a></li>
+              <li class=""><a href="#studydesign-script">Script Design</a></li>
+              <li class=""><a href="#studydesign-participants">Participants</a></li>
+              <li class=""><a href="#studydesign-procedure">Procedure</a></li>
+              <li class=""><a href="#studydesign-dv">Measurements</a></li>
+            </ul>
+          </li>
+    			<li><a href="#results">Results</a>
     				<ul>
-    					<li class=""><a href="#endpoints--root">Root</a></li>
-    					<li class=""><a href="#endpoints--cities-overview">Cities Overview</a></li>
-    					<li class=""><a href="#endpoints--city-detail">City Detail</a></li>
-    					<li class=""><a href="#endpoints--city-config">City Config</a></li>
-    					<li class=""><a href="#endpoints--city-spots-overview">City Spots Overview</a></li>
-    					<li class=""><a href="#endpoints--city-spot-detail">City Spot Detail</a></li>
-    					<li class=""><a href="#endpoints--city-icons-overview">City Icons Overview</a></li>
-    					<li class=""><a href="#endpoints--city-icon-detail">City Icon Detail</a></li>
+    					<li class=""><a href="#results-usefulness">Usefulness</a></li>
+    					<li class=""><a href="#results-sociability">Sociability</a></li>
+    					<li class=""><a href="#results-service">Service Evaluation</a></li>
     				</ul>
     			</li>
-    			<li class=""><a href="#links">Links</a></li>
-    			<li class=""><a href="#expanders">Expanders</a></li>
-    			<li class=""><a href="#filters">Filters</a></li>
+          <li><a href="#conclusion">Conclusion</a>
+    				<ul>
+    					<li class=""><a href="#conclusion-implication">Implication</a></li>
+    					<li class=""><a href="#conclusion-limitation">Limitation & Future Work</a></li>
+    				</ul>
+    			</li>
+          <li><a href="#videolink">Video Link</a></li>
     		</ol>
     	</nav>
     </main>
