@@ -125,7 +125,7 @@ input[id="tab09"]:checked ~ .con09 { display: block; }
 }
 
 .project-item-container {
-  padding: 10px;
+  padding: 15px;
 }
 
 img + label {
