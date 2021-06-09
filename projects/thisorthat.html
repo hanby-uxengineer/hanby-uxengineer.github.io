@@ -48,7 +48,7 @@
 					<h3>Hanbyeol Lee</h3>
 				</a>
 				<div class="menu">
-					<a class="menu-item" href="../index.html">Works</a>
+					<a class="menu-item" href="../index.html">Projects</a>
 					<a class="menu-item" href="../about.html">About</a>
 				</div>
 			</div>
@@ -67,7 +67,7 @@
           <div class="project-info">
             <p>
               <b>Type</b><br>
-              <span style="font-size:14px">Human-Agent Interaction 연구</span>
+              <span style="font-size:14px">Human-Robot Interaction 연구</span>
             </p>
             <p>
               <b>Affiliation</b><br>
@@ -75,21 +75,22 @@
             </p>
             <p>
               <b>Role</b><br>
-              <span style="font-size:14px">인터랙션 리서처 / 프로젝트 매니저 (기여도: 80%)</span><br>
+              <span style="font-size:14px">인터랙션 리서처</span><br>
               <span style="font-size:12px; color:gray;">프로젝트 기획, 문헌 조사, 인터랙션 디자인,
                 제품 디자인, 프로토타입 개발, 사용자 조사, 데이터 분석, 논문 집필</span>
             </p>
             <p>
               <b>Team</b><br>
-              <span style="font-size:14px">Dr. Dahyun Kang (KIST) </span><span style="font-size:12px; color:gray;">문헌 조사, 프로젝트 지도</span><br>
-              <span style="font-size:14px">Dr. Sonya S. Kwak (KIST) </span><span style="font-size:12px; color:gray;">SPSS, 프로젝트 지도</span>
+              <span style="font-size:14px">Dr. Dahyun Kang (KIST) </span><span style="font-size:12px; color:gray;">프로젝트 기획, 문헌 조사, 실험 설계, 사용자 조사, 데이터 분석, 논문 집필</span><br>
+              <span style="font-size:14px">Dr. Eun Ho Kim (KITECH) </span><span style="font-size:12px; color:gray;">프로젝트 기획, 실험 설계, 데이터 분석</span><br>
+							<span style="font-size:14px">Dr. Sonya S. Kwak (KIST) </span><span style="font-size:12px; color:gray;">프로젝트 기획, 실험 설계, 사용자 조사, 데이터 분석, 프로젝트 지도</span>
             </p>
             <p>
               <b>Tools</b><br>
 							<span style="font-size:14px">
                 SolidWorks <span style="font-size:12px; color:gray;">3D모델링</span>,
-                Arduino <span style="font-size:12px; color:gray;">하드웨어</span>,
-                Clova Dubbing <span style="font-size:12px; color:gray;">음성녹음</span>,
+                Raspberry Pi <span style="font-size:12px; color:gray;">하드웨어</span>,
+                TurtleBot <span style="font-size:12px; color:gray;">로봇플랫폼</span>,
                 SPSS <span style="font-size:12px; color:gray;">데이터분석</span>
               </span>
             </p>
@@ -97,9 +98,13 @@
               <b>Output</b><br>
               <span style="font-size:14px">제품 프로토타입, 연구 논문</span>
             </p>
+						<p>
+              <b>Achievement</b><br>
+              <span style="font-size:14px"><a href="https://ieeexplore.ieee.org/document/9341067"><u>IEEE/RSJ IROS 2020 학회 논문</u></a></span>
+            </p>
             <p>
               <b>Duration</b><br>
-              <span style="font-size:14px;">2020.07 ~ 08 (2개월)</span>
+              <span style="font-size:14px;">2019.12 ~ 2020.02 (3개월)</span>
             </p>
           </div>
         </section>
@@ -107,39 +112,48 @@
         <section id="background">
           <h2>Background</h2>
           <section>
-            <p>스마트 스피커는 대화형 AI가 탑재된 음성 기반 스피커이다. 페르소나, 보이스 종류, NLP 엔진 등과 같이 다양한 AI의 특성을 통해 스마트 스피커의 개성을 표현할 수 있으며,
-                  이는 사용자의 인식과 만족도에 영향을 줄 수 있다.</p>
-            <p>하지만, 사용자는 스마트 스피커를 사용하기 전까지 AI 특성을 파악하기 어렵다. 그에 비해, 스마트 스피커의 외형은 사용자가 바로 인지할 수 있는 요소 중 하나이다.
+            <p>
+							우리는 같은 공간에 있는 사람과 대화할 때 주변의 사물, 장소 등이 자주 토픽이 되고, 제스처나 지시어를 사용해 위치 정보를 공유한다.
+							로봇 또한, 휴대폰이나 스마트 스피커와 달리 언어적 의사소통뿐만 아니라 비언어적 의사소통을 가능하게 하는 물리적인 형태(physical embodiment)를 가지고 있다.
+						</p>
+						<p>하지만, HRI 측면에서 로봇의 포인팅 연구는 몇 가지 제한이 있었다.</p>
+						<div class="quotation">
+                <b>Design Question:</b> “사람들과 효과적으로 의사소통할 수 있는 로봇의 포인팅은 어떻게 디자인될 수 있을까?”
+            </div>
+          </section>
+          <section id="locative-deixis">
+            <h3>Locative Deixis</h3>
+            <p>
+							직시어는 대화에서 자주 사용된다. 특히, 위치격 직시어(예시: 이거, 저거)는 주변에 있는 특정 대상을 청자 또는 독자가 이해할 수 있도록 언어를 사용해서 참조할 때 사용된다.
+							하지만, 로봇은 언어적 의사소통에 있어 대부분 <b>서술적 직시어</b>(예시: 왼쪽에서 두 번째)를 사용한다.
+						</p>
+            <div class="img-wrapper">
+              <img src="../assets/image/02_ThisorThat/01.png">
+              <p style="font-size:12px; color: gray; text-align: center;">직시어는 위치격 직시어와 서술적 직시어로 나뉠 수 있다.</p>
+            </div>
+          </section>
+          <section id="pointing-gesture">
+            <h3>Pointing Gesture</h3>
+            <p>
+							포인팅 제스처는 유아가 첫 단어를 말하기 전 배우는 의사소통 기술 중 하나다<sup id="R01"><a href="#refer01">1</a></sup>.
+							사람들은 복잡한 서술을 생략하기 위해 팔, 머리, 눈, 입술, 코와 같은 다양한 신체 부위를 사용하여 포인팅 제스처를 취한다<sup id="R02"><a href="#refer02">2</a></sup>.
+							하지만, 대부분의 로봇 포인팅 제스처에 대한 연구는 <b>손가락</b>으로 가리키는 것으로 제한되었다.
             </p>
-            <div class="quotation">
-                <b>Design Question:</b> “AI의 특성이 외형적으로 표현된다면, 스마트 스피커는 어떻게 디자인될 수 있을까?”
+						<div class="img-wrapper">
+              <img src="../assets/image/02_ThisorThat/02.png">
+              <p style="font-size:12px; color: gray; text-align: center;">사람은 다양한 신체 부위를 사용하여 포인팅 제스처를 취할 수 있다.</p>
             </div>
           </section>
-          <section id="background-ai">
-            <h3>AI Persona: Verbal Communication</h3>
-            <p>대화형 AI를 디자인하기 위해서 제일 처음으로 고려되는 부분은 AI 페르소나이다.
-            CASA(Computers are Social Actors) 패러다임<sup id="R01"><a href="#refer01">1</a></sup>에 의하면, 대화형 인터페이스와 같은 컴퓨터의 의인화는 사용자가 컴퓨터를 사회적 행위자로 인식하게 만든다.
-            사용자는 스마트 스피커를 사회적 행위자로 인식함에 따라, 인간-인간 상호작용의 사회적 규범을 인간-컴퓨터 상호작용에 적용하여 스마트 스피커와 특정 관계를 형성하기를 기대한다<sup id="R02"><a href="#refer02">2</a></sup>.</p>
-            <p>그 중, 사용자가 스마트 스피커에 대해 가장 기대하는 관계는 <b>비서(51.3%)</b>와 <b>친구(48.7%)</b>이다<sup id="R02"><a href="#refer02">2</a></sup>.
-            이러한 AI 페르소나의 관계 형성을 잘 보여줄 수 있는 요소는 언어적 표현이다.
-            특히, 수직적 관계와 수평적 관계에 따라 언어적 표현이 분명하게 달라진다<sup id="R03"><a href="#refer03">3</a></sup>.
-            한국어의 어법 문화에서 관계에 대한 언어적 표현으로는 수직적 관계인 비서는 <b>존댓말</b>을, 수평적 관계인 친구는 <b>반말</b>을 적용할 수 있다.</p>
-            <div class="img-wrapper">
-              <img src="../assets/image/01_SmartSpeaker/01.png">
-              <p style="font-size:12px; color: gray; text-align: center;">AI 페르소나의 관계 포지셔닝에 따라 발화 방식이 달라질 수 있다.</p>
-            </div>
-          </section>
-          <section id="background-texture">
-            <h3>Appearance: Texture</h3>
-            <p>사용자가 스마트 스피커를 통해 인식할 수 있는 또 다른 특성으로는 외형적 요소인 형태, 색상, 텍스처(재질) 등을 들 수 있다.
-            다양한 외형적 요소 중 텍스처는 컴퓨터나 로봇의 의인화 관련 연구에 많이 적용되고 있으며 다음과 같은 특성이 있다.</p>
-            <li>텍스처는 직접적이고 직관적이며 감정 정보를 전달하는 데 적합하다<sup id="R04"><a href="#refer04">4</a></sup>.</li>
-            <li>텍스처는 정서적 소통을 더욱 풍부하게 만들고 특정 감정을 유발할 수 있다<sup id="R04"><a href="#refer04">4</a></sup>.</li>
-            <p>텍스처를 통한 촉감의 5가지 형용사 척도 중, 서로 직교하는 2가지 주요 축은 <b>soft(flexible)-hard</b>와 <b>smooth-rough</b>이다<sup id="R05"><a href="#refer05">5</a></sup>.
-            이 두 축은 텔레프레젠스 로봇의 텍스처와 사회적 관계에 관한 인간-로봇 상호작용 실험에서도 의인화와 비의인화 촉감의 기준이 되었다<sup id="R06"><a href="#refer06">6</a></sup>.</p>
-            <div class="img-wrapper">
-              <img src="../assets/image/01_SmartSpeaker/02.png">
-              <p style="font-size:12px; color: gray; text-align: center;">촉감의 주요 형용사 척도 (soft-hard / smooth-rough)</p>
+					<section id="head-pointing">
+            <h3>Head Pointing</h3>
+            <p>
+							사람은 머리를 움직여서 특정 대상을 가리키기도 한다.
+							HRI 연구에 따르면 로봇이 머리를 움직여서 가리키는 것은 인간의 행동과 비슷한 효과를 나타낸다<sup id="R03"><a href="#refer03">3</a></sup>.
+							사람은 시선과 돌출된 코를 통해 포인팅 제스처를 취할 수 있는 반면에, 소셜 로봇의 머리는 대부분 <b>평면 디스플레이</b>를 사용하기 때문에 정확한 포인팅이 가능한지 알 수 없다.
+            </p>
+						<div class="img-wrapper">
+              <img src="../assets/image/02_ThisorThat/03.png">
+              <p style="font-size:12px; color: gray; text-align: center;">사람은 시선과 돌출된 코를 통해 포인팅 제스처를 쉽게 취할 수 있다.</p>
             </div>
           </section>
         </section>
@@ -148,73 +162,66 @@
     			<h2>Study Design</h2>
             <section>
               <div class="quotation">
-                  <b>Research Question:</b> “스마트 스피커의 말투와 텍스처가 사용자의 인식에 어떤 영향을 줄 수 있을까?”
+                  <b>Research Question:</b> “로봇의 언어적, 비언어적 포인팅은 사용자의 인식에 어떤 영향을 끼치며, 효과적인 포인팅 인터랙션은 무엇일까?”
               </div>
-              <p>스마트 스피커의 말투와 텍스처를 모듈화하여 프로토타이핑한 후, 사용자 인식에 대한 정량 조사를 진행한다.</p>
-              <div class="img-wrapper">
-                <img src="../assets/image/01_SmartSpeaker/03.png">
-                <p style="font-size:12px; color: gray; text-align: center;">{말투: (존댓말-반말)} X {텍스처: (soft-hard축, smooth-rough축)}</p>
-              </div>
+              <p>로봇의 포인팅 관련 발화 및 제스처를 다양한 조건으로 프로토타이핑한 후, 상황에 따라 로봇의 표현에 대한 사용자의 인식을 정량 조사한다.</p>
             </section>
             <section id="studydesign-iv">
               <h3>Independent Varialbes</h3>
-      			  <p>독립 변수는 말투 요소 2가지와 텍스처 요소 4가지로 설정하였다.</p>
+      			  <p>
+								로봇은 사용자에게 언어뿐만 아니라 포인팅 제스처를 통해 물체의 위치를 알릴 수 있다.
+								또한, 포인팅 제스처는 <b>시선(eye pointing)</b> 확장이다<sup id="R04"><a href="#refer04">4</a></sup>.
+								즉, 시선은 포인팅 제스처의 기본이다.
+							</p>
+							<p>독립 변수는 언어 2가지, 포인팅 제스처 2가지, 시선 2가지로 설정하였다.</p>
               <p>
-                <b>말투</b>
-                <li>assistant-like: 존댓말</li>
-                <li>companion-like: 반말</li>
+                <b>언어</b>
+                <li>지시적(deictic)</li>
+                <li>서술적(descriptive)</li>
               </p>
               <p>
-              <b>텍스처</b>
-                <li>soft+smooth: 부드러운 천</li>
-                <li>soft+rough: 거친 천</li>
-                <li>hard+smooth: 부드러운 플라스틱</li>
-                <li>hard+rough: 거친 플라스틱</li>
+              <b>포인팅 제스처</b>
+                <li>코가 있는(with nose)</li>
+                <li>코가 없는(without nose)</li>
+              </p>
+							<p>
+              <b>시선</b>
+                <li>눈이 있는(with eyes)</li>
+                <li>눈이 없는(without eyes)</li>
               </p>
               <div class="img-wrapper">
-                <img src="../assets/image/01_SmartSpeaker/04.png">
-                <p style="font-size:12px; color: gray; text-align: center;">독립 변수: 발화(2가지) X 텍스처(4가지)</p>
+                <img src="../assets/image/02_ThisorThat/04.png">
+                <p style="font-size:12px; color: gray; text-align: center;">독립 변수: 언어(2가지) X 포인팅 제스처(2가지) X 시선(2가지)</p>
               </div>
             </section>
             <section id="studydesign-prototyping">
               <h3>Prototyping</h3>
-      			  <p><b>Wizard of Oz</b> 기법 실험을 위한 모듈형 스마트 스피커의 전원부와 텍스처 모듈을 디자인하고 개발하였다.</p>
+      			  <p><b>Wizard of Oz</b> 기법 실험을 위한 로봇을 디자인하고 개발하였다.</p>
               <p>
                 <b>사용한 소프트웨어</b>
                 <li>3D 모델링: SolidWorks</li>
-                <li>하드웨어: Arduino</li>
+                <li>하드웨어: Raspberry Pi</li>
+								<li>로봇플랫폼: TurtleBot</li>
               </p>
               <div class="img-wrapper">
-                <img src="../assets/image/01_SmartSpeaker/05.png">
-                <p style="font-size:12px; color: gray; text-align: center;">제품 프로토타입: 전원부 X 텍스처 모듈</p>
+                <img src="../assets/image/02_ThisorThat/05.png">
+                <p style="font-size:12px; color: gray; text-align: center;">제품 프로토타입</p>
               </div>
               <details>
                 <summary style="cursor:pointer">제품 설계 세부 사항</summary>
                 <p>
-                  <li>모듈형 스마트 스피커는 전원부와 텍스처 모듈로 나뉠 수 있으며, 텍스처 모듈은 전원부 위에 올려놓을 수 있다.</li>
-                  <li>텍스처 모듈은 부드러운 천, 거친 천, 부드러운 플라스틱, 거친 플라스틱으로 이루어졌으며, 총 4가지이다.</li>
-                  <li>텍스처 모듈을 쉽게 탈부착할 수 있도록 전원부와 텍스처 모듈 모서리에 네오디움 자석이 붙어있다.</li>
-                  <li>전원부에는 아두이노, 블루투스 모듈, 스피커, 버튼, LED가 포함되어 있다.</li>
+                  <li>로봇 프로토타입은 ROS 기반 모바일 로봇인 TurtleBot3를 기반으로 방향을 변경하면서 이동할 수 있다.</li>
+                  <li>블루투스 통신으로 로봇의 언어 타입을 제어할 수 있다.</li>
+                  <li>Raspberry Pi와 연결된 모니터를 통해 로봇의 시선을 제어할 수 있다.</li>
+                  <li>로봇의 움직임은 블루투스 통신을 통해 조이스틱 컨트롤러를 통해 수동으로 제어된다.</li>
                 </p>
               </details>
-            </section>
-            <section id="studydesign-script">
-              <h3>Script Design</h3>
-              <p>피험자는 최근 유행하는 음식, 노래, TV 프로그램에 대해 질문하고, 스마트 스피커는 다음과 같은 스크립트로 답변한다.</p>
-              <p>
-                <b>사용한 소프트웨어</b>
-                <li>음성 녹음: Clova Dubbing</li>
-              </p>
-               <div class="img-wrapper">
-                 <img src="../assets/image/01_SmartSpeaker/06.png">
-                 <p style="font-size:12px; color: gray; text-align: center;">스마트 스피커의 스크립트 설계</p>
-               </div>
             </section>
             <section id="studydesign-participants">
               <h3>Participants</h3>
       			     <p>피험자를 모집하여 연구실 조사(in-lab study)로 실험이 진행되었다.</p>
                  <p>
-                   <li>피험자: 48명 (23세~39세 / 여성 23명, 남성 25명)</li>
+                   <li>피험자: 48명 (23세~37세 / 여성 26명, 남성 22명)</li>
                  </p>
                  <details>
                    <summary style="cursor:pointer">피험자 설계 세부 사항</summary>
@@ -222,180 +229,195 @@
                      <b>혼합 설계 (mixed design)</b>
                    </p>
                    <p>
-                     <li>말투: between design - 피험자는 한 가지 발화만 경험한다.</li>
-                     <li>텍스처: within design - 피험자는 네 가지 텍스처를 모두 경험한다. (무작위 순서)</li>
+                     <li>언어: within design - 피험자는 두 가지 언어를 모두 경험한다. (무작위 순서)</li>
+                     <li>포인팅 제스처: within design - 피험자는 두 가지 포인팅 제스처를 모두 경험한다. (무작위 순서)</li>
+										 <li>시선: between design - 피험자는 한 가지 시선을 경험한다.</li>
                   </p>
                </details>
             </section>
-            <section id="studydesign-procedure">
-              <h3>Procedure</h3>
-      			  <p>텍스처 모듈은 모든 피험자에게 무작위 순서로 배정되어있으며 실험 과정은 다음과 같다.</p>
-              <p>
-                <li>피험자는 왼쪽 텍스처 모듈부터 전원부 위에 올려놓는다.</li>
-                <li>텍스처 모듈을 전원부 위에 놓으면 스마트 스피커의 인사가 시작된다.</li>
-                <li>피험자는 음식, 노래, TV 프로그램에 대해 스마트 스피커에 질문한다. </li>
-                <li>피험자는 한 가지 텍스처 모듈을 경험한 후, 해당 스마트 스피커의 인상 평가를 진행한다.</li>
-                <li>나머지 텍스처 모듈에 대해서도 위와 같이 반복한다.</li>
-              </p>
-              <div class="img-wrapper">
-                <img src="../assets/image/01_SmartSpeaker/07.png">
-                <p style="font-size:12px; color: gray; text-align: center;">피험자는 무작위 순서로 배정된 텍스처 모듈을 모두 경험한다.</p>
-              </div>
-            </section>
+						<section id="studydesign-experiments">
+							<h3>Experiments</h3>
+								<p>로봇이 사용자와 상호작용하는 상황에 따라, 2가지의 실험을 진행하였다.</p>
+								<li>명령형 포인팅 상황: 가리킨 객체에 대한 <b>요청</b> - 자리 안내(seat guide)</li>
+								<li>서술형 포인팅 상황: 가리킨 객체에 대한 <b>설명</b> - 전시 안내(exhibition guide)</li>
+						</section>
             <section id="studydesign-dv">
               <h3>Measurments</h3>
-      			    <p>각 실험 조건에 대해서 아래 3가지를 <b>7점 리커트 척도</b>로 측정하였다. 측정을 통해, 피험자가 각 조건의 스마트 스피커를 얼마나 유용하게 생각했는지, 얼마나 사회적인 존재로 인지했는지, 얼마나 서비스에 대해 만족하는지 확인하였다.</p>
+      			    <p>각 실험 조건에 대해서 아래 4가지를 <b>7점 리커트 척도</b>로 측정하였다.</p>
+								<p>
+									측정을 통해, 사용자가 각 로봇의 표현 방식에 따라 사용자에게 위치 정보를 얼마나 효과적으로, 사회적으로, 자연스럽게 제공하는지 확인하였다.
+									또한, 로봇에 대한 전반적인 인상을 알아보기위해 제품 평가를 조사하였다.
+								</p>
                 <p>
-                  <li>유용성 (perceived usefulness)<sup id="R07"><a href="#refer07">7</a></sup></li>
-                  <li>사교성(perceived sociability)<sup id="R07"><a href="#refer07">7</a></sup></li>
-                  <li>서비스 평가(service evaluation)<sup id="R08"><a href="#refer08">8</a></sup></li>
+                  <li>효율성(perceived effectiveness)<sup id="R05"><a href="#refer05">5</a></sup></li>
+                  <li>사교성(perceived sociability)<sup id="R06"><a href="#refer06">6</a></sup></li>
+                  <li>자연스러움(perceived naturalness)<sup id="R05"><a href="#refer05">5</a></sup></li>
+									<li>제품 평가(product evaluation)<sup id="R07"><a href="#refer07">7,</a></sup><sup id="R08"><a href="#refer08"> 8</a></sup></li>
                 </p>
+								<p>진행되었던 실험 중, 전시 안내 상황에서는 로봇의 설명에 대한 인식을 알아보기 위해 아래 2가지를 추가적으로 측정하였다.</p>
+								<p>
+									<li>유능함(perceived competency)<sup id="R06"><a href="#refer06">6</a></sup></li>
+                  <li>신뢰성(perceived trustworthiness)<sup id="R06"><a href="#refer06">6</a></sup></li>
+								</p>
                 <details>
                   <summary style="cursor:pointer">질문 아이템</summary>
                   <div class="img-wrapper">
-                    <img src="../assets/image/01_SmartSpeaker/08.png">
-                    <p style="font-size:12px; color: gray; text-align: center;">3가지 측정에 대한 아이템</p>
+                    <img src="../assets/image/02_ThisorThat/06.png">
+										<img src="../assets/image/02_ThisorThat/07.png">
+                    <p style="font-size:12px; color: gray; text-align: center;">4가지 공통 측정과 2가지 추가 측정에 대한 아이템</p>
                   </div>
               </details>
             </section>
     		</section>
 
-    		<section id="results">
-          <section>
-    			<h2>Results</h2>
-            <p>실험을 통해 모듈형 스마트 스피커의 발화와 텍스처 사용자의 인식에 미치는 영향을 조사하기 위해 <b>이원 반복측정 분산분석(two-way RM ANOVA)</b>을 수행했다.</p>
-            <p>
+				<section id="seat-guide">
+    			<h2>Seat Guide</h2>
+					<p>
+						로봇은 피험자를 맞이하고 자리를 안내한다.
+						피험자는 연구실에 배치된 5개의 의자 중 로봇이 포인팅 하는 의자에 앉도록 요청받았다.
+					</p>
+					<div class="img-wrapper">
+						<img src="../assets/image/02_ThisorThat/08.png">
+						<img src="../assets/image/02_ThisorThat/09.png">
+						<p style="font-size:12px; color: gray; text-align: center;">자리 안내 실험 환경</p>
+					</div>
+					<section id="seat-procedure">
+						<h3>Procedure</h3>
+						<p>
+							피험자는 무작위 순서로 총 4번의 착석 요청을 받았으며, 각 착석 이후에 로봇의 인상을 평가했다.
+							로봇의 언어 및 제스처 표현 예는 다음과 같다.
+						</p>
+						<div class="img-wrapper">
+							<img src="../assets/image/02_ThisorThat/10.png">
+						</div>
+					</section>
+					<section id="seat-results">
+						<h3>Results</h3>
+						<p>실험을 통해 각 조건의 로봇이 사용자의 인식에 미치는 영향을 조사하기 위해 <b>이원 반복측정 분산분석(two-way RM ANOVA)</b>을 수행했다.</p>
+						<p>
               <b>사용한 소프트웨어</b>
               <li>데이터 분석: SPSS</li>
             </p>
-            <p>스마트 스피커의 유용성, 사교성 및 서비스 평가 측정에 대해 신뢰도 분석(Cronbach's alpha) 시, 모두 0.6 이상으로 유의한 결과가 나왔다.</p>
-            <details>
+						<p>로봇의 효율성, 사교성, 자연스러움 및 제품 평가 측정에 대해 신뢰도 분석(Cronbach's alpha) 시, 모두 0.6 이상으로 유의한 결과가 나왔다.</p>
+						<details>
               <summary style="cursor:pointer">신뢰도 분석 결과</summary>
                 <div class="img-wrapper">
-                  <img src="../assets/image/01_SmartSpeaker/09.png">
+                  <img src="../assets/image/02_ThisorThat/11.png">
                   <p style="font-size:12px; color: gray; text-align: center;">각 측정에 대한 신뢰도 분석 후 Cronbach's alpha 계수</p>
                 </div>
             </details>
-            <div class="img-wrapper">
+						<div class="img-wrapper">
               <p style="text-align: center; font-weight:600;">Main Effect</p>
-              <p><img src="../assets/image/01_SmartSpeaker/10.png"></p>
-              <p><img src="../assets/image/01_SmartSpeaker/11.png"></p>
-              <br>
-              <p style="text-align: center; font-weight:600;">Interaction Effect</p>
-              <p><img src="../assets/image/01_SmartSpeaker/12.png"></p>
+              <p><img src="../assets/image/02_ThisorThat/12.png"></p>
+              <p><img src="../assets/image/02_ThisorThat/13.png"></p>
             </div>
-          </section>
-          <section id="results-usefulness">
-    				<h3>Usefulness</h3>
-    				<p>
-              smooth-rough축이 유용성에 미치는 <b>주 효과</b>는 유의미했다.
-              <li>거친(rough) 스마트 스피커가 부드러운(smooth) 스마트 스피커보다 더 유용하다고 인식했다.</li>
+						<section>
+							<h3>Effectiveness</h3>
+							<p>
+	              포인팅 제스처가 효율성에 미치는 <b>주 효과</b>는 유의미했다.
+	              <li>코가 있는 로봇이 코가 없는 로봇보다 더 효율적이라고 인식했다.</li>
+	            </p>
+	            <details>
+	              <summary style="cursor:pointer">주 효과 데이터</summary>
+	                <p>
+	                  <li><i>F</i><sub>(1,46)</sub> = 21.171, <i>p</i> < 0.0005</li>
+	                  <li><i>M</i><sub>withnose</sub> = 5.32, <i>SD</i> = 0.15 vs. <i>M</i><sub>withoutnose</sub> = 4.54, <i>SD</i> = 0.19</li>
+	                </p>
+	            </details>
+							<div class="img-wrapper">
+	              <img src="../assets/image/02_ThisorThat/15.png">
+	              <p style="font-size:12px; color: gray; text-align: center;">효율성 주 효과: with nose > without nose</p>
+	            </div>
+						</section>
+						<section>
+							<h3>Sociability</h3>
+							<p>
+	              포인팅 제스처가 사교성에 미치는 <b>주 효과</b>는 유의미했다.
+	              <li>코가 있는 로봇이 코가 없는 로봇보다 더 사교적이라고 인식했다.</li>
+	            </p>
+	            <details>
+	              <summary style="cursor:pointer">주 효과 데이터</summary>
+	                <p>
+	                  <li><i>F</i><sub>(1,46)</sub> = 3.870, <i>p</i> = 0.055</li>
+	                  <li><i>M</i><sub>withnose</sub> = 4.68, <i>SD</i> = 0.16 vs. <i>M</i><sub>withoutnose</sub> = 4.41, <i>SD</i> = 0.17</li>
+	                </p>
+	            </details>
+							<div class="img-wrapper">
+	              <img src="../assets/image/02_ThisorThat/16.png">
+	              <p style="font-size:12px; color: gray; text-align: center;">사교성 주 효과: with nose > without nose</p>
+	            </div>
+						</section>
+						<section>
+							<h3>Product Evaluation</h3>
+							<p>
+	              언어와 포인팅 제스처가 제품 평가에 미치는 <b>주 효과</b>는 유의미했다.
+								<li>서술적 발화를 하는 로봇이 지시적 발화를 하는 로봇보다 더 긍정적이라고 인식했다.</li>
+	              <li>코가 있는 로봇이 코가 없는 로봇보다 더 긍정적이라고 인식했다.</li>
+	            </p>
+	            <details>
+	              <summary style="cursor:pointer">주 효과 데이터</summary>
+	                <p>
+	                  <li>verbal type: <i>F</i><sub>(1,46)</sub> = 2.955, <i>p</i> = 0.092</li>
+	                  <li><i>M</i><sub>deictic</sub> = 4.70, <i>SD</i> = 0.17 vs. <i>M</i><sub>descriptive</sub> = 5.00, <i>SD</i> = 0.15</li>
+										<li>pointing gesture: <i>F</i><sub>(1,46)</sub> = 7.736, <i>p</i> = 0.008</li>
+	                  <li><i>M</i><sub>withnose</sub> = 5.01, <i>SD</i> = 0.15 vs. <i>M</i><sub>withoutnose</sub> = 4.70, <i>SD</i> = 0.15</li>
+	                </p>
+	            </details>
+							<div class="img-wrapper">
+	              <img src="../assets/image/02_ThisorThat/17.png">
+	              <p style="font-size:12px; color: gray; text-align: center;">제품 평가 주 효과: descriptive > deictic / with nose > without nose</p>
+	            </div>
+						</section>
+						<section>
+							<h3>Accuracy of Location Information Perception</h3>
+							<p>위치 정보 인식의 정확성은 다음과 같다. (피험자가 안내 로봇이 의도한 자리에 앉은 확률)</p>
+							<div class="img-wrapper">
+	              <img src="../assets/image/02_ThisorThat/14.png">
+	            </div>
+						</section>
+					</section>
+        </section>
+
+				<section id="exhibition-guide">
+    			<h2>Exhibition Guide</h2>
+						<p>
+							피험자는 안내 로봇을 통해 로봇 쇼룸에 전시된 로봇에 대한 설명을 듣는다.
+							안내 로봇은 전시된 5개의 로봇을 하나씩 포인팅 하면서 설명하고, 피험자는 메모지에 안내 로봇이 포인팅 한 순서대로 메모한다.
+						</p>
+						<div class="img-wrapper">
+							<img src="../assets/image/02_ThisorThat/18.png">
+							<img src="../assets/image/02_ThisorThat/19.png">
+							<p style="font-size:12px; color: gray; text-align: center;">전시 안내 실험 환경</p>
+						</div>
+					<section id="exhibition-procedure">
+						<h3>Procedure</h3>
+						<p>피실험자는 무작위 순서로 총 4번의 조건을 경험했으며, 각 조건 이후에 로봇의 인상을 평가했다. 로봇의 언어 및 제스처 표현 예는 다음과 같다.</p>
+						<div class="img-wrapper">
+							<img src="../assets/image/02_ThisorThat/20.png">
+						</div>
+					</section>
+					<section id="exhibition-results">
+						<h3>Results</h3>
+						<p>실험을 통해 각 조건의 로봇이 사용자의 인식에 미치는 영향을 조사하기 위해 <b>이원 반복측정 분산분석(two-way RM ANOVA)</b>을 수행했다.</p>
+						<p>
+              <b>사용한 소프트웨어</b>
+              <li>데이터 분석: SPSS</li>
             </p>
-            <details>
-              <summary style="cursor:pointer">주 효과 데이터</summary>
-                <p>
-                  <li><i>F</i><sub>(1,46)</sub> = 13.707, <i>p</i> = 0.001</li>
-                  <li><i>M</i><sub>smooth</sub> = 4.96, <i>SD</i> = 0.13 vs. <i>M</i><sub>rough</sub> = 5.30, <i>SD</i> = 0.12</li>
-                </p>
+						<p>로봇의 효율성, 사교성, 자연스러움, 유능함, 신뢰성 및 제품 평가 측정에 대해 신뢰도 분석(Cronbach's alpha) 시, 모두 0.6 이상으로 유의한 결과가 나왔다.</p>
+						<details>
+              <summary style="cursor:pointer">신뢰도 분석 결과</summary>
+                <div class="img-wrapper">
+                  <img src="../assets/image/02_ThisorThat/21.png">
+                  <p style="font-size:12px; color: gray; text-align: center;">각 측정에 대한 신뢰도 분석 후 Cronbach's alpha 계수</p>
+                </div>
             </details>
-            <div class="img-wrapper">
-              <img src="../assets/image/01_SmartSpeaker/13.png">
-              <p style="font-size:12px; color: gray; text-align: center;">유용성 주 효과: rough > smooth</p>
+						<div class="img-wrapper">
+              <p style="text-align: center; font-weight:600;">Main Effect</p>
+              <p><img src="../assets/image/02_ThisorThat/22.png"></p>
+              <p><img src="../assets/image/02_ThisorThat/23.png"></p>
             </div>
-            <p>
-              또한, 말투와 soft-hard축이 유용성에 미치는 <b>상호작용 효과</b>가 존재했다.
-              <li>말투가 존댓말(assistant-like)일 때, 플라스틱(hard) 스마트 스피커가 천(soft) 스마트 스피커보다 더 유용하다고 인식했다.</li>
-              <li>말투가 반말(companion-like)일 때, 천(soft) 스마트 스피커가 플라스틱(hard) 스마트 스피커보다 더 유용하다고 인식했다.</li>
-            </p>
-            <details>
-              <summary style="cursor:pointer">상호작용 효과 데이터</summary>
-                <p>
-                  <li><i>F</i><sub>(1,46)</sub> = 13.833, <i>p</i> = 0.001</li>
-                  <li>assistant-like: <i>M</i><sub>soft</sub> = 5.01, <i>SD</i> = 1.03 vs. <i>M</i><sub>hard</sub> = 5.24, <i>SD</i> = 0.90, <i>t</i> = 2.302, df = 47, <i>p</i> = 0.026</li>
-                  <li>companion-like: <i>M</i><sub>soft</sub> = 5.33, <i>SD</i> = 0.99 vs. <i>M</i><sub>hard</sub> = 4.94, <i>SD</i> = 1.06, <i>t</i> = 2.548, df = 47, <i>p</i> = 0.014</li>
-                </p>
-            </details>
-            <div class="img-wrapper">
-              <img src="../assets/image/01_SmartSpeaker/14.png">
-              <p style="font-size:12px; color: gray; text-align: center;">유용성 상호작용 효과: [assistant-like] hard > soft / [companion-like] soft > hard</p>
-            </div>
-            <p>스마트 스피커에 대해 사용자가 인식하는 <b>유용성</b>을 높이기 위해 <b>존댓말(assistant-like)</b> 유형에는 <b>플라스틱(hard)</b> 소재를, <b>반말(companion-like)</b> 유형에는 <b>천(soft)</b> 소재를 적용할 수 있다.</p>
-    			</section>
-    			<section id="results-sociability">
-    				<h3>Sociability</h3>
-            <p>
-              soft-hard축이 사교성에 미치는 <b>주 효과</b>는 유의미했다.
-              <li>천(soft) 스마트 스피커가 플라스틱(hard) 스마트 스피커보다 더 사교적이라고 인식했다.</li>
-            </p>
-            <details>
-              <summary style="cursor:pointer">주 효과 데이터</summary>
-                <p>
-                  <li><i>F</i><sub>(1,46)</sub> = 15.329, <i>p</i> < 0.0005</li>
-                  <li><i>M</i><sub>soft</sub> = 4.24, <i>SD</i> = 0.15 vs. <i>M</i><sub>hard</sub> = 3.64, <i>SD</i> = 0.14</li>
-                </p>
-            </details>
-            <div class="img-wrapper">
-              <img src="../assets/image/01_SmartSpeaker/15.png">
-              <p style="font-size:12px; color: gray; text-align: center;">사교성 주 효과: soft > hard</p>
-            </div>
-            <p>
-              또한, 말투와 soft-hard축이 사교성에 미치는 <b>상호작용 효과</b>가 존재했다.
-              <li>말투가 존댓말(assistant-like)일 때, 사교성에 대한 차이가 유의하지 않았다.</li>
-              <li>말투가 반말(companion-like)일 때, 천(soft) 스마트 스피커가 플라스틱(hard) 스마트 스피커보다 더 사교적이라고 인식했다.</li>
-            </p>
-            <details>
-              <summary style="cursor:pointer">상호작용 효과 데이터</summary>
-                <p>
-                  <li><i>F</i><sub>(1,46)</sub> = 5.977, <i>p</i> = 0.018</li>
-                  <li>assistant-like: <i>t</i> = 1.296, df = 47, <i>p</i> = 0.201</li>
-                  <li>companion-like: <i>M</i><sub>soft</sub> = 4.51, <i>SD</i> = 1.30 vs. <i>M</i><sub>hard</sub> = 3.53, <i>SD</i> = 1.08, <i>t</i> = 4.232, df = 47, <i>p</i> = 0.000</li>
-                </p>
-            </details>
-            <div class="img-wrapper">
-              <img src="../assets/image/01_SmartSpeaker/16.png">
-              <p style="font-size:12px; color: gray; text-align: center;">사교성 상호작용 효과: [companion-like] soft > hard</p>
-            </div>
-            <p>스마트 스피커에 대해 사용자가 인식하는 <b>사교성</b>을 높이기 위해 <b>반말(companion-like)</b> 유형에는 <b>천(soft)</b> 소재를 적용할 수 있다.</p>
-    			</section>
-    			<section id="results-service">
-    				<h3>Service Evaluation</h3>
-            <p>
-              soft-hard축과 smooth-rough축이 서비스 평가에 미치는 <b>주 효과</b>는 유의미했다.
-              <li>천(soft) 스마트 스피커가 플라스틱(hard) 스마트 스피커보다 더 서비스가 좋다고 인식했다.</li>
-              <li>거친(rough) 스마트 스피커가 부드러운(smooth) 스마트 스피커보다 더 서비스가 좋다고 인식했다.</li>
-            </p>
-            <details>
-              <summary style="cursor:pointer">주 효과 데이터</summary>
-                <p>
-                  <li>soft-hard: <i>F</i><sub>(1,46)</sub> = 5.056, <i>p</i> < 0.029</li>
-                  <li><i>M</i><sub>soft</sub> = 5.17, <i>SD</i> = 0.12 vs. <i>M</i><sub>hard</sub> = 4.87, <i>SD</i> = 0.14</li>
-                  <li>smooth-rough: <i>F</i><sub>(1,46)</sub> = 3.987, <i>p</i> < 0.052</li>
-                  <li><i>M</i><sub>smooth</sub> = 4.89, <i>SD</i> = 0.14 vs. <i>M</i><sub>rough</sub> = 5.14, <i>SD</i> = 0.12</li>
-                </p>
-            </details>
-            <div class="img-wrapper">
-              <img src="../assets/image/01_SmartSpeaker/17.png">
-              <p style="font-size:12px; color: gray; text-align: center;">서비스 평가 주 효과: soft > hard / rough > smooth</p>
-            </div>
-            <p>
-              또한, 말투와 soft-hard축이 서비스 평가에 미치는 <b>상호작용 효과</b>가 존재했다.
-              <li>말투가 존댓말(assistant-like)일 때, 플라스틱(hard) 스마트 스피커가 천(soft) 스마트 스피커보다 더 서비스가 좋다고 인식했다.</li>
-              <li>말투가 반말(companion-like)일 때, 천(soft) 스마트 스피커가 플라스틱(hard) 스마트 스피커보다 더 서비스가 좋다고 인식했다.</li>
-            </p>
-            <details>
-              <summary style="cursor:pointer">상호작용 효과 데이터</summary>
-                <p>
-                  <li><i>F</i><sub>(1,46)</sub> = 6.811, <i>p</i> = 0.012</li>
-                  <li>assistant-like: <i>M</i><sub>soft</sub> = 5.10, <i>SD</i> = 1.01 vs. <i>M</i><sub>hard</sub> = 5.15, <i>SD</i> = 1.01, <i>t</i> = 0.368, df = 47, <i>p</i> = 0.715</li>
-                  <li>companion-like: <i>M</i><sub>soft</sub> = 5.24, <i>SD</i> = 1.07 vs. <i>M</i><sub>hard</sub> = 4.58, <i>SD</i> = 1.15, <i>t</i> = 3.087, df = 47, <i>p</i> = 0.003</li>
-                </p>
-            </details>
-            <div class="img-wrapper">
-              <img src="../assets/image/01_SmartSpeaker/18.png">
-              <p style="font-size:12px; color: gray; text-align: center;">서비스 평가 상호작용 효과: [assistant-like] hard > soft / [companion-like] soft > hard</p>
-            </div>
-            <p>스마트 스피커에 대해 사용자가 인식하는 <b>서비스 평가</b>를 높이기 위해 <b>존댓말(assistant-like)</b> 유형에는 <b>플라스틱(hard)</b> 소재를, <b>반말(companion-like)</b> 유형에는 <b>천(soft)</b> 소재를 적용할 수 있다.</p>
-    			</section>
+					</section>
+        </section>
 
         <section id="conclusion">
     			<h2>Conclusion</h2>
@@ -419,23 +441,21 @@
     			</section>
     		</section>
 
-        <section id="videolink">
-    			<h2>Video Link</h2>
-          <div class="video-container">
-            <iframe width="100%" src="https://www.youtube.com/embed/0Tf_RTPqyZs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
+        <section id="publication">
+    			<h2>Publication</h2>
+          <p><a href="https://ieeexplore.ieee.org/document/9341067"><u><b>This or That: The Effect of Robot’s Deictic Expression on User’s Perception</b></u> <br /> <font size="2em"><u>2020 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</u></font></a></p>
         </section>
 
         <div class="references">
           <h3>References</h3>
-          <p style="font-size:12px"><a name="refer01">[1] <a href="https://www.radford.edu/~sjennings15/CASA.pdf"><u><b>Computers are Social Actors</b></u></a> (1994) by Clifford Nass, Jonathan Steuer, and Ellen R. Tauber in ACM CHI <a href="#R01"><b>↩</b></a></p>
-          <p style="font-size:12px"><a name="refer02">[2] <a href="https://ieeexplore.ieee.org/document/8923391"><u><b>An Empirical Study on Expectation of Relationship Between Human and Smart Devices—With Smart Speaker as an Example</b></u></a> (2019) by Shilong Wu, Sinan He, Yu Peng, Weiying Li, Moli Zhou and Daisong Guan in IEEE DSC <a href="#R02"><b>↩</b></a></p>
-          <p style="font-size:12px"><a name="refer03">[3] <a href="https://doi.org/10.1016/j.chb.2012.10.001"><u><b>Am I Acceptable to You? Effect of a Robot’s Verbal Language Forms on People’s Social Distance from Robots</b></u></a> (2013) by Yunkyung Kim, Sonya S. Kwak and Myung-suk Kim in Computers in Human Behavior <a href="#R03"><b>↩</b></a></p>
-          <p style="font-size:12px"><a name="refer04">[4] <a href="https://dl.acm.org/doi/abs/10.1145/2702613.2732768"><u><b>Emotion Evoked by Texture and Application to Emotional Communication</b></u></a> (2015) by Yurika Ebe and Hiroyuki Umemuro in ACM CHI <a href="#R04"><b>↩</b></a></p>
-          <p style="font-size:12px"><a name="refer05">[5] <a href="https://link.springer.com/article/10.3758/BF03212154"><u><b>Individual Differences in Perceptual Space for Tactile Textures: Evidence from Multidimensional Scaling</b></u></a> (2000) by Mark Hollins, Sliman Bensmaïa, Kristie Karlof and Forrest Young in Perception & Psychophysics <a href="#R05"><b>↩</b></a></p>
-          <p style="font-size:12px"><a name="refer06">[6] <a href="https://ieeexplore.ieee.org/document/8673144"><u><b>The Effect of Tactility and Socio-Relational Context on Social Presence and User Satisfaction</b></u></a> (2019) by Dahyun Kang in ACM/IEEE HRI <a href="#R06"><b>↩</b></a></p>
-          <p style="font-size:12px"><a name="refer07">[7] <a href="http://rua.ua.es/dspace/handle/10045/12586"><u><b>The Influence of Social Presence on Acceptance of a Companion Robot by Older People</b></u></a> ((2008) by Marcel Heerink, Ben Kröse, Vanessa Evers and Bob Wielinga in Journal of Physical Agents <a href="#R07"><b>↩</b></a></p>
-          <p style="font-size:12px"><a name="refer08">[8] <a href="https://ieeexplore.ieee.org/document/5453195/"><u><b>Gracefully Mitigating Breakdowns in Robotic Services</b></u></a> (2010) by Min Kyung Lee, Sara Kiesler, Jodi Forlizzi, Siddhartha Srinivasa and Paul Rybski in ACM/IEEE HRI <a href="#R08"><b>↩</b></a></p>
+          <p style="font-size:12px"><a name="refer01">[1] <a href="https://books.google.co.kr/books?id=JlN4AgAAQBAJ&lpg=PP1&ots=pP-gJzkuK8&dq=Pointing%3A%20Where%20Language%2C%20Culture%2C%20and%20Cognition%20Meet&lr&hl=ko&pg=PP1#v=onepage&q=Pointing:%20Where%20Language,%20Culture,%20and%20Cognition%20Meet&f=false"><u><b>Pointing: Where Language, Culture, and Cognition Meet</b></u></a> (2003) by Sotaro Kita <a href="#R01"><b>↩</b></a></p>
+          <p style="font-size:12px"><a name="refer02">[2] <a href="http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=51D1CBC4966CC0EDAAF34593B83E30F3?doi=10.1.1.462.5492&rep=rep1&type=pdf"><u><b>The Role of Gesture in Communication and Thinking</b></u></a> (1999) by Susan Goldin-Meadow in Trends in Cognitive Sciences <a href="#R02"><b>↩</b></a></p>
+          <p style="font-size:12px"><a name="refer03">[3] <a href="https://ieeexplore.ieee.org/document/6247845"><u><b>We Are Not Contortionists: Coupled Adaptive Learning for Head and Body Orientation Estimation in Surveillance Video</b></u></a> (2012) by Cheng Chen and Jean-Marc Odobez in IEEE Conference on Computer Vision and Pattern Recognition <a href="#R03"><b>↩</b></a></p>
+          <p style="font-size:12px"><a name="refer04">[4] <a href="https://books.google.co.kr/books?id=jK5nk7iDgSYC&lpg=PT1&dq=Becoming%20Human%3A%20From%20Pointing%20Gestures%20to%20Syntax&lr&hl=ko&pg=PT1#v=onepage&q=Becoming%20Human:%20From%20Pointing%20Gestures%20to%20Syntax&f=false"><u><b>Becoming Human: From Pointing Gestures to Syntax</b></u></a> (2011) by Teresa Bejarano <a href="#R04"><b>↩</b></a></p>
+          <p style="font-size:12px"><a name="refer05">[5] <a href="https://ieeexplore.ieee.org/abstract/document/8542607"><u><b>Robot Deictics: How Gesture and Context Shape Referential Communication</b></u></a> (2014) by Allison Sauppé and Bilge Mutlu in ACM/IEEE HRI <a href="#R05"><b>↩</b></a></p>
+          <p style="font-size:12px"><a name="refer06">[6] <a href="https://ieeexplore.ieee.org/abstract/document/6483608"><u><b>Rhetorical Robots: Making Robots More Effective Speakers Using Linguistic Cues of Expertise</b></u></a> (2013) by Sean Andrist, Erin Spannan and Bilge Mutlu in ACM/IEEE HRI <a href="#R06"><b>↩</b></a></p>
+          <p style="font-size:12px"><a name="refer07">[7] <a href="https://journals.sagepub.com/doi/10.1509/jmkr.44.2.251"><u><b>Adoption of New and Really New Products: The Effects of Self-Regulation Systems and Risk Salience</b></u></a> (2007) by Michal Herzenstein, Steven S. Posavac and J. Joško Brakus in Journal of Marketing Research <a href="#R07"><b>↩</b></a></p>
+          <p style="font-size:12px"><a name="refer08">[8] <a href="https://journals.sagepub.com/doi/10.1509/jmkr.46.1.46"><u><b>The Role of Imagination-Focused Visualization on New Product Evaluation</b></u></a> (1989) by Min Zhao, Steve Hoeffler and Darren W. Dahl in Journal of Marketing Research <a href="#R08"><b>↩</b></a></p>
         </div>
 
     	</div>
@@ -444,25 +464,30 @@
     		<ol>
     			<li><a href="#background">Background</a>
             <ul>
-              <li class=""><a href="#background-ai">AI Persona: VC</a></li>
-              <li class=""><a href="#background-texture">Appearance: Texture</a></li>
+              <li class=""><a href="#locative-deixis">Locative Deixis</a></li>
+              <li class=""><a href="#pointing-gesture">Pointing Gesture</a></li>
+							<li class=""><a href="#head-pointing">Head Pointing</a></li>
             </ul>
           </li>
     			<li><a href="#studydesign">Study Design</a>
             <ul>
               <li class=""><a href="#studydesign-iv">Independent Varialbes</a></li>
               <li class=""><a href="#studydesign-prototyping">Prototyping</a></li>
-              <li class=""><a href="#studydesign-script">Script Design</a></li>
               <li class=""><a href="#studydesign-participants">Participants</a></li>
-              <li class=""><a href="#studydesign-procedure">Procedure</a></li>
+							<li class=""><a href="#studydesign-experiments">Experiments</a></li>
               <li class=""><a href="#studydesign-dv">Measurements</a></li>
             </ul>
           </li>
-    			<li><a href="#results">Results</a>
+    			<li><a href="#seat-guide">Seat Guide</a>
     				<ul>
-    					<li class=""><a href="#results-usefulness">Usefulness</a></li>
-    					<li class=""><a href="#results-sociability">Sociability</a></li>
-    					<li class=""><a href="#results-service">Service Evaluation</a></li>
+    					<li class=""><a href="#seat-procedure">Prodecure</a></li>
+							<li class=""><a href="#seat-results">Results</a></li>
+    				</ul>
+    			</li>
+					<li><a href="#exhibition-guide">Exhibition Guide</a>
+    				<ul>
+    					<li class=""><a href="#exhibition-procedure">Prodecure</a></li>
+							<li class=""><a href="#exhibition-results">Results</a></li>
     				</ul>
     			</li>
           <li><a href="#conclusion">Conclusion</a>
@@ -471,7 +496,7 @@
     					<li class=""><a href="#conclusion-limitation">Limitation & Future Work</a></li>
     				</ul>
     			</li>
-          <li><a href="#videolink">Video Link</a></li>
+          <li><a href="#publication">Publication</a></li>
     		</ol>
     	</nav>
     </main>
