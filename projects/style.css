@@ -55,6 +55,10 @@ img {width: 100%;}
 	background: #efefef;
 }
 
+summary {
+	color: gray;
+}
+
 .references {
 	width: 100%;
 	border-top: 1px solid #efefef;
