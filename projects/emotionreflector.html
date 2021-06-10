@@ -54,93 +54,126 @@
 			</div>
 		</header>
 
-    <img src="../assets/image/01_SmartSpeaker/main.jpg">
+    <img src="../assets/image/10_EmotionReflector/main.jpg">
 
     <!-- partial:index.partial.html -->
     <main>
     	<div class="main-container">
 
-    		<h1>Dino</h1>
-        <h3>교통 약자를 위한 카풀 서비스</h3>
+    		<h1>Emotion Reflector</h1>
+        <h3>감정 트랙킹 스마트 미러 디자인</h3>
 
         <section style="margin-top:2rem">
           <div class="project-info">
             <p>
               <b>Type</b><br>
-              <span style="font-size:14px">Human-Agent Interaction 연구</span>
+              <span style="font-size:14px">Human-Computer Interaction 디자인</span><br>
+							<span style="font-size:12px; color:gray;"><콘텐츠, 공감하다> 감성 인식 교육 프로젝트</span>
             </p>
             <p>
               <b>Affiliation</b><br>
-              <span style="font-size:14px">KIST 지능로봇연구단</span>
+              <span style="font-size:14px">한국콘텐츠진흥원(KOCCA)</span>
             </p>
             <p>
               <b>Role</b><br>
-              <span style="font-size:14px">인터랙션 리서처 / 프로젝트 매니저</span><br>
-              <span style="font-size:12px; color:gray;">프로젝트 기획, 문헌 조사, 인터랙션 디자인,
-                제품 디자인, 프로토타입 개발, 실험 설계, 사용자 조사, 데이터 분석, 논문 집필</span>
+              <span style="font-size:14px">인터랙션 엔지니어 / 프로젝트 매니저</span><br>
+              <span style="font-size:12px; color:gray;">프로젝트 기획, 그래픽 디자인, 하드웨어 설계, 소프트웨어 개발</span>
             </p>
             <p>
               <b>Team</b><br>
-              <span style="font-size:14px">Dr. Dahyun Kang (KIST) </span><span style="font-size:12px; color:gray;">문헌 조사, 실험 설계, 프로젝트 지도</span><br>
-              <span style="font-size:14px">Dr. Sonya S. Kwak (KIST) </span><span style="font-size:12px; color:gray;">실험 설계, 데이터 분석, 프로젝트 지도</span>
+              <span style="font-size:14px">Seungkyu Gim (BDCI) </span><span style="font-size:12px; color:gray;">프로젝트 기획, 제품 디자인, 기구 설계</span><br>
+              <span style="font-size:14px">Byeongkuk Kwak (UNIST) </span><span style="font-size:12px; color:gray;">프로젝트 기획, 시나리오 설계</span>
             </p>
             <p>
               <b>Tools</b><br>
               <span style="font-size:14px">
                 SolidWorks <span style="font-size:12px; color:gray;">3D모델링</span>,
-                Arduino <span style="font-size:12px; color:gray;">하드웨어</span>,
-                Clova Dubbing <span style="font-size:12px; color:gray;">음성녹음</span>,
-                SPSS <span style="font-size:12px; color:gray;">데이터분석</span>
+                Raspberry Pi <span style="font-size:12px; color:gray;">하드웨어</span>,
+                Processing <span style="font-size:12px; color:gray;">그래픽스</span>,
+								Python <span style="font-size:12px; color:gray;">감정인식모델</span>
               </span>
             </p>
             <p>
               <b>Output</b><br>
-              <span style="font-size:14px">제품 프로토타입, 연구 논문</span>
+              <span style="font-size:14px">제품 프로토타입</span>
+            </p>
+						<p>
+              <b>Achievement</b><br>
+              <span style="font-size:14px">온:한류축제 Contents Impact 온라인 전시, Red Dot: Design Concept 2020 파이널리스트</span>
             </p>
             <p>
               <b>Duration</b><br>
-              <span style="font-size:14px;">2020.07 ~ 08 (2개월)</span>
+              <span style="font-size:14px;">2019.11 (1개월)</span>
             </p>
           </div>
         </section>
 
-        <div class="references">
-          <h3>References</h3>
-        </div>
+				<section id="overview">
+          <h2>Overview</h2>
+					<p>
+						Emotion Reflector는 사용자가 느끼는 감정을 정확하게 표현할 수 있도록 지원하는 스마트 거울이다.
+						표정 인식을 기반으로 적절한 시각/청각 피드백을 통해 6가지 보편 감성을 표현한다.
+						Emotion Reflector는 사용자가 자기 표출(self-expression)을 연습할 수 있도록 하여 사용자가 자신의 감정에 묻히는 것을 방지하고 자신의 정신 상태에 대한 객관적인 시각을 키울 수 있다.
+						또한, 기록된 감정에 따라 연속된 사운드가 생성되어 사용자가 정기적으로 자기 표출을 연습하도록 유도한다.
+					</p>
+					<div class="img-wrapper">
+            <img src="../assets/image/10_EmotionReflector/01.png">
+					</div>
+        </section>
+
+				<section id="implementation">
+          <h2>Implementation</h2>
+					<section id="metaphoric">
+	          <h3>Metaphoric Design</h3>
+						<p>사용자가 자신의 얼굴을 거울을 통해 보면서 표정이 자연스럽게 인식될 수 있도록 Emotion Reflector를 디자인하고 개발하였다.</p>
+						<div class="img-wrapper">
+	            <img src="../assets/image/10_EmotionReflector/02.png">
+						</div>
+	        </section>
+					<section id="interaction">
+	          <h3>Interaction Design</h3>
+						<p>Ekman의 6가지 보편 감성인 화남(anger), 혐오(disgust), 두려움(fear), 행복(happiness), 슬픔(sadness)과 놀람(surprise)을
+							기반으로 표정 인식을 진행하였다. (트레이닝된 감정 인식 모델 사용)</p>
+						<div class="img-wrapper">
+	            <img src="../assets/image/10_EmotionReflector/03.png">
+						</div>
+	        </section>
+					<section id="scenario">
+	    			<h3>Scenario Design</h3>
+						<div class="img-wrapper">
+	            <img src="../assets/image/10_EmotionReflector/04.png">
+						</div>
+	        </section>
+					<section id="iteration">
+	    			<h3>Iteration Design</h3>
+						<p>두 번째 프로토타입은 벽에 걸 수 있는 형태로 설계하고, 기존보다 더 감성적인 그래픽으로 개발하였다.</p>
+						<div class="img-wrapper">
+	            <img src="../assets/image/10_EmotionReflector/05.png">
+						</div>
+	        </section>
+        </section>
+
+				<section id="videolink">
+    			<h2>Video Link</h2>
+          <div class="video-container">
+            <iframe width="100%" src="https://www.youtube.com/embed/QK5-5I0bJDk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </section>
+
     	</div>
 
     	<nav class="section-nav">
     		<ol>
-    			<li><a href="#background">Background</a>
-            <ul>
-              <li class=""><a href="#background-ai">AI Persona: VC</a></li>
-              <li class=""><a href="#background-texture">Appearance: Texture</a></li>
-            </ul>
-          </li>
-    			<li><a href="#studydesign">Study Design</a>
-            <ul>
-              <li class=""><a href="#studydesign-iv">Independent Varialbes</a></li>
-              <li class=""><a href="#studydesign-prototyping">Prototyping</a></li>
-              <li class=""><a href="#studydesign-script">Script Design</a></li>
-              <li class=""><a href="#studydesign-participants">Participants</a></li>
-              <li class=""><a href="#studydesign-procedure">Procedure</a></li>
-              <li class=""><a href="#studydesign-dv">Measurements</a></li>
-            </ul>
-          </li>
-    			<li><a href="#results">Results</a>
-    				<ul>
-    					<li class=""><a href="#results-usefulness">Usefulness</a></li>
-    					<li class=""><a href="#results-sociability">Sociability</a></li>
-    					<li class=""><a href="#results-service">Service Evaluation</a></li>
-    				</ul>
-    			</li>
-          <li><a href="#conclusion">Conclusion</a>
-    				<ul>
-    					<li class=""><a href="#conclusion-implication">Implication</a></li>
-    					<li class=""><a href="#conclusion-limitation">Limitation & Future Work</a></li>
-    				</ul>
-    			</li>
-          <li><a href="#videolink">Video Link</a></li>
+    			<li><a href="#overview">Overview</a></li>
+    			<li><a href="#implementation">Implementation</a>
+						<ul>
+							<li class=""><a href="#metaphoric">Metaphoric Design</a></li>
+							<li class=""><a href="#interaction">Interaction Design</a></li>
+							<li class=""><a href="#scenario">Scenario Design</a></li>
+							<li class=""><a href="#iteration">Iteration Design</a></li>
+						</ul>
+					</li>
+					<li><a href="#videolink">Video Link</a></li>
     		</ol>
     	</nav>
     </main>
