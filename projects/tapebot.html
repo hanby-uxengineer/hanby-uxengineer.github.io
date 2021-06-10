@@ -54,20 +54,20 @@
 			</div>
 		</header>
 
-    <img src="../assets/image/01_SmartSpeaker/main.jpg">
+    <img src="../assets/image/07_TapeBot/main.jpg">
 
     <!-- partial:index.partial.html -->
     <main>
     	<div class="main-container">
 
-    		<h1>Dino</h1>
-        <h3>교통 약자를 위한 카풀 서비스</h3>
+    		<h1>TapeBot</h1>
+        <h3>마스킹 테이프 기반 아동용 로보틱 키트</h3>
 
         <section style="margin-top:2rem">
           <div class="project-info">
             <p>
               <b>Type</b><br>
-              <span style="font-size:14px">Human-Agent Interaction 연구</span>
+              <span style="font-size:14px">Human-Robot Interaction 연구</span>
             </p>
             <p>
               <b>Affiliation</b><br>
@@ -75,72 +75,104 @@
             </p>
             <p>
               <b>Role</b><br>
-              <span style="font-size:14px">인터랙션 리서처 / 프로젝트 매니저</span><br>
-              <span style="font-size:12px; color:gray;">프로젝트 기획, 문헌 조사, 인터랙션 디자인,
-                제품 디자인, 프로토타입 개발, 실험 설계, 사용자 조사, 데이터 분석, 논문 집필</span>
+              <span style="font-size:14px">인터랙션 엔지니어</span><br>
+              <span style="font-size:12px; color:gray;">인터랙션 디자인, 하드웨어 설계, 소프트웨어 개발, 패키지 디자인</span>
             </p>
             <p>
               <b>Team</b><br>
-              <span style="font-size:14px">Dr. Dahyun Kang (KIST) </span><span style="font-size:12px; color:gray;">문헌 조사, 실험 설계, 프로젝트 지도</span><br>
-              <span style="font-size:14px">Dr. Sonya S. Kwak (KIST) </span><span style="font-size:12px; color:gray;">실험 설계, 데이터 분석, 프로젝트 지도</span>
+              <span style="font-size:14px">Dr. Dahyun Kang (KIST) </span><span style="font-size:12px; color:gray;">프로젝트 기획, 인터랙션 디자인</span><br>
+              <span style="font-size:14px">Dr. Sonya S. Kwak (KIST) </span><span style="font-size:12px; color:gray;">프로젝트 기획, 프로젝트 지도</span>
             </p>
             <p>
               <b>Tools</b><br>
               <span style="font-size:14px">
                 SolidWorks <span style="font-size:12px; color:gray;">3D모델링</span>,
                 Arduino <span style="font-size:12px; color:gray;">하드웨어</span>,
-                Clova Dubbing <span style="font-size:12px; color:gray;">음성녹음</span>,
-                SPSS <span style="font-size:12px; color:gray;">데이터분석</span>
+                Adobe Illustrator <span style="font-size:12px; color:gray;">그래픽디자인</span>
               </span>
             </p>
             <p>
               <b>Output</b><br>
-              <span style="font-size:14px">제품 프로토타입, 연구 논문</span>
+              <span style="font-size:14px">제품 프로토타입, 데모 논문</span>
+            </p>
+						<p>
+              <b>Achievement</b><br>
+              <span style="font-size:14px"><a href="https://dl.acm.org/doi/10.1145/3371382.3378200"><u>ACM/IEEE HRI 2020 학회 Demo (3rd Prize)</u></a></span><br>
+							<span style="font-size:14px">디자인 특허</span>
             </p>
             <p>
               <b>Duration</b><br>
-              <span style="font-size:14px;">2020.07 ~ 08 (2개월)</span>
+              <span style="font-size:14px;">2019.10 (1개월)</span>
             </p>
           </div>
         </section>
 
-        <div class="references">
-          <h3>References</h3>
-        </div>
+				<section id="overview">
+          <h2>Overview</h2>
+					<p>
+						아이들이 창의력을 높이고 로봇 기술을 배울 수 있도록 LEGO 마인드스톰과 ROBOTIS 플레이 시리즈와 같은 다양한 유형의 교육용 로봇 키트가 개발되었다.
+						로봇은 환경을 인식하고 그에 따라 반응할 수 있는 인공물이며, TapeBot은 로봇의 외부 환경을 디자인하는 모듈형 로봇 키트다.
+					</p>
+          <div class="img-wrapper">
+            <img src="../assets/image/07_TapeBot/01.png">
+						<p style="font-size:12px; color: gray; text-align: center;">When everyone focuses on the MAIN CHARACTER, we focus on the BACKGROUND.</p>
+					</div>
+        </section>
+
+				<section id="implementation">
+          <h2>Implementation</h2>
+					<section id="tapebot">
+	          <h3>TapeBot Design</h3>
+						<p>TapeBot은 지능형 테이프와 캐릭터 로봇으로 이루어져 있다.</p>
+						<div class="img-wrapper">
+	            <img src="../assets/image/07_TapeBot/02.png">
+						</div>
+						<p>우리는 다음과 같은 이유로 TapeBot의 환경을 구축하기 위해 지능형 테이프를 선택했다.</p>
+						<li>제품에 관한 기대를 감소시켜 소비자의 수용을 증가시킨다.</li>
+						<li>어린이에게 친숙한 소재이자 다양한 길이/형태로 잘라 쓸 수 있다. (모듈형 디자인)</li>
+						<p>TapeBot의 캐릭터 로봇은 아두이노 보드, RFID 리더, 틸트 센서, 스피커로 구성된다.</p>
+						<div class="img-wrapper">
+	            <img src="../assets/image/07_TapeBot/03.png">
+						</div>
+	        </section>
+					<section id="interaction">
+	          <h3>Interaciton Design</h3>
+						<p>TapeBot의 인터랙션은 다음과 같다.</p>
+						<li>지능형 테이프에 내장된 RFID 태그를 감지하여 테이프 패턴 디자인에 따라 특정 사운드를 생성한다.</li>
+						<li>틸트 센서를 사용하여 로봇의 기울기에 따라 다른 사운드를 생성한다.</li>
+						<p>인터랙션의 예시는 다음과 같다.</p>
+						<li>잔디 패턴 테이프가 평평한 바닥에 부착되어 있을 때, 양의 울음소리가 생성된다.</li>
+						<li>잔디 패턴 테이프가 경사에 부착되어 있을 때, 산 새 지저귀는 소리가 생성된다.</li>
+						<div class="img-wrapper">
+	            <img src="../assets/image/07_TapeBot/04.png">
+						</div>
+	        </section>
+        </section>
+
+				<section id="videolink">
+    			<h2>Video Link</h2>
+          <div class="video-container">
+            <iframe width="100%" src="https://www.youtube.com/embed/JyFbIBUp92c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </section>
+
+				<section id="publication">
+    			<h2>Publication</h2>
+          <p><a href="https://dl.acm.org/doi/10.1145/3371382.3378200"><u><b>TapeBot: Modular Robotic Kit for Creating an Interactive Environment</b></u> <br /> <font size="2em"><u>2020 ACM/IEEE International Conference on Human-Robot Interaction(HRI) Demo</u></font></a></p>
+        </section>
     	</div>
 
     	<nav class="section-nav">
     		<ol>
-    			<li><a href="#background">Background</a>
+    			<li><a href="#overview">Overview</a></li>
+    			<li><a href="#implementation">Implementation</a>
             <ul>
-              <li class=""><a href="#background-ai">AI Persona: VC</a></li>
-              <li class=""><a href="#background-texture">Appearance: Texture</a></li>
+              <li class=""><a href="#tapebot">TapeBot Design</a></li>
+							<li class=""><a href="#interaction">Interaction Design</a></li>
             </ul>
           </li>
-    			<li><a href="#studydesign">Study Design</a>
-            <ul>
-              <li class=""><a href="#studydesign-iv">Independent Varialbes</a></li>
-              <li class=""><a href="#studydesign-prototyping">Prototyping</a></li>
-              <li class=""><a href="#studydesign-script">Script Design</a></li>
-              <li class=""><a href="#studydesign-participants">Participants</a></li>
-              <li class=""><a href="#studydesign-procedure">Procedure</a></li>
-              <li class=""><a href="#studydesign-dv">Measurements</a></li>
-            </ul>
-          </li>
-    			<li><a href="#results">Results</a>
-    				<ul>
-    					<li class=""><a href="#results-usefulness">Usefulness</a></li>
-    					<li class=""><a href="#results-sociability">Sociability</a></li>
-    					<li class=""><a href="#results-service">Service Evaluation</a></li>
-    				</ul>
-    			</li>
-          <li><a href="#conclusion">Conclusion</a>
-    				<ul>
-    					<li class=""><a href="#conclusion-implication">Implication</a></li>
-    					<li class=""><a href="#conclusion-limitation">Limitation & Future Work</a></li>
-    				</ul>
-    			</li>
-          <li><a href="#videolink">Video Link</a></li>
+					<li><a href="#videolink">Video Link</a></li>
+					<li><a href="#publication">Publication</a></li>
     		</ol>
     	</nav>
     </main>
