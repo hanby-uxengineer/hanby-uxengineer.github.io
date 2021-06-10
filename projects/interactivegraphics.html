@@ -26,6 +26,12 @@
 				}
 
 				function drawShadow() {
+          push();
+				    translate(windowWidth/2+1800, windowHeight+calHeight(6));
+				    rotate(PI*3/4);
+				    makeRect(4.5);
+				  pop();
+
 				  push();
 				    translate(windowWidth/2+1600, windowHeight+calHeight(6));
 				    rotate(PI*3/4);
