@@ -54,43 +54,43 @@
 			</div>
 		</header>
 
-    <img src="../assets/image/01_SmartSpeaker/main.jpg">
+    <img src="../assets/image/08_LightinO/main.png">
 
     <!-- partial:index.partial.html -->
     <main>
     	<div class="main-container">
 
-    		<h1>Dino</h1>
-        <h3>교통 약자를 위한 카풀 서비스</h3>
+    		<h1>Lightin'O</h1>
+        <h3>프레임 형태의 인에어 핸드 제스처 인터페이스 디자인</h3>
 
         <section style="margin-top:2rem">
           <div class="project-info">
             <p>
               <b>Type</b><br>
-              <span style="font-size:14px">Human-Agent Interaction 연구</span>
+              <span style="font-size:14px">Human-Computer Interaction 연구</span>
             </p>
             <p>
               <b>Affiliation</b><br>
-              <span style="font-size:14px">KIST 지능로봇연구단</span>
+              <span style="font-size:14px">UNIST 창의디자인공학과</span>
             </p>
             <p>
               <b>Role</b><br>
-              <span style="font-size:14px">인터랙션 리서처 / 프로젝트 매니저</span><br>
-              <span style="font-size:12px; color:gray;">프로젝트 기획, 문헌 조사, 인터랙션 디자인,
-                제품 디자인, 프로토타입 개발, 실험 설계, 사용자 조사, 데이터 분석, 논문 집필</span>
+              <span style="font-size:14px">인터랙션 리서처</span><br>
+              <span style="font-size:12px; color:gray;">프로젝트 기획, 문헌 조사, 인터랙션 디자인, 제품 디자인, 프로토타입 개발, 사용자 조사, 데이터 분석</span>
             </p>
             <p>
               <b>Team</b><br>
-              <span style="font-size:14px">Dr. Dahyun Kang (KIST) </span><span style="font-size:12px; color:gray;">문헌 조사, 실험 설계, 프로젝트 지도</span><br>
-              <span style="font-size:14px">Dr. Sonya S. Kwak (KIST) </span><span style="font-size:12px; color:gray;">실험 설계, 데이터 분석, 프로젝트 지도</span>
+              <span style="font-size:14px">Beom Kim (UNIST) </span><span style="font-size:12px; color:gray;">프로토타입 개발 보조</span><br>
+              <span style="font-size:14px">Seungkyu Gim (BDCI) </span><span style="font-size:12px; color:gray;">프로토타입 개발 보조</span><br>
+							<span style="font-size:14px">Prof. Young-Woo Park (UNIST) </span><span style="font-size:12px; color:gray;">프로젝트 지도</span>
             </p>
             <p>
               <b>Tools</b><br>
               <span style="font-size:14px">
                 SolidWorks <span style="font-size:12px; color:gray;">3D모델링</span>,
                 Arduino <span style="font-size:12px; color:gray;">하드웨어</span>,
-                Clova Dubbing <span style="font-size:12px; color:gray;">음성녹음</span>,
-                SPSS <span style="font-size:12px; color:gray;">데이터분석</span>
+                Processing <span style="font-size:12px; color:gray;">그래픽스</span>,
+                Leap Motion <span style="font-size:12px; color:gray;">제스처센싱</span>
               </span>
             </p>
             <p>
@@ -99,48 +99,83 @@
             </p>
             <p>
               <b>Duration</b><br>
-              <span style="font-size:14px;">2020.07 ~ 08 (2개월)</span>
+              <span style="font-size:14px;">2018.06 ~ 08 (3개월)</span>
             </p>
           </div>
         </section>
 
-        <div class="references">
-          <h3>References</h3>
-        </div>
+				<section id="background">
+          <h2>Background</h2>
+					<p>
+						사용자와 전자 제품 간의 인터랙션 기술은 인간의 편의에 따라 지속해서 발전해왔다.
+						버튼, 다이얼과 같은 전통적인 물리적 컨트롤러에서 벗어나 음성 인식, 제스처와 같은 새로운 무형의 제어 방식이 대중화되고 있다.
+						그 중 제스처 인터페이스는 자율적이고 직관적인 사용성을 제공하지만, 아래와 같은 문제점이 있었다.
+					</p>
+					<li><b>받아들이기 어려움(low acceptance)</b>: 사람들은 제스처 인터페이스를 익숙하지 않은 기술로 여겨 처음 사용하는 데 어려움을 겪는다.</li>
+					<li><b>행동유도성의 부족(lack of affordance)</b>: 제스처 인터페이스를 인지한 상태임에도 불구하고 어디에서 제스처가 인식이 되는지 잘 알지 못한다.</li>
+					<li><b>피드백의 부족(lack of feedback)</b>: 제스처 인터랙션에 대한 물리적인 피드백이 부족하여 시각, 청각적 대체 피드백이 필요하다.</li>
+				</section>
+
+				<section id="implementation">
+          <h2>Implementation</h2>
+					<section id="formdriven">
+						<h3>Form-driven Interaction</h3>
+						<p>
+							Tangible 인터랙션에서 외형은 사용자에게 사용 방법을 알려주는 가장 중요한 요소 중 하나이다.
+							물리적인 형태를 통해 사용자의 상호작용을 중재하거나 촉진할 수 있다.
+						</p>
+						<p>
+							사람들은 구멍이 뚫린 형태에 손을 집어넣는 습관이 있다.
+							그리하여, 사용자의 핸드 제스처를 유도하고 인식 범위를 안내하기 위해 프레임 형태로 디자인하게 되었다.
+						</p>
+	          <div class="img-wrapper">
+	            <img src="../assets/image/08_LightinO/01.jpeg">
+							<p style="font-size:12px; color: gray; text-align: center;">사람들은 구멍이 뚫린 형태에 손을 집어넣는 습관이 있다.</p>
+						</div>
+					</section>
+					<section id="visual">
+						<h3>Visual Feedback</h3>
+						<p>
+							외형과 컴퓨팅의 올바른 조합은 사용자가 제품과 효과적으로 상호작용하도록 지원한다.
+							제스처의 시각적 피드백을 위해 프레임 내부를 LED 스트립으로 마무리하였다.
+						</p>
+	          <div class="img-wrapper">
+	            <img src="../assets/image/08_LightinO/02.jpeg">
+						</div>
+					</section>
+        </section>
+
+				<section id="poster">
+    			<h2>Poster</h2>
+						<div class="img-wrapper">
+							<img src="../assets/image/08_LightinO/03.jpg">
+							<img src="../assets/image/08_LightinO/04.jpg">
+							<img src="../assets/image/08_LightinO/05.jpg">
+							<img src="../assets/image/08_LightinO/06.jpg">
+							<img src="../assets/image/08_LightinO/07.jpg">
+						</div>
+        </section>
+
+				<section id="videolink">
+    			<h2>Video Link</h2>
+          <div class="video-container">
+            <iframe width="100%" src="https://www.youtube.com/embed/pYlqMDbsiwc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </section>
+
     	</div>
 
     	<nav class="section-nav">
     		<ol>
-    			<li><a href="#background">Background</a>
-            <ul>
-              <li class=""><a href="#background-ai">AI Persona: VC</a></li>
-              <li class=""><a href="#background-texture">Appearance: Texture</a></li>
-            </ul>
-          </li>
-    			<li><a href="#studydesign">Study Design</a>
-            <ul>
-              <li class=""><a href="#studydesign-iv">Independent Varialbes</a></li>
-              <li class=""><a href="#studydesign-prototyping">Prototyping</a></li>
-              <li class=""><a href="#studydesign-script">Script Design</a></li>
-              <li class=""><a href="#studydesign-participants">Participants</a></li>
-              <li class=""><a href="#studydesign-procedure">Procedure</a></li>
-              <li class=""><a href="#studydesign-dv">Measurements</a></li>
-            </ul>
-          </li>
-    			<li><a href="#results">Results</a>
-    				<ul>
-    					<li class=""><a href="#results-usefulness">Usefulness</a></li>
-    					<li class=""><a href="#results-sociability">Sociability</a></li>
-    					<li class=""><a href="#results-service">Service Evaluation</a></li>
-    				</ul>
-    			</li>
-          <li><a href="#conclusion">Conclusion</a>
-    				<ul>
-    					<li class=""><a href="#conclusion-implication">Implication</a></li>
-    					<li class=""><a href="#conclusion-limitation">Limitation & Future Work</a></li>
-    				</ul>
-    			</li>
-          <li><a href="#videolink">Video Link</a></li>
+    			<li><a href="#background">Background</a></li>
+    			<li><a href="#implementation">Implementation</a>
+						<ul>
+							<li><a href="#formdriven">Form-driven Interaction</a></li>
+							<li><a href="#visual">Visual Feedback</a></li>
+					 	</ul>
+					</li>
+					<li><a href="#poster">Poster</a></li>
+					<li><a href="#videolink">Video Link</a></li>
     		</ol>
     	</nav>
     </main>
