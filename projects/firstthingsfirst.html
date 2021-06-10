@@ -54,20 +54,20 @@
 			</div>
 		</header>
 
-    <img src="../assets/image/01_SmartSpeaker/main.jpg">
+    <img src="../assets/image/06_FirstThingsFirst/main.png">
 
     <!-- partial:index.partial.html -->
     <main>
     	<div class="main-container">
 
-    		<h1>Dino</h1>
-        <h3>교통 약자를 위한 카풀 서비스</h3>
+    		<h1>First Things First</h1>
+        <h3>홈 로봇의 서비스 시나리오에 따른 사용자의 인식 연구</h3>
 
         <section style="margin-top:2rem">
           <div class="project-info">
             <p>
               <b>Type</b><br>
-              <span style="font-size:14px">Human-Agent Interaction 연구</span>
+              <span style="font-size:14px">Human-Robot Interaction 연구</span>
             </p>
             <p>
               <b>Affiliation</b><br>
@@ -75,72 +75,201 @@
             </p>
             <p>
               <b>Role</b><br>
-              <span style="font-size:14px">인터랙션 리서처 / 프로젝트 매니저</span><br>
-              <span style="font-size:12px; color:gray;">프로젝트 기획, 문헌 조사, 인터랙션 디자인,
-                제품 디자인, 프로토타입 개발, 실험 설계, 사용자 조사, 데이터 분석, 논문 집필</span>
+              <span style="font-size:14px">인터랙션 리서처</span><br>
+              <span style="font-size:12px; color:gray;">프로젝트 기획, 시나리오 디자인, 사용자 조사</span>
             </p>
             <p>
               <b>Team</b><br>
-              <span style="font-size:14px">Dr. Dahyun Kang (KIST) </span><span style="font-size:12px; color:gray;">문헌 조사, 실험 설계, 프로젝트 지도</span><br>
-              <span style="font-size:14px">Dr. Sonya S. Kwak (KIST) </span><span style="font-size:12px; color:gray;">실험 설계, 데이터 분석, 프로젝트 지도</span>
+              <span style="font-size:14px">Dr. Dahyun Kang (KIST) </span><span style="font-size:12px; color:gray;">프로젝트 기획, 시나리오 디자인, 사용자 조사, 데이터 분석</span><br>
+              <span style="font-size:14px">Dr. Sonya S. Kwak (KIST) </span><span style="font-size:12px; color:gray;">프로젝트 지도</span>
             </p>
             <p>
               <b>Tools</b><br>
               <span style="font-size:14px">
-                SolidWorks <span style="font-size:12px; color:gray;">3D모델링</span>,
-                Arduino <span style="font-size:12px; color:gray;">하드웨어</span>,
-                Clova Dubbing <span style="font-size:12px; color:gray;">음성녹음</span>,
-                SPSS <span style="font-size:12px; color:gray;">데이터분석</span>
+                Google Forms <span style="font-size:12px; color:gray;">서베이</span>
               </span>
             </p>
             <p>
               <b>Output</b><br>
-              <span style="font-size:14px">제품 프로토타입, 연구 논문</span>
+              <span style="font-size:14px">연구 논문</span>
+            </p>
+						<p>
+              <b>Achievement</b><br>
+              <span style="font-size:14px"><a href="https://dl.acm.org/doi/10.1145/3371382.3378317"><u>ACM/IEEE HRI 2020 학회 LBR</u></a></span>
             </p>
             <p>
               <b>Duration</b><br>
-              <span style="font-size:14px;">2020.07 ~ 08 (2개월)</span>
+              <span style="font-size:14px;">2019.09 (1개월)</span>
             </p>
           </div>
         </section>
 
-        <div class="references">
+				<section id="background">
+          <h2>Background</h2>
+					<div class="img-wrapper">
+						<img src="../assets/image/06_FirstThingsFirst/01.png">
+						<p style="font-size:12px; color: gray; text-align: center;">가사노동을 돕는 다양한 로봇들이 개발되고 있다.</p>
+					</div>
+					<p>
+						가사노동은 대부분의 사람들이 하기를 꺼려 하는 일이다.
+						다행히도, 이런 가사노동을 돕는 다양한 로봇들이 개발되고 있다 (PR2, Aeolus, Blue).
+						계속해서 가사노동은 로봇으로 대체될 것으로 예상된다<sup id="R01"><a href="#refer01">1</a></sup>.
+					</p>
+					<p>우리는 가사노동을 다음과 같이 정의했다.</p>
+					<li>일상적으로 반복됨</li>
+					<li>시장에서 거래되지 않음</li>
+					<li>무보수</li>
+					<li>집 안에서 일어남</li>
+					<p>Bugmann과 Copleston의 연구에 따르면, 사람들이 로봇에게 맡기고 싶어하는 주요 가사노동은 다음과 같다<sup id="R02"><a href="#refer02">2</a></sup>.</p>
+					<li>청소(일반 청소, 진공 청소, 정리 등)</li>
+					<li>요리(아침 준비, 점심 준비, 음료 만들기 등)</li>
+					<li>세탁</li>
+					<div class="img-wrapper">
+						<img src="../assets/image/06_FirstThingsFirst/02.png">
+					</div>
+					<div class="quotation">
+							<b>Design Question:</b> “앞으로 개발되어야 하는 홈 로봇 서비스는 어떻게 디자인될 수 있을까?”
+					</div>
+        </section>
+
+				<section id="studydesign">
+          <h2>Study Design</h2>
+					<p>홈 로봇의 서비스를 개발하기 위해, 가사노동 중 청소, 세탁, 요리를 선택하였다.</p>
+					<div class="quotation">
+							<b>Research Question:</b> “우선순위로 개발되어야 하는 홈 로봇 서비스는 무엇인가?”
+					</div>
+					<section id="stimuli">
+	          <h3>Stimuli</h3>
+						<p>사람들이 가장 많이 사용하고 싶은 로봇의 서비스를 찾기 위해 각각 5~6 가지 기능을 포함하는 세 가지 서비스에 대한 설명을 제공했다.</p>
+						<p><b>1. Cleaning</b></p>
+						<li>공기 청정기가 로봇에게 거실 청소를 요청하면 로봇은 창문을 열어 환기를 시킬 수 있다.</li>
+						<li>로봇은 책, 컵, 쿠션과 같은 물건을 적절한 위치로 되돌릴 수 있다. (1-1)</li>
+						<li>로봇은 로봇청소기(진공, 물걸레 등)의 청소 시작을 명령 내릴 수 있다. (1-2)</li>
+						<li>로봇은 재활용을 위해 쓰레기통에서 캔, 유리, 플라스틱 등을 분류할 수 있다. (1-3)</li>
+						<li>청소가 완료되면 로봇은 환기를 위해 열린 창문을 닫고 청소 작업을 종료할 수 있다.</li>
+						<div class="img-wrapper">
+							<img src="../assets/image/06_FirstThingsFirst/03.png">
+						</div>
+						<p><b>2. Laundry</b></p>
+						<li>세탁물 바구니에 세탁물이 가득 차 있음을 알리면 로봇이 세탁 바구니를 세탁기로 옮긴다. (2-1)</li>
+						<li>로봇은 바구니에서 세탁물을 집어 세탁기에 넣을 수 있다.</li>
+						<li>로봇은 세탁기와 건조기에게 명령을 내려서 세탁물을 세탁하고 말릴 수 있다. (2-2)</li>
+						<li>세탁 및 건조가 완료되면 로봇이 세탁물을 수거 할 수 있다.</li>
+						<li>로봇은 세탁물을 접을 수 있다. (2-3)</li>
+						<div class="img-wrapper">
+							<img src="../assets/image/06_FirstThingsFirst/04.png">
+						</div>
+						<p><b>3. Cooking</b></p>
+						<li>로봇은 냉장고의 재료를 정리할 수 있다.</li>
+						<li>남은 재료와 과거 식사를 고려하여 로봇이 식사 메뉴를 추천할 수 있다. (3-1)</li>
+						<li>사용자가 요리를 할 때, 로봇은 재료, 조미료 및 요리 도구를 전달하여 도울 수 있다. (3-2)</li>
+						<li>로봇은 냄비 나 그릇을 테이블로 옮길 수 있다. (3-3)</li>
+						<li>식사 후, 로봇은 빈 접시를 식기세척기로 옮길 수 있다.</li>
+						<li>로봇은 식기세척기에 설거지를 명령 내릴 수 있다.</li>
+						<div class="img-wrapper">
+							<img src="../assets/image/06_FirstThingsFirst/05.png">
+						</div>
+	        </section>
+					<section id="measurements">
+	          <h3>Measurements</h3>
+						<p>
+							로봇의 서비스 시나리오에 따라서 아래 2가지를 측정하였다.
+							측정을 통해, 사용자가 각 시나리오의 로봇의 서비스에 얼마나 만족하는지, 구매 의도가 얼마나 있는지 확인하였다.
+						</p>
+						<li>서비스 평가(service evaluation)<sup id="R03"><a href="#refer03">3</a></sup></li>
+						<li>구매 의도(purchase intention)<sup id="R04"><a href="#refer04">4</a></sup></li>
+						<p>또한, 서비스 평가 및 구매의도에 영향을 미치는 로봇의 속성(attribute)과 작업(task)을 조사하기 위해 다음 항목을 평가했다.</p>
+						<details>
+							<summary style="cursor:pointer">질문 아이템</summary>
+							<div class="img-wrapper">
+								<img src="../assets/image/06_FirstThingsFirst/06.png">
+								<img src="../assets/image/06_FirstThingsFirst/07.png">
+								<p style="font-size:12px; color: gray; text-align: center;">측정에 대한 아이템</p>
+							</div>
+					</details>
+	        </section>
+					<section id="participants">
+	          <h3>Participants</h3>
+						<h3>Participants</h3>
+							 <p>피험자를 모집하여 온라인 서베이로 진행되었다.</p>
+							 <p>
+								 <li>피험자: 36명 (25세~42세, 여성 24명, 남성 12명)</li>
+							 </p>
+							 <details>
+								 <summary style="cursor:pointer">피험자 설계 세부 사항</summary>
+								 <p>
+									 <b>피험자 내 설계 (within design)</b>
+								 </p>
+								 <p>
+									 <li>로봇이 제공하는 서비스: within design - 피실험자는 로봇이 제공하는 청소, 세탁, 요리 등 3가지 서비스를 모두 평가한다. (무작위 순서)</li>
+								</p>
+						 </details>
+	        </section>
+        </section>
+
+				<section id="results">
+          <h2>Results</h2>
+					<p>
+						실험을 통해 모듈형 스마트 스피커의 발화와 촉각이 사용자의 인식에 미치는 영향을 조사하기 위해 일원 반복측정 분산분석(one-way RM ANOVA),
+						Tukey HSD 사후 검정(Tukey HSD post hoc test)과 다중 회귀분석(multiple regression)을 수행했다.
+					</p>
+					<section id="serviceeval">
+	          <h3>Service Evaluation by Service Types</h3>
+						<p>로봇 서비스 유형의 서비스 평가 측정은 Cronbach α=.977로, 모든 문항에 대해 유의한 결과가 나왔다.</p>
+	        </section>
+					<section id="cleaning">
+	          <h3>Cleaning</h3>
+	        </section>
+					<section id="laundry">
+	          <h3>Laundry</h3>
+	        </section>
+					<section id="cooking">
+	          <h3>Cooking</h3>
+	        </section>
+        </section>
+
+
+				<section id="videolink">
+    			<h2>Video Link</h2>
+          <div class="video-container">
+            <iframe width="100%" src="https://www.youtube.com/embed/faVdcVmok_o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </section>
+
+				<section id="publication">
+    			<h2>Publication</h2>
+          <p><a href="https://dl.acm.org/doi/10.1145/3371382.3378317"><u><b>First Things First: A Survey Exploring Key Services and Functions of a Robot</b></u> <br /> <font size="2em"><u>2020 ACM/IEEE International Conference on Human-Robot Interaction(HRI) LBR</u></font></a></p>
+        </section>
+
+				<div class="references">
           <h3>References</h3>
+          <p style="font-size:12px"><a name="refer01">[1] <a href="https://ifr.org/downloads/press2018/Executive_Summary_WR_Service_Robots_2018.pdf"><u><b>Executive Summary World Robotics 2018 Service Robots</b></u></a><b>↩</b></a></p>
+          <p style="font-size:12px"><a name="refer02">[2] <a href="https://link.springer.com/chapter/10.1007/978-3-642-23232-9_32"><u><b>What Can a Personal Robot Do for You?</b></u></a> (2011) by Guido Bugmann and Simon N. Copleston in Towards Autonomous Robotic Systems <a href="#R02"><b>↩</b></a></p>
+          <p style="font-size:12px"><a name="refer03">[3] <a href="https://ieeexplore.ieee.org/abstract/document/5453195"><u><b>Gracefully Mitigating Breakdowns in Robotic Services</b></u></a> (2010) by Min Kyung Lee, Sara Kiesler, Jodi Forlizzi, Siddhartha Srinivasa and Paul Rybski in ACM/IEEE HRI <a href="#R03"><b>↩</b></a></p>
+          <p style="font-size:12px"><a name="refer04">[4] <a href="https://journals.sagepub.com/doi/abs/10.1509/jmkr.48.5.827"><u><b>Mental Simulation and Product Evaluation: The Affective and Cognitive Dimensions of Process versus Outcome Simulation</b></u></a> (2011) by Min Zhao, Steve Hoeffler and Gal Zauberman in Journal of Marketing Research <a href="#R04"><b>↩</b></a></p>
         </div>
+
     	</div>
 
-    	<nav class="section-nav">
+			<nav class="section-nav">
     		<ol>
-    			<li><a href="#background">Background</a>
-            <ul>
-              <li class=""><a href="#background-ai">AI Persona: VC</a></li>
-              <li class=""><a href="#background-texture">Appearance: Texture</a></li>
-            </ul>
-          </li>
-    			<li><a href="#studydesign">Study Design</a>
-            <ul>
-              <li class=""><a href="#studydesign-iv">Independent Varialbes</a></li>
-              <li class=""><a href="#studydesign-prototyping">Prototyping</a></li>
-              <li class=""><a href="#studydesign-script">Script Design</a></li>
-              <li class=""><a href="#studydesign-participants">Participants</a></li>
-              <li class=""><a href="#studydesign-procedure">Procedure</a></li>
-              <li class=""><a href="#studydesign-dv">Measurements</a></li>
-            </ul>
-          </li>
-    			<li><a href="#results">Results</a>
-    				<ul>
-    					<li class=""><a href="#results-usefulness">Usefulness</a></li>
-    					<li class=""><a href="#results-sociability">Sociability</a></li>
-    					<li class=""><a href="#results-service">Service Evaluation</a></li>
-    				</ul>
-    			</li>
-          <li><a href="#conclusion">Conclusion</a>
-    				<ul>
-    					<li class=""><a href="#conclusion-implication">Implication</a></li>
-    					<li class=""><a href="#conclusion-limitation">Limitation & Future Work</a></li>
-    				</ul>
-    			</li>
-          <li><a href="#videolink">Video Link</a></li>
+    			<li><a href="#background">Background</a></li>
+					<li><a href="#studydesign">Study Design</a>
+						<ul>
+							<li><a href="#stimuli">Stimuli</a></li>
+							<li><a href="#measurements">Measurements</a></li>
+							<li><a href="#participants">Participants</a></li>
+						</ul>
+					</li>
+					<li><a href="#results">Results</a></li>
+					<ul>
+						<li><a href="#serviceeval">Service Evaluation</a></li>
+						<li><a href="#cleaning">Cleaning</a></li>
+						<li><a href="#laundry">Laundry</a></li>
+						<li><a href="#cooking">Cooking</a></li>
+					</ul>
+					<li><a href="#videolink">Video Link</a></li>
+					<li><a href="#publication">Publication</a></li>
     		</ol>
     	</nav>
     </main>
