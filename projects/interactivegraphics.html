@@ -23,9 +23,20 @@
 				  drawShadow();
 				  drawBall();
 				  title();
+          drawCursor();
 				}
 
 				function drawShadow() {
+          push();
+				    translate(windowWidth/2+windowHeight*17/7, windowHeight+calHeight(7));
+				    rotate(PI*3/4);
+				    makeRect(5);
+				  pop();
+          push();
+				    translate(windowWidth/2+windowHeight*15/7, windowHeight+calHeight(6));
+				    rotate(PI*3/4);
+				    makeRect(4.5);
+				  pop();
           push();
 				    translate(windowWidth/2+windowHeight*13/7, windowHeight+calHeight(5));
 				    rotate(PI*3/4);
@@ -129,6 +140,17 @@
 				    }
 				}
 
-				</script>
-			</body>
-	</html>
+        function drawCursor()
+  			{
+  				fill(225, 100);
+  				triangle(mouseX, mouseY-30, mouseX+10, mouseY-20, mouseX-10, mouseY-20);
+  				triangle(mouseX+30, mouseY, mouseX+20, mouseY+10, mouseX+20, mouseY-10);
+  				triangle(mouseX, mouseY+30, mouseX+10, mouseY+20, mouseX-10, mouseY+20);
+  				triangle(mouseX-30, mouseY, mouseX-20, mouseY-10, mouseX-20, mouseY+10);
+
+  				text("move!", mouseX-50, mouseY-20);
+  			}
+
+			</script>
+		</body>
+</html>
