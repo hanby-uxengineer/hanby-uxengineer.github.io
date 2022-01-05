@@ -51,7 +51,9 @@ function draw()
 
   cursor('pointer');
 
-  drawCursor(x1, y1);
+  if(windowWidth>windowHeight){
+    drawCursor(x1, y1);
+  }
 }
 
 function selectShape()
@@ -83,10 +85,12 @@ function selectShape()
 
 function mouseDragged()
 {
-  if(mouseX > pmouseX) amp++;
-  if(mouseX < pmouseX) amp--;
-  if(mouseY > pmouseY) freq++;
-  if(mouseY < pmouseY) freq--;
+  if(windowWidth>windowHeight){
+    if(mouseX > pmouseX) amp++;
+    if(mouseX < pmouseX) amp--;
+    if(mouseY > pmouseY) freq++;
+    if(mouseY < pmouseY) freq--;
+  }
 }
 
 function mousePressed()
@@ -116,4 +120,12 @@ function drawCursor(x, y)
   fill(colorR*2/3, colorG*2/3, colorB*2/3, clickAlpha/an);
   ellipse(x, y, 20, 20);
   text("drag!", x-45, y-20);
+}
+
+function windowResized() {
+  if(windowWidth>windowHeight){
+    canvas = resizeCanvas(windowWidth/2.1, windowWidth/4.2);
+  }else{
+    canvas = resizeCanvas(windowWidth/1.2, windowWidth/1.2);
+  }
 }
