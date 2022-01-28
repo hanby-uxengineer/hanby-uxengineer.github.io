@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+		<title>Hanbyeol Lee | Portfolio</title>
+
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+		<style>
+			* { font-family: 'Poppins', sans-serif; }
+			body { margin: 0; padding: 0; }
+		</style>
+
+		<link href="style.css" rel="stylesheet" type="text/css" />
+
+		<!-- favicon -->
+		<link rel="apple-touch-icon" sizes="57x57" href="assets/favicon.ico/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="assets/favicon.ico/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="assets/favicon.ico/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="assets/favicon.ico/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="assets/favicon.ico/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="assets/favicon.ico/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="assets/favicon.ico/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="assets/favicon.ico/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon.ico/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="assets/favicon.ico/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.ico/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="assets/favicon.ico/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon.ico/favicon-16x16.png">
+
+		<style type="text/css">
+		a { text-decoration:none }
+		a { text-decoration: none; color: black; }
+    a:visited { text-decoration: none; }
+    a:hover { text-decoration: none; }
+    a:focus { text-decoration: none; }
+    a:hover, a:active { text-decoration: none; }
+		</style>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.1/p5.js"></script>
+		<script src="sketch.js"></script>
+	</head>
+
+	<body>
+
+		<header class="header">
+			<div class="header-container">
+				<a class="logo" href="index.html">
+					<h3>Hanbyeol Lee</h3>
+				</a>
+				<div class="menu">
+					<a class="menu-item" href="index.html">Projects</a>
+					<a class="menu-item" href="about.html">About</a>
+				</div>
+			</div>
+		</header>
+
+		<div class="main">
+			<div class="graphics">
+				<!--
+				<iframe src="https://editor.p5js.org/yihaanstar/full/BJd5Tq_yG" width=100% height=100%
+				frameborder=0 framespacing=0 marginheight=0 marginwidth=0 scrolling=no vspace=0></iframe>
+				-->
+				<div id="sketch"></div>
+			</div>
+			<div class="description">
+				<div class="description-container">
+					<h1>Hello, I’m Hanbyeol Lee.<br> I’m a UX Engineer specialized in<br>Smart Home and Graphics.</h1>
+					<h3>안녕하세요. UX 엔지니어 이한별입니다.</h3>
+				</div>
+			</div>
+		</div>
+
+		<div class="hashtag">
+			<input type="radio" name="tabmenu" id="tab01" checked>
+			<label for="tab01">Featured</label>
+			<input type="radio" name="tabmenu" id="tab02">
+			<label for="tab02">All</label>
+			<input type="radio" name="tabmenu" id="tab03">
+			<label for="tab03">HCI</label>
+			<input type="radio" name="tabmenu" id="tab04">
+			<label for="tab04">HRI</label>
+			<input type="radio" name="tabmenu" id="tab05">
+			<label for="tab05">UI/UX</label>
+			<input type="radio" name="tabmenu" id="tab06">
+			<label for="tab06">Graphics</label>
+			<input type="radio" name="tabmenu" id="tab07">
+			<label for="tab07">Research</label>
+			<input type="radio" name="tabmenu" id="tab08">
+			<label for="tab08">Prototype</label>
+			<input type="radio" name="tabmenu" id="tab09">
+			<label for="tab09">Concept</label>
+
+			<div class="conbox con01">
+				<div class="project-container">
+					<div class="project-item">
+						<a href="projects/modularsmartspeaker.html">
+							<div class="project-item-container">
+								<img src="assets/image/01_SmartSpeaker/logo.png" width=100% height="100%" id="p01">
+								<label for="p01">Modular Smart Speaker</label>
+								<div class="year">2020</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/thisorthat.html">
+							<div class="project-item-container">
+								<img src="assets/image/02_ThisorThat/logo.png" width=100% height="100%" id="p02">
+								<label for="p02">This or That</label>
+								<div class="year">2020</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/roboticcabinets.html">
+							<div class="project-item-container">
+								<img src="assets/image/03_RoboticCabinets/logo.png" width=100% height="100%" id="p03">
+								<label for="p03">Robotic Cabinets</label>
+								<div class="year">2019</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/moneyplanet.html">
+							<div class="project-item-container">
+								<img src="assets/image/04_MoneyPlanet/logo.jpg" width=100% height="100%" id="p04">
+								<label for="p04">Money Planet</label>
+								<div class="year">2017</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="conbox con02">
+				<div class="project-container">
+					<div class="project-item">
+						<a href="projects/dino.html">
+							<div class="project-item-container">
+								<img src="assets/image/16_Dino/logo.png" width=100% height="100%" id="p16">
+								<label for="p16">Dino</label>
+								<div class="year">2021</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/triple.html">
+							<div class="project-item-container">
+								<img src="assets/image/17_Triple/logo.jpeg" width=100% height="100%" id="p17">
+								<label for="p17">Triple</label>
+								<div class="year">2020</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/modularsmartspeaker.html">
+							<div class="project-item-container">
+								<img src="assets/image/01_SmartSpeaker/logo.png" width=100% height="100%" id="p01">
+								<label for="p01">Modular Smart Speaker</label>
+								<div class="year">2020</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/thisorthat.html">
+							<div class="project-item-container">
+								<img src="assets/image/02_ThisorThat/logo.png" width=100% height="100%" id="p02">
+								<label for="p02">This or That</label>
+								<div class="year">2020</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/tapebot.html">
+							<div class="project-item-container">
+								<img src="assets/image/07_TapeBot/logo.jpg" width=100% height="100%" id="p07">
+								<label for="p07">TapeBot</label>
+								<div class="year">2019</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/firstthingsfirst.html">
+							<div class="project-item-container">
+								<img src="assets/image/06_FirstThingsFirst/logo.png" width=100% height="100%" id="p06">
+								<label for="p06">First Things First</label>
+								<div class="year">2019</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/emotionreflector.html">
+							<div class="project-item-container">
+								<img src="assets/image/10_EmotionReflector/logo.jpg" width=100% height="100%" id="p10">
+								<label for="p10">Emotion Reflector</label>
+								<div class="year">2019</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/roboticcabinets.html">
+							<div class="project-item-container">
+								<img src="assets/image/03_RoboticCabinets/logo.png" width=100% height="100%" id="p03">
+								<label for="p03">Robotic Cabinets</label>
+								<div class="year">2019</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/lightflow.html">
+							<div class="project-item-container">
+								<img src="assets/image/12_LightFlow/logo.png" width=100% height="100%" id="p12">
+								<label for="p12">LightFlow</label>
+								<div class="year">2018</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/lightino.html">
+							<div class="project-item-container">
+								<img src="assets/image/08_LightinO/logo.jpg" width=100% height="100%" id="p08">
+								<label for="p08">Lightin'O</label>
+								<div class="year">2018</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/arvaltogether.html">
+							<div class="project-item-container">
+								<img src="assets/image/14_ArvalTogether/logo.jpeg" width=100% height="100%" id="p14">
+								<label for="p14">Arval Together</label>
+								<div class="year">2018</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/innerstagram.html">
+							<div class="project-item-container">
+								<img src="assets/image/11_Innerstagram/logo.jpg" width=100% height="100%" id="p11">
+								<label for="p11">Innerstagram</label>
+								<div class="year">2018</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/newsprinter.html">
+							<div class="project-item-container">
+								<img src="assets/image/09_NewsPrinter/logo.jpg" width=100% height="100%" id="p09">
+								<label for="p09">Interactive News Printer</label>
+								<div class="year">2017</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/moneyplanet.html">
+							<div class="project-item-container">
+								<img src="assets/image/04_MoneyPlanet/logo.jpg" width=100% height="100%" id="p04">
+								<label for="p04">Money Planet</label>
+								<div class="year">2017</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/mindfulness.html">
+							<div class="project-item-container">
+								<img src="assets/image/15_Mindfulness/logo.jpg" width=100% height="100%" id="p15">
+								<label for="p15">Mindfulness</label>
+								<div class="year">2017</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/soundcreator.html">
+							<div class="project-item-container">
+								<img src="assets/image/13_SoundCreator/logo.jpg" width=100% height="100%" id="p13">
+								<label for="p13">Sound Creator</label>
+								<div class="year">2017</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/computergraphics.html">
+							<div class="project-item-container">
+								<img src="assets/image/18_CG/logo.png" width=100% height="100%" id="p18">
+								<label for="p18">Computer Graphics</label>
+								<div class="year">2015</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/morphing.html">
+							<div class="project-item-container">
+								<img src="assets/image/19_Morphing/logo.jpg" width=100% height="100%" id="p19">
+								<label for="p19">Morphing</label>
+								<div class="year">2013</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/beourguest.html">
+							<div class="project-item-container">
+								<img src="assets/image/05_BeOurGuest/logo.png" width=100% height="100%" id="p05">
+								<label for="p05">Be Our Guest (WIP)</label>
+								<div class="year">2020</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/interactivegraphics.html">
+							<div class="project-item-container">
+								<img src="assets/image/20_InteractiveGraphics/logo.png" width=100% height="100%" id="p20">
+								<label for="p20">Interactive Graphics (WIP)</label>
+								<div class="year">2021</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/interactivegraphics2.html">
+							<div class="project-item-container">
+								<img src="assets/image/21_InteractiveGraphics2/logo.png" width=100% height="100%" id="p21">
+								<label for="p21">Interactive Graphics 2 (WIP)</label>
+								<div class="year">2021</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="conbox con03">
+				<div class="project-container">
+					<div class="project-item">
+						<a href="projects/modularsmartspeaker.html">
+							<div class="project-item-container">
+								<img src="assets/image/01_SmartSpeaker/logo.png" width=100% height="100%" id="p01">
+								<label for="p01">Modular Smart Speaker</label>
+								<div class="year">2020</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/lightino.html">
+							<div class="project-item-container">
+								<img src="assets/image/08_LightinO/logo.jpg" width=100% height="100%" id="p08">
+								<label for="p08">Lightin'O</label>
+								<div class="year">2018</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/newsprinter.html">
+							<div class="project-item-container">
+								<img src="assets/image/09_NewsPrinter/logo.jpg" width=100% height="100%" id="p09">
+								<label for="p09">Interactive News Printer</label>
+								<div class="year">2017</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/emotionreflector.html">
+							<div class="project-item-container">
+								<img src="assets/image/10_EmotionReflector/logo.jpg" width=100% height="100%" id="p10">
+								<label for="p10">Emotion Reflector</label>
+								<div class="year">2019</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/innerstagram.html">
+							<div class="project-item-container">
+								<img src="assets/image/11_Innerstagram/logo.jpg" width=100% height="100%" id="p11">
+								<label for="p11">Innerstagram</label>
+								<div class="year">2018</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/lightflow.html">
+							<div class="project-item-container">
+								<img src="assets/image/12_LightFlow/logo.png" width=100% height="100%" id="p12">
+								<label for="p12">LightFlow</label>
+								<div class="year">2018</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/mindfulness.html">
+							<div class="project-item-container">
+								<img src="assets/image/15_Mindfulness/logo.jpg" width=100% height="100%" id="p15">
+								<label for="p15">Mindfulness</label>
+								<div class="year">2017</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/soundcreator.html">
+							<div class="project-item-container">
+								<img src="assets/image/13_SoundCreator/logo.jpg" width=100% height="100%" id="p13">
+								<label for="p13">Sound Creator</label>
+								<div class="year">2017</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/triple.html">
+							<div class="project-item-container">
+								<img src="assets/image/17_Triple/logo.jpeg" width=100% height="100%" id="p17">
+								<label for="p17">Triple</label>
+								<div class="year">2020</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="conbox con04">
+				<div class="project-container">
+					<div class="project-item">
+						<a href="projects/thisorthat.html">
+							<div class="project-item-container">
+								<img src="assets/image/02_ThisorThat/logo.png" width=100% height="100%" id="p02">
+								<label for="p02">This or That</label>
+								<div class="year">2020</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/roboticcabinets.html">
+							<div class="project-item-container">
+								<img src="assets/image/03_RoboticCabinets/logo.png" width=100% height="100%" id="p03">
+								<label for="p03">Robotic Cabinets</label>
+								<div class="year">2019</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/firstthingsfirst.html">
+							<div class="project-item-container">
+								<img src="assets/image/06_FirstThingsFirst/logo.png" width=100% height="100%" id="p06">
+								<label for="p06">First Things First</label>
+								<div class="year">2019</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/tapebot.html">
+							<div class="project-item-container">
+								<img src="assets/image/07_TapeBot/logo.jpg" width=100% height="100%" id="p07">
+								<label for="p07">TapeBot</label>
+								<div class="year">2019</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/beourguest.html">
+							<div class="project-item-container">
+								<img src="assets/image/05_BeOurGuest/logo.png" width=100% height="100%" id="p05">
+								<label for="p05">Be Our Guest (WIP)</label>
+								<div class="year">2020</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="conbox con05">
+				<div class="project-container">
+					<div class="project-item">
+						<a href="projects/moneyplanet.html">
+							<div class="project-item-container">
+								<img src="assets/image/04_MoneyPlanet/logo.jpg" width=100% height="100%" id="p04">
+								<label for="p04">Money Planet</label>
+								<div class="year">2017</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/arvaltogether.html">
+							<div class="project-item-container">
+								<img src="assets/image/14_ArvalTogether/logo.jpeg" width=100% height="100%" id="p14">
+								<label for="p14">Arval Together</label>
+								<div class="year">2018</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/dino.html">
+							<div class="project-item-container">
+								<img src="assets/image/16_Dino/logo.png" width=100% height="100%" id="p16">
+								<label for="p16">Dino</label>
+								<div class="year">2021</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="conbox con06">
+				<div class="project-container">
+					<div class="project-item">
+						<a href="projects/computergraphics.html">
+							<div class="project-item-container">
+								<img src="assets/image/18_CG/logo.png" width=100% height="100%" id="p18">
+								<label for="p18">Computer Graphics</label>
+								<div class="year">2015</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/morphing.html">
+							<div class="project-item-container">
+								<img src="assets/image/19_Morphing/logo.jpg" width=100% height="100%" id="p19">
+								<label for="p19">Morphing</label>
+								<div class="year">2013</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/interactivegraphics.html">
+							<div class="project-item-container">
+								<img src="assets/image/20_InteractiveGraphics/logo.png" width=100% height="100%" id="p20">
+								<label for="p20">Interactive Graphics (WIP)</label>
+								<div class="year">2021</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/interactivegraphics2.html">
+							<div class="project-item-container">
+								<img src="assets/image/21_InteractiveGraphics2/logo.png" width=100% height="100%" id="p21">
+								<label for="p21">Interactive Graphics 2 (WIP)</label>
+								<div class="year">2021</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="conbox con07">
+				<div class="project-container">
+					<div class="project-item">
+						<a href="projects/modularsmartspeaker.html">
+							<div class="project-item-container">
+								<img src="assets/image/01_SmartSpeaker/logo.png" width=100% height="100%" id="p01">
+								<label for="p01">Modular Smart Speaker</label>
+								<div class="year">2020</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/thisorthat.html">
+							<div class="project-item-container">
+								<img src="assets/image/02_ThisorThat/logo.png" width=100% height="100%" id="p02">
+								<label for="p02">This or That</label>
+								<div class="year">2020</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/roboticcabinets.html">
+							<div class="project-item-container">
+								<img src="assets/image/03_RoboticCabinets/logo.png" width=100% height="100%" id="p03">
+								<label for="p03">Robotic Cabinets</label>
+								<div class="year">2019</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/firstthingsfirst.html">
+							<div class="project-item-container">
+								<img src="assets/image/06_FirstThingsFirst/logo.png" width=100% height="100%" id="p06">
+								<label for="p06">First Things First</label>
+								<div class="year">2019</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/beourguest.html">
+							<div class="project-item-container">
+								<img src="assets/image/05_BeOurGuest/logo.png" width=100% height="100%" id="p05">
+								<label for="p05">Be Our Guest (WIP)</label>
+								<div class="year">2020</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="conbox con08">
+				<div class="project-container">
+					<div class="project-item">
+						<a href="projects/lightino.html">
+							<div class="project-item-container">
+								<img src="assets/image/08_LightinO/logo.jpg" width=100% height="100%" id="p08">
+								<label for="p08">Lightin'O</label>
+								<div class="year">2018</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/newsprinter.html">
+							<div class="project-item-container">
+								<img src="assets/image/09_NewsPrinter/logo.jpg" width=100% height="100%" id="p09">
+								<label for="p09">Interactive News Printer</label>
+								<div class="year">2017</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/emotionreflector.html">
+							<div class="project-item-container">
+								<img src="assets/image/10_EmotionReflector/logo.jpg" width=100% height="100%" id="p10">
+								<label for="p10">Emotion Reflector</label>
+								<div class="year">2019</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/tapebot.html">
+							<div class="project-item-container">
+								<img src="assets/image/07_TapeBot/logo.jpg" width=100% height="100%" id="p07">
+								<label for="p07">TapeBot</label>
+								<div class="year">2019</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/moneyplanet.html">
+							<div class="project-item-container">
+								<img src="assets/image/04_MoneyPlanet/logo.jpg" width=100% height="100%" id="p04">
+								<label for="p04">Money Planet</label>
+								<div class="year">2017</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/arvaltogether.html">
+							<div class="project-item-container">
+								<img src="assets/image/14_ArvalTogether/logo.jpeg" width=100% height="100%" id="p14">
+								<label for="p14">Arval Together</label>
+								<div class="year">2018</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/innerstagram.html">
+							<div class="project-item-container">
+								<img src="assets/image/11_Innerstagram/logo.jpg" width=100% height="100%" id="p11">
+								<label for="p11">Innerstagram</label>
+								<div class="year">2018</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/lightflow.html">
+							<div class="project-item-container">
+								<img src="assets/image/12_LightFlow/logo.png" width=100% height="100%" id="p12">
+								<label for="p12">LightFlow</label>
+								<div class="year">2018</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/soundcreator.html">
+							<div class="project-item-container">
+								<img src="assets/image/13_SoundCreator/logo.jpg" width=100% height="100%" id="p13">
+								<label for="p13">Sound Creator</label>
+								<div class="year">2017</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/computergraphics.html">
+							<div class="project-item-container">
+								<img src="assets/image/18_CG/logo.png" width=100% height="100%" id="p18">
+								<label for="p18">Computer Graphics</label>
+								<div class="year">2015</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/morphing.html">
+							<div class="project-item-container">
+								<img src="assets/image/19_Morphing/logo.jpg" width=100% height="100%" id="p19">
+								<label for="p19">Morphing</label>
+								<div class="year">2013</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="conbox con09">
+				<div class="project-container">
+					<div class="project-item">
+						<a href="projects/dino.html">
+							<div class="project-item-container">
+								<img src="assets/image/16_Dino/logo.png" width=100% height="100%" id="p16">
+								<label for="p16">Dino</label>
+								<div class="year">2021</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/triple.html">
+							<div class="project-item-container">
+								<img src="assets/image/17_Triple/logo.jpeg" width=100% height="100%" id="p17">
+								<label for="p17">Triple</label>
+								<div class="year">2020</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/mindfulness.html">
+							<div class="project-item-container">
+								<img src="assets/image/15_Mindfulness/logo.jpg" width=100% height="100%" id="p15">
+								<label for="p15">Mindfulness</label>
+								<div class="year">2017</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/interactivegraphics.html">
+							<div class="project-item-container">
+								<img src="assets/image/20_InteractiveGraphics/logo.png" width=100% height="100%" id="p20">
+								<label for="p20">Interactive Graphics (WIP)</label>
+								<div class="year">2021</div>
+							</div>
+						</a>
+					</div>
+					<div class="project-item">
+						<a href="projects/interactivegraphics2.html">
+							<div class="project-item-container">
+								<img src="assets/image/21_InteractiveGraphics2/logo.png" width=100% height="100%" id="p21">
+								<label for="p21">Interactive Graphics 2 (WIP)</label>
+								<div class="year">2021</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="footer-container">
+				<div class="footer-item">
+					<h3>Hanbyeol Lee</h3>
+					<p><a href="mailto:yihaanstar@gmail.com">yihaanstar@gmail.com</a></p>
+					<iframe src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://hanby-uxengineer.github.io/" width="130px" height="20px"
+					frameborder=0 framespacing=0 marginheight=0 marginwidth=0 scrolling=no vspace=0></iframe>
+				</div>
+				<div class="footer-item">
+					<h3>Info</h3>
+					<a title="CV" href="https://drive.google.com/file/d/19G-QaX75WvF0RJQhCPFrVk53iEOlsNnC/view?usp=sharing">CV</a><br>
+					<a title="Scholar" href="https://scholar.google.com/citations?user=J2aMC2gAAAAJ&hl=ko">Google Scholar</a><br>
+					<a title="Blog" href="https://hanby-uxengineer.tistory.com">Blog</a><br>
+				</div>
+				<div class="copyright">
+					© Hanbyeol Lee. 2021
+				</div>
+			</div>
+		</footer>
+
+	</body>
+</html>
