@@ -13,10 +13,31 @@ section {
 }
 
 .intro-container > h1 {
-    font-size: 3rem;
+    font-size: calc(2rem + 1.7vw);
     font-weight: 700;
-    background: linear-gradient(135deg, #a2facf 0%, #64acff 100%);
+    line-height: 1.4;
+    background: linear-gradient(135deg, #a2facf 0%, #64acff 90%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    width: 70%;
+    width: 80%;
+}
+
+.intro-container > h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 70%);
+    width: 80%;
+    margin-bottom: 1em;
+}
+
+.intro-container > a {
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    width: 80%;
+}
+
+@media screen and (min-width: 900px) {
+    .intro-container > h1 {font-size: 3rem; width: 60%;}
 }
