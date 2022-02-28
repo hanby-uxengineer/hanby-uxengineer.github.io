@@ -15,7 +15,7 @@ section {
 .intro-container > h1 {
     font-size: calc(2rem + 1.7vw);
     font-weight: 700;
-    line-height: 1.4;
+    line-height: 1.2;
     background: linear-gradient(135deg, #a2facf 0%, #64acff 90%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -31,5 +31,5 @@ section {
 }
 
 @media screen and (min-width: 900px) {
-    .intro-container > h1 {font-size: 3rem; width: 60%;}
+    .intro-container > h1 {font-size: 3rem; line-height: 1.4;}
 }
