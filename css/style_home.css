@@ -1,14 +1,128 @@
+body {
+    background-color: white;
+}
+
+header {
+    background-color: black;
+    -webkit-transition: background-color .15s ease-in-out;
+    transition: background-color .15s ease-in-out;
+}
+
+header a {
+    color: white;
+    -webkit-transition: color .15s ease-in-out;
+    transition: color .15s ease-in-out;
+}
+
 section {
     overflow: hidden;   /* head */
-}
-
-.section-home-intro {
     width: 100%;
-    height: 100vh;
-    background-color: #040D21;
+
 }
 
-.intro-container {
+.section-container {
+    margin: 0 auto;
+}
+
+.intro-section {
+    height: 100vh;
+    background: black;
+}
+
+.project-section {
+    min-height: 100vh;
+}
+
+input[id="tab01"]:checked ~ .con01 { display: block; }
+input[id="tab02"]:checked ~ .con02 { display: block; }
+input[id="tab03"]:checked ~ .con03 { display: block; }
+
+input[type="radio"] {display: none;}
+
+input[type="radio"] + label {
+    font-size: 2rem;
+    color: lightgray;
+    margin-right: 2em;
+}
+
+input[type="radio"] + label:hover {
+    cursor: pointer;
+    color: black;
+}
+
+input[type="radio"]:checked + label {
+    color: black;
+}
+
+.project-container {
+  width: 100%;
+  display: none;
+}
+
+.project-item{
+    display: grid;
+    gap: 1em 4em;
+    padding: 0;
+    list-style: none;
+}
+
+.project-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-item a {
+    text-decoration: none;
+    color: black;
+}
+
+.project-item img {
+    width: 100%;
+    height: 100%;
+    margin: 1em 0;
+    border-radius: 1em;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.project-item span, time {
+    color: lightgray;
+}
+
+.project-item h3 {
+    font-weight: 600;
+    margin: 0.2em 0;
+}
+
+.project-wrapper:hover img{
+    box-shadow: 0 0.5em 1em lightgray;
+    transform: translateY(-0.5em);
+}
+
+.project-wrapper:hover h3{
+    color: cornflowerblue;
+}
+
+/* RESPONSIVE SIZE ***********************************/
+/*****************************************************/
+
+/* > 1680 */
+.section-container {width: 1680px; padding: 8em;}
+.project-item {grid-template-columns: 1fr 1fr 1fr;}
+
+/* < 1680 */
+@media(max-width: 1679px){
+    .section-container {width: 100%;}
+}
+
+/* < 600 */
+@media(max-width: 599px){
+    .section-container {width: 100%; padding: 2em;}
+    .project-item {grid-template-columns: 1fr;}
+    
+}
+
+/* .intro-container {
     margin: 4em 0 0 4em;
 }
 
@@ -22,14 +136,6 @@ section {
     width: 80%;
 }
 
-.intro-container > h2 {
-    font-size: 1rem;
-    font-weight: 700;
-    color: rgba(255, 255, 255, 70%);
-    width: 80%;
-    margin-bottom: 1em;
-}
-
 @media screen and (min-width: 900px) {
     .intro-container > h1 {font-size: 3rem; line-height: 1.4;}
-}
+} */

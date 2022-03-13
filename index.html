@@ -6,20 +6,217 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=0.0">
     <link rel="stylesheet" href="css/style_main.css">
     <link rel="stylesheet" href="css/style_home.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/scroll.js"></script>
     <title>Hanbyeol Lee | Portfolio</title>
 </head>
+
 <body>
-    <!-- <script src="js/three.js"></script> -->
+
+    <header>
+        <div class="nav-bar">
+            <a href="/" class="logo font-sans-serif-en"><b>hanbyeol</b></a>
+            <ul>
+                <li><a href="/" class="current font-sans-serif-en">work</a></li>
+                <li><a href="/about" class="font-sans-serif-en">about</a></li>
+            </ul>
+        </div>
+    </header>
+
     <main>
-        <section class="section-home-intro">
-            <div class="intro-container">
-                <h1 class="font-sans-serif-en">
-                    Hello, I’m Hanbyeol Lee.<br>
-                    I'm a UX engineer specialized in<br>robotics and graphics.
-                </h1>
-                <h2 class="font-sans-serif-en">The website is under construction.<br>(Mar 2022)</h2>
+        <section class="intro-section">
+            <div class="section-container">
+            </div>
+        </section>
+        <section class="project-section">
+            <div class="section-container">
+                <input type="radio" name="tabmenu" id="tab01" checked>
+                <label for="tab01" class="hashtag font-sans-serif-en">HRI/HAI</label>
+                <input type="radio" name="tabmenu" id="tab02">
+                <label for="tab02" class="hashtag font-sans-serif-en">HCI</label>
+                <input type="radio" name="tabmenu" id="tab03">
+                <label for="tab03" class="hashtag font-sans-serif-en">UI/UX</label>
+
+                <div class="project-container con01">
+                    <ul class="project-item">
+                        <li>
+                            <a href="this-or-that">
+                                <div class="project-wrapper">
+                                    <img src="assets/image/this-or-that/thumbnail.gif">
+                                    <span class="font-sans-serif-kr">리서치</span>
+                                    <h3 class="font-sans-serif-en">This or That</h3>
+                                    <time class="font-sans-serif-kr" datetime="2020">2020</time>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="modular-smart-speaker">
+                                <div class="project-wrapper">
+                                    <img src="assets/image/modular-smart-speaker/thumbnail.png">
+                                    <span class="font-sans-serif-kr">리서치</span>
+                                    <h3 class="font-sans-serif-en">Modular Smart Speaker</h3>
+                                    <time class="font-sans-serif-kr" datetime="2020">2020</time>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="robotic-cabinets">
+                                <div class="project-wrapper">
+                                    <img src="assets/image/robotic-cabinets/thumbnail.png">
+                                    <span class="font-sans-serif-kr">리서치</span>
+                                    <h3 class="font-sans-serif-en">Robotic Cabinets</h3>
+                                    <time class="font-sans-serif-kr" datetime="2019">2019</time>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="first-things-first">
+                                <div class="project-wrapper">
+                                    <img src="assets/image/first-things-first/thumbnail.png">
+                                    <span class="font-sans-serif-kr">리서치</span>
+                                    <h3 class="font-sans-serif-en">First Things First</h3>
+                                    <time class="font-sans-serif-kr" datetime="2019">2019</time>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tapebot">
+                                <div class="project-wrapper">
+                                    <img src="assets/image/tapebot/thumbnail.jpg">
+                                    <span class="font-sans-serif-kr">프로토타입</span>
+                                    <h3 class="font-sans-serif-en">TapeBot</h3>
+                                    <time class="font-sans-serif-kr" datetime="2019">2019</time>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="be-our-guest">
+                                <div class="project-wrapper">
+                                    <img src="assets/image/be-our-guest/thumbnail.png">
+                                    <span class="font-sans-serif-kr">프로토타입</span>
+                                    <h3 class="font-sans-serif-en">Be Our Guest</h3>
+                                    <time class="font-sans-serif-kr" datetime="2020">2020</time>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="project-container con02">
+                    <ul class="project-item">
+                        <li>
+                            <a href="hand-in-o">
+                                <div class="project-wrapper">
+                                    <img src="assets/image/hand-in-o/thumbnail.jpg">
+                                    <span class="font-sans-serif-kr">리서치</span>
+                                    <h3 class="font-sans-serif-en">Hand-in-O</h3>
+                                    <time class="font-sans-serif-kr" datetime="2018">2018</time>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="emotion-reflector">
+                                <div class="project-wrapper">
+                                    <img src="assets/image/emotion-reflector/thumbnail.jpg">
+                                    <span class="font-sans-serif-kr">프로토타입</span>
+                                    <h3 class="font-sans-serif-en">Emotion Reflector</h3>
+                                    <time class="font-sans-serif-kr" datetime="2019">2019</time>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="interactive-news-printer">
+                                <div class="project-wrapper">
+                                    <img src="assets/image/interactive-news-printer/thumbnail.jpg">
+                                    <span class="font-sans-serif-kr">프로토타입</span>
+                                    <h3 class="font-sans-serif-en">Interactive News Printer</h3>
+                                    <time class="font-sans-serif-kr" datetime="2017">2017</time>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="innerstagram">
+                                <div class="project-wrapper">
+                                    <img src="assets/image/innerstagram/thumbnail.jpg">
+                                    <span class="font-sans-serif-kr">프로토타입</span>
+                                    <h3 class="font-sans-serif-en">Innerstagram</h3>
+                                    <time class="font-sans-serif-kr" datetime="2018">2018</time>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="light-flow">
+                                <div class="project-wrapper">
+                                    <img src="assets/image/light-flow/thumbnail.png">
+                                    <span class="font-sans-serif-kr">프로토타입</span>
+                                    <h3 class="font-sans-serif-en">Light Flow</h3>
+                                    <time class="font-sans-serif-kr" datetime="2018">2018</time>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="sound-creator">
+                                <div class="project-wrapper">
+                                    <img src="assets/image/sound-creator/thumbnail.jpg">
+                                    <span class="font-sans-serif-kr">프로토타입</span>
+                                    <h3 class="font-sans-serif-en">Sound Creator</h3>
+                                    <time class="font-sans-serif-kr" datetime="2017">2017</time>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="project-container con03">
+                    <ul class="project-item">
+                        <li>
+                            <a href="money-planet">
+                                <div class="project-wrapper">
+                                    <img src="assets/image/money-planet/thumbnail.jpg">
+                                    <span class="font-sans-serif-kr">리서치</span>
+                                    <h3 class="font-sans-serif-en">Money Planet</h3>
+                                    <time class="font-sans-serif-kr" datetime="2017">2017</time>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="arval-together">
+                                <div class="project-wrapper">
+                                    <img src="assets/image/arval-together/thumbnail.jpg">
+                                    <span class="font-sans-serif-kr">리서치</span>
+                                    <h3 class="font-sans-serif-en">Arval Together</h3>
+                                    <time class="font-sans-serif-kr" datetime="2018">2018</time>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="dino">
+                                <div class="project-wrapper">
+                                    <img src="assets/image/dino/thumbnail.png">
+                                    <span class="font-sans-serif-kr">프로토타입</span>
+                                    <h3 class="font-sans-serif-en">Dino</h3>
+                                    <time class="font-sans-serif-kr" datetime="2020">2020</time>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
     </main>
+
+    <footer>
+        <div class="footer-bar">
+            <div class="footer-content">
+              <h1 class="copyright font-sans-serif-en">© 2022 Hanbyeol Lee</h1>
+              <div class="sns-wrapper">
+                <a href="https://www.linkedin.com/in/hanbyeol-lee-2a3a01108/"><img src="assets/image/footer-icon/linkedin.png" alt="linkedin"></a>
+                <a href="https://github.com/hanby-uxengineer"><img src="assets/image/footer-icon/github.png" alt="github"></a>
+                <a href="mailto:yihaanstar@gmail.com?subject=안녕하세요!"><img src="assets/image/footer-icon/email.png" alt="email"></a>
+              </div>
+            </div>
+          </div>
+    </footer>
+
 </body>
 </html>
