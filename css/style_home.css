@@ -24,10 +24,6 @@ section {
     margin: 0 auto;
 }
 
-.gap-section {
-    height: 4em;
-}
-
 canvas {
     display: block;
 }
