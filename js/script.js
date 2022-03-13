@@ -50,7 +50,9 @@ loader.load('scene.gltf', function(gltf){
 function render(time) {
     time *= 0.0005;  // convert time to seconds
 
-    model.rotation.y = time;
+    if(model) {
+        model.rotation.y = time;
+    }
 
     renderer.render(scene, camera);
 
