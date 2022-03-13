@@ -24,9 +24,21 @@ section {
     margin: 0 auto;
 }
 
-.intro-section {
-    height: 100vh;
-    background: black;
+.gap-section {
+    height: 4em;
+}
+
+canvas {
+    display: block;
+}
+
+.test-font {
+    position: absolute;
+    top: 4em;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-align: center;
 }
 
 .project-section {
@@ -119,7 +131,7 @@ input[type="radio"]:checked + label {
 @media(max-width: 599px){
     .section-container {width: 100%; padding: 2em;}
     .project-item {grid-template-columns: 1fr;}
-    
+    .test-font {margin-top: 3em; font-size: 1rem;}
 }
 
 /* .intro-container {
