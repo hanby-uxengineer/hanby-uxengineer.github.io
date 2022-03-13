@@ -1,4 +1,5 @@
 window.addEventListener('resize', resize, false);
+window.addEventListener('mousedown', onMouseDown, false );
 
 function resize(){
     renderer.setSize( window.innerWidth, window.innerHeight );
@@ -7,8 +8,15 @@ function resize(){
     camera.position.z = 5;
 }
 
+let rotationDir = 1;
+function onMouseDown() {
+    if(rotationDir == 1) {
+        rotationDir = -1;
+    } else rotationDir = 1;
+}
+
 const canvas = document.querySelector('#c');
-const renderer = new THREE.WebGLRenderer({canvas});
+const renderer = new THREE.WebGLRenderer({canvas, antialias:true});
 renderer.setSize( window.innerWidth, window.innerHeight );
 
 let camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 5);
@@ -34,24 +42,25 @@ loader.load('scene.gltf', function(gltf){
 });
 
 {
-    const color = 0xFFFFFF;
-    const intensity = 1;
     const hlight = new THREE.AmbientLight(0x404040, 5);
     scene.add(hlight);
-    const dlight = new THREE.DirectionalLight(color, intensity);
-    dlight.position.set(-1, 2, 4);
+    const dlight = new THREE.DirectionalLight(0xffffff, 1);
+    dlight.position.set(-1, 0, 0);
     dlight.castShadow = true;
     scene.add(dlight);
-    const plight = new THREE.PointLight(0xc4c4c4, 1);
-    plight.position.set(0, 300, 500);
+    const plight = new THREE.PointLight(0x34eb80, 5);
+    plight.position.set(10, 100, -100);
     scene.add(plight);
+    const plight2 = new THREE.PointLight(0xeb3477, 5);
+    plight2.position.set(100, -100, -100);
+    scene.add(plight2);
 }
 
 function render(time) {
     time *= 0.0005;  // convert time to seconds
 
     if(model) {
-        model.rotation.y = time;
+        model.rotation.y = rotationDir * time;
     }
 
     renderer.render(scene, camera);
