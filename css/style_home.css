@@ -42,14 +42,12 @@ canvas {
 
 .featured-item{
     display: grid;
-    gap: 2em;
     grid-template-columns: 1fr;
 }
 
 .featured-item img {
+    object-fit: cover;
     width: 100%;
-    height: 100%;
-    margin: 1em 0;
     border-radius: 1em;
     box-shadow: 0 0.1em 1em gray;
     /* filter: blur(2px); */
@@ -140,6 +138,8 @@ input[type="radio"]:checked + label {
 /* > 1680 */
 .section-container {width: 1680px; padding: 8em;}
 .intro-greeting {font-size: 2.5rem; top: 15vh;}
+.featured-item{gap: 4em;}
+.featured-item img {object-position: 50% 80%; height: 40vh;}
 input[type="radio"] + label {font-size: 2rem; margin-right: 2em;}
 .project-item {grid-template-columns: 1fr 1fr 1fr;}
 
@@ -153,6 +153,8 @@ input[type="radio"] + label {font-size: 2rem; margin-right: 2em;}
 @media(max-width: 599px){
     .section-container {width: 100%; padding: 2em;}
     .intro-greeting {font-size: 1.5rem; width: 80%; top: 10vh;}
+    .featured-item{gap: 3em;}
+    .featured-item img {object-position: 90% 80%; height: 50vh;}
     input[type="radio"] + label {font-size: 1.5rem; margin-right: 1em;}
     .project-item {grid-template-columns: 1fr;}
 }
