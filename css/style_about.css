@@ -1,8 +1,64 @@
+header {
+    background-color: white;
+}
+
 header a {
     color: black;
 }
 
 main {
     width: 100%;
-    height: 100vh;
+}
+
+section {
+    margin: 4em 0;
+}
+
+section .section-container {
+    text-align: center;
+}
+
+section .profile-image {
+    border-radius: 1em;
+    margin: 1.5em 0;
+}
+
+section p {
+    text-align: left;
+}
+
+section a {
+    color: black;
+}
+
+section .cv-container {
+    margin-top: 4em;
+}
+
+section .cv {
+    text-decoration: none;
+    font-weight: 700;
+    border: black solid 3px;
+    border-radius: 25px;
+    padding: 0.5em 0.8em;
+}
+
+/* RESPONSIVE SIZE ***********************************/
+/*****************************************************/
+
+/* > 1680 */
+section .profile-title {font-size: 3rem;}
+section .profile-image {width: 50%;}
+section p {width: 50%; margin-left: auto; margin-right: auto;}
+
+/* < 1680 */
+@media(max-width: 1679px){
+    section .profile-title {font-size: calc(1rem + 1vw);}
+}
+
+/* < 600 */
+@media(max-width: 599px){
+    section .profile-title {font-size: 1.8rem;}
+    section .profile-image {width: 100%;}
+    section p {width: 100%;}
 }

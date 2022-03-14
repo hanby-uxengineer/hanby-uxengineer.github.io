@@ -72,6 +72,16 @@ header .current {
 
 /* MAIN **********************************************/
 /*****************************************************/
+
+section {
+    overflow: hidden;   /* head */
+    width: 100%;
+}
+
+.section-container {
+    margin: 0 auto;
+}
+
 main .top-container {
     height: 4.5em;
     position: sticky;
@@ -137,11 +147,13 @@ footer {
 /* > 1680 */
 header .nav-bar {width: 1680px; padding: 0 8em;}
 header li {padding-left: 5em;}
+.section-container {width: 1680px; padding: 8em;}
 footer .footer-bar {width: 1680px; padding: 0 8em;}
 
 /* < 1680 */
 @media(max-width: 1679px){
     header .nav-bar {width: 100%;}
+    .section-container {width: 100%;}
     footer .footer-bar {width:100%;}
 }
 
@@ -149,5 +161,6 @@ footer .footer-bar {width: 1680px; padding: 0 8em;}
 @media(max-width: 599px){
     header .nav-bar {width: 100%; padding: 0 2em;}
     header li {padding-left: 2.5em;}
+    .section-container {width: 100%; padding: 2em;}
     footer .footer-bar {padding: 0 2em; flex-direction: column; justify-content: space-around; align-items: flex-start;}
 }
