@@ -1,7 +1,8 @@
 window.addEventListener('resize', resize, false);
-window.addEventListener('mousedown', onMouseDown, false);
-window.addEventListener('touchstart', onMouseDown, false);
+// window.addEventListener('mousedown', onMouseDown, false);
+// window.addEventListener('touchstart', onMouseDown, false);
 window.addEventListener('mousewheel', onScroll, false);
+document.body.addEventListener('touchmove', onScroll, false);
 
 function resize(){
     renderer.setSize( window.innerWidth, window.innerHeight );
@@ -10,12 +11,12 @@ function resize(){
     camera.position.z = 5;
 }
 
-let rotationDir = -1;
-function onMouseDown() {
-    if(rotationDir == 1) {
-        rotationDir = -1;
-    } else rotationDir = 1;
-}
+// let rotationDir = -1;
+// function onMouseDown() {
+//     if(rotationDir == 1) {
+//         rotationDir = -1;
+//     } else rotationDir = 1;
+// }
 
 let rotationVal = 1;
 function onScroll() {
@@ -72,7 +73,8 @@ function render(time) {
     time *= 0.0005;  // convert time to seconds
 
     if(model) {
-        model.rotation.y = rotationDir * time;
+        // model.rotation.y = rotationDir * time;
+        model.rotation.y = time;
     }
 
     renderer.render(scene, camera);
