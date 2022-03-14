@@ -2,7 +2,7 @@ window.addEventListener('resize', resize, false);
 // window.addEventListener('mousedown', onMouseDown, false);
 // window.addEventListener('touchstart', onMouseDown, false);
 window.addEventListener('mousewheel', onScroll, false);
-document.body.addEventListener('touchmove', onScroll, false);
+document.body.addEventListener('touchmove', onTouchMove, false);
 
 function resize(){
     renderer.setSize( window.innerWidth, window.innerHeight );
@@ -25,6 +25,16 @@ function onScroll() {
         rotationVal = -1;
     } else if(model.rotation.z < -0.3) {
         rotationVal = 1;
+    }
+}
+
+let rotationTouchVal = 1;
+function onTouchMove() {
+    model.rotation.z += 0.01 * rotationTouchVal;
+    if(model.rotation.z > 0.3) {
+        rotationTouchVal = -1;
+    } else if(model.rotation.z < -0.3) {
+        rotationTouchVal = 1;
     }
 }
 

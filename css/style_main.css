@@ -70,6 +70,28 @@ header .current {
 }
 
 
+/* MAIN **********************************************/
+/*****************************************************/
+main .top-container {
+    height: 4.5em;
+    position: sticky;
+    bottom: 0;
+    z-index: 1;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+#button-top {
+    filter: drop-shadow(0 0.1em 0.2em gray);
+    height: 2.5em;
+    bottom: 2em;
+    padding-right: 2em;
+    width: auto;
+    cursor: pointer;
+}
+
+
 /* FOOTER ********************************************/
 /*****************************************************/
 
