@@ -62,6 +62,13 @@ header li {
     font-weight: 500;
 }
 
+header .current {
+    text-decoration-line: underline;
+    text-decoration-color: #407CF7;
+    text-decoration-thickness: 3px;
+    text-underline-position: under;
+}
+
 
 /* FOOTER ********************************************/
 /*****************************************************/

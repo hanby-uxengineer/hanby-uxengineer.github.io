@@ -4,6 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=0.0">
+    <link rel="shortcut icon" href="assets/favicon.ico/">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon.ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon.ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon.ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon.ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon.ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon.ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon.ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon.ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon.ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicon.ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon.ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon.ico/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon.ico/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/favicon.ico/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="css/style_main.css">
     <link rel="stylesheet" href="css/style_home.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -15,25 +33,34 @@
 
     <header>
         <div class="nav-bar">
-            <a href="/" class="logo font-sans-serif-en"><b>hanbyeol</b></a>
+            <a href="/" class="logo font-sans-serif-en"><b>Hanbyeol</b></a>
             <ul>
-                <li><a href="/" class="current font-sans-serif-en">work</a></li>
-                <li><a href="/about" class="font-sans-serif-en">about</a></li>
+                <li><a href="/" class="current font-sans-serif-en">Work</a></li>
+                <li><a href="/about" class="font-sans-serif-en">About</a></li>
             </ul>
         </div>
     </header>
 
-    
-
-    <h1 class="test-font font-sans-serif-en">Hi, I'm Hanbyeol Lee.<br>I’m a UX engineer specialized in<br>robotics and graphics.</h1>
-
     <main>
+
         <section class="intro-section">
-            <canvas id="c"></canvas>
+            <canvas id="threejs"></canvas>
             <script src="js/three.js"></script>
             <script src="js/GLTFLoader.js"></script>
             <script src="js/script.js"></script>
+            <h1 class="intro-greeting font-sans-serif-en">Hi! I'm Hanbyeol Lee.<br>I’m a UX engineer specialized in<br><span style="color:#6445ff;">robotics</span> and <span style="color:#2ee895;">graphics</span>.</h1>
         </section>
+
+        <section class="featured-section">
+            <div class="section-container">
+                <a href="this-or-that">
+                    <div class="featured-wrapper">
+                        <img src="assets/image/this-or-that/thumbnail.gif">
+                    </div>
+                </a>
+            </div>
+        </section>
+
         <section class="project-section">
             <div class="section-container">
                 <input type="radio" name="tabmenu" id="tab01" checked>
@@ -209,6 +236,7 @@
                 </div>
             </div>
         </section>
+
     </main>
 
     <footer>

@@ -28,13 +28,17 @@ canvas {
     display: block;
 }
 
-.test-font {
+.intro-greeting {
     position: absolute;
-    top: 4em;
+    top: 15vh;
     left: 50%;
     transform: translateX(-50%);
-    color: white;
     text-align: center;
+    color: white;
+}
+
+.featured-section {
+    background-color: #407CF7;
 }
 
 .project-section {
@@ -48,9 +52,8 @@ input[id="tab03"]:checked ~ .con03 { display: block; }
 input[type="radio"] {display: none;}
 
 input[type="radio"] + label {
-    font-size: 2rem;
+    font-weight: 700;
     color: lightgray;
-    margin-right: 2em;
 }
 
 input[type="radio"] + label:hover {
@@ -108,7 +111,7 @@ input[type="radio"]:checked + label {
 }
 
 .project-wrapper:hover h3{
-    color: cornflowerblue;
+    color: #407CF7;
 }
 
 /* RESPONSIVE SIZE ***********************************/
@@ -116,34 +119,20 @@ input[type="radio"]:checked + label {
 
 /* > 1680 */
 .section-container {width: 1680px; padding: 8em;}
+.intro-greeting {font-size: 2.5rem;}
+input[type="radio"] + label {font-size: 2rem; margin-right: 2em;}
 .project-item {grid-template-columns: 1fr 1fr 1fr;}
 
 /* < 1680 */
 @media(max-width: 1679px){
     .section-container {width: 100%;}
+    .intro-greeting {font-size: calc(1.2rem + 1.2vw); width: 80%;}
+    input[type="radio"] + label {font-size: calc(1rem + 1vw);}
 }
-
 /* < 600 */
 @media(max-width: 599px){
     .section-container {width: 100%; padding: 2em;}
+    .intro-greeting {font-size: 1.5rem; width: 80%;}
+    input[type="radio"] + label {font-size: 1.5rem; margin-right: 1em;}
     .project-item {grid-template-columns: 1fr;}
-    .test-font {margin-top: 3em; font-size: 1rem;}
 }
-
-/* .intro-container {
-    margin: 4em 0 0 4em;
-}
-
-.intro-container > h1 {
-    font-size: calc(2rem + 1.7vw);
-    font-weight: 700;
-    line-height: 1.2;
-    background: linear-gradient(135deg, #a2facf 0%, #64acff 90%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    width: 80%;
-}
-
-@media screen and (min-width: 900px) {
-    .intro-container > h1 {font-size: 3rem; line-height: 1.4;}
-} */

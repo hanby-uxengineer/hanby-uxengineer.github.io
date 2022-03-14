@@ -1,5 +1,7 @@
 window.addEventListener('resize', resize, false);
-window.addEventListener('mousedown', onMouseDown, false );
+window.addEventListener('mousedown', onMouseDown, false);
+window.addEventListener('touchstart', onMouseDown, false);
+window.addEventListener('mousewheel', onScroll, false);
 
 function resize(){
     renderer.setSize( window.innerWidth, window.innerHeight );
@@ -8,14 +10,24 @@ function resize(){
     camera.position.z = 5;
 }
 
-let rotationDir = 1;
+let rotationDir = -1;
 function onMouseDown() {
     if(rotationDir == 1) {
         rotationDir = -1;
     } else rotationDir = 1;
 }
 
-const canvas = document.querySelector('#c');
+let rotationVal = 1;
+function onScroll() {
+    model.rotation.z += 0.1 * rotationVal;
+    if(model.rotation.z > 0.3) {
+        rotationVal = -1;
+    } else if(model.rotation.z < -0.3) {
+        rotationVal = 1;
+    }
+}
+
+const canvas = document.querySelector('#threejs');
 const renderer = new THREE.WebGLRenderer({canvas, antialias:true});
 renderer.setSize( window.innerWidth, window.innerHeight );
 
@@ -42,7 +54,7 @@ loader.load('scene.gltf', function(gltf){
 });
 
 {
-    const hlight = new THREE.AmbientLight(0x404040, 5);
+    const hlight = new THREE.AmbientLight(0x404040, 1);
     scene.add(hlight);
     const dlight = new THREE.DirectionalLight(0xffffff, 1);
     dlight.position.set(-1, 0, 0);
