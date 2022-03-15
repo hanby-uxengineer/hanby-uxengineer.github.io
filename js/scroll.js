@@ -6,9 +6,9 @@ $(document).scroll(function () {
               $('header a').css('color', 'black');
               $('header .current').css('text-decoration-color', '#407CF7');
             } else if($(this).attr('class') == 'featured-section') {
-              $('header').css('background-color', '#407CF7');
+              $('header').css('background-color', 'gray');
               $('header a').css('color', 'white');
-              $('header .current').css('text-decoration-color', 'white');
+              $('header .current').css('text-decoration-color', '#407CF7');
             }else {
               $('header').css('background-color', 'black');
               $('header a').css('color', 'white');
