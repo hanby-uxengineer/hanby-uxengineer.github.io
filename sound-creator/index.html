@@ -29,6 +29,7 @@
     <title>Hanbyeol Lee | Portfolio</title>
 </head>
 <body>
+    <script>AOS.init();</script>
     <header>
         <div class="nav-bar">
             <a href="../" class="logo font-sans-serif-en"><b>Hanbyeol</b></a>
@@ -41,49 +42,77 @@
 
     <main>
         <section class="project-intro-section">
-            <img class="main-image" src="../assets/image/this-or-that/main.jpg">
+            <img class="main-image" src="../assets/image/sound-creator/main.jpg">
             <div class="section-container">
-                <h1 class="font-sans-serif-en">This or That</h1>
-                <h3 class="font-sans-serif-kr">소셜 로봇의 포인팅 제스처와 발화 방식에 따른 사용자의 인식 연구</h2>
+                <h1 class="font-sans-serif-en">Sound Creator</h1>
+                <h3 class="font-sans-serif-kr">인터랙티브 사운드 데스크 토이</h2>
                 <div class="project-info">
                     <div class="info-item">
                         <h3 class="font-sans-serif-en">Type</h3>
-                        <p class="font-sans-serif-kr">Human-Robot Interaction 리서치</p>
+                        <p class="font-sans-serif-kr">Human-Computer Interaction 프로토타이핑</p>
                     </div>
                     <div class="info-item">
                         <h3 class="font-sans-serif-en">Affiliation</h3>
-                        <p class="font-sans-serif-kr">KIST AIㆍ로봇연구소 지능로봇연구단</p>
+                        <p class="font-sans-serif-kr">UNIST 창의디자인공학과</p>
                     </div>
                     <div class="info-item">
                         <h3 class="font-sans-serif-en">Role</h3>
-                        <p class="font-sans-serif-kr">인터랙션 리서처/엔지니어</p>
-                        <span class="font-sans-serif-kr">프로젝트 기획, 문헌 조사, 인터랙션 디자인, 제품 디자인, 프로토타입 개발, 사용자 조사, 데이터 분석, 논문 집필</span>
+                        <p class="font-sans-serif-kr">인터랙션 엔지니어</p>
+                        <span class="font-sans-serif-kr">프로젝트 기획, 인터랙션 디자인, 하드웨어 설계, 소프트웨어 개발</span>
                     </div>
                     <div class="info-item">
                         <h3 class="font-sans-serif-en">Tools</h3>
                         <p class="font-sans-serif-kr">
                             SolidWorks <span class="font-sans-serif-kr">3D모델링</span>,
-                            Raspberry Pi <span class="font-sans-serif-kr">하드웨어</span>,
-                            TurtleBot <span class="font-sans-serif-kr">로봇플랫폼</span>,
-                            SPSS <span class="font-sans-serif-kr">데이터분석</span>
+                            Arduino <span class="font-sans-serif-kr">하드웨어</span>,
+                            Leap Motion <span class="font-sans-serif-kr">제스처센싱</span>,
+                            Garageband <span class="font-sans-serif-kr">사운드</span>
                         </p>
                     </div>
                     <div class="info-item">
                         <h3 class="font-sans-serif-en">Achievement</h3>
-                        <p class="font-sans-serif-kr"><a href="https://ieeexplore.ieee.org/document/9341067">IEEE/RSJ IROS 2020 학회 논문</a></p>
+                        <p class="font-sans-serif-kr">Design Korea 2017 전시</p>
                     </div>
                     <div class="info-item">
                         <h3 class="font-sans-serif-en">Duration</h3>
-                        <p class="font-sans-serif-kr">2019.12 ~ 2020.02 (3개월)</p>
+                        <p class="font-sans-serif-kr">2017.04 (1개월)</p>
                     </div>
                 </div>
                 <div class="project-detail">
-                    <h2 class="font-sans-serif-en">Background</h2>
+                    <h2 class="font-sans-serif-en">Overview</h2>
                     <p class="font-sans-serif-kr">
-                        우리는 같은 공간에 있는 사람과 대화할 때 주변의 사물, 장소 등이 자주 토픽이 되고, 제스처나 지시어를 사용해 위치 정보를 공유한다.<br>
-                        로봇 또한, 휴대폰이나 스마트 스피커와 달리 언어적 의사소통뿐만 아니라 비언어적 의사소통을 가능하게 하는 물리적인 형태(physical embodiment)를 가지고 있다.
+                        공공장소에서 다양한 사람들이 사용할 수 있는 데스크 토이를 디자인하였다.
+						핸드 제스처 피젯팅을 위해 시각과 청각을 자극하는 사운드 크리에이터를 개발하였다.
                     </p>
-                    <p class="font-sans-serif-kr">하지만, HRI 측면에서 로봇의 포인팅 연구는 몇 가지 제한이 있었다.</p>
+                    <div class="img-wrapper" data-aos="fade-up">
+                        <img src="../assets/image/sound-creator/overview-01.png">
+                        <p class="font-sans-serif-kr">손의 위치와 높이에 따라 빛과 사운드가 달라지는 피젯 토이</p>
+                    </div>
+                </div>
+                <div class="project-detail">
+                    <h2 class="font-sans-serif-en">Implementation</h2>
+                    <p class="font-sans-serif-kr">책상 위에 두거나 벽에 고정하여, 누구나 핸드 제스처를 통해 빛과 소리를 만들 수 있다.</p>
+                    <ul>
+                        <li class="font-sans-serif-kr">높이에 따른 사운드 매핑: 손의 높이에 따라, 빛의 색상 변화가 나타나며, 소리의 선명도가 달라짐</li>
+					    <li class="font-sans-serif-kr">원형의 사운드 매핑: 1~2 옥타브의 음을 제품의 가장자리를 따라 적용</li>
+                    </ul>
+                    <div class="img-wrapper" data-aos="fade-up">
+                        <img src="../assets/image/sound-creator/implementation-01.jpg">
+                        <p class="font-sans-serif-kr">소프트웨어 설계</p>
+                    </div>
+                </div>
+                <div class="project-detail">
+                    <h2 class="font-sans-serif-en">Exhibition</h2>
+                    <div class="img-wrapper" data-aos="fade-up">
+                        <img src="../assets/image/sound-creator/exhibition-01.jpg">
+                        <p class="font-sans-serif-kr">Design Korea 2017, KINTEX, Goyang</p>
+                    </div>
+                </div>
+                <div class="project-detail">
+                    <h2 class="font-sans-serif-en">Video Link</h2>
+                    <div class="video-container">
+                        <iframe width="100%" src="https://www.youtube.com/embed/DJRkd_WlnzQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
         </section>
