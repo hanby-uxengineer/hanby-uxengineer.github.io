@@ -20,7 +20,7 @@ function resize(){
 
 let rotationVal = 1;
 function onScroll() {
-    model.rotation.z += 0.1 * rotationVal;
+    model.rotation.z += 0.05 * rotationVal;
     if(model.rotation.z > 0.3) {
         rotationVal = -1;
     } else if(model.rotation.z < -0.3) {
@@ -84,7 +84,7 @@ function render(time) {
 
     if(model) {
         // model.rotation.y = rotationDir * time;
-        model.rotation.y = time;
+        model.rotation.y = -time;
     }
 
     renderer.render(scene, camera);
