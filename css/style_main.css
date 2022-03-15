@@ -33,7 +33,7 @@ header {
     top: 0;
     position: fixed;
     z-index: 1;
-    box-shadow: 0 0.1em 0.5em rgba(0, 0, 0, 0.2);;
+    box-shadow: 0 0.1em 0.1em rgba(0, 0, 0, 0.1);;
 }
 
 header .nav-bar {
@@ -94,7 +94,7 @@ main .top-container {
   }
 
 #button-top {
-    filter: drop-shadow(0 0.1em 0.2em gray);
+    filter: drop-shadow(0 0.1em 0.1em rgba(0, 0, 0, 0.3));
     height: 2.5em;
     bottom: 2em;
     padding-right: 2em;
