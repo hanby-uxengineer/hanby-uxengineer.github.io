@@ -101,6 +101,7 @@ canvas {
 input[id="tab01"]:checked ~ .con01 { display: block; }
 input[id="tab02"]:checked ~ .con02 { display: block; }
 input[id="tab03"]:checked ~ .con03 { display: block; }
+input[id="tab04"]:checked ~ .con04 { display: block; }
 
 input[type="radio"] {display: none;}
 
@@ -130,7 +131,7 @@ input[type="radio"]:checked + label {
     list-style: none;
 }
 
-.project-wrapper {
+.project-wrapper, .project-wrapper-no {
     display: flex;
     flex-direction: column;
 }
@@ -199,6 +200,6 @@ input[type="radio"] + label {font-size: 2rem; margin-right: 2em;}
     .featured-item img {filter: brightness(0.7);}
     .featured-title {opacity: 1;}
     .featured-title p {font-size: 1rem;}
-    input[type="radio"] + label {font-size: 1.5rem; margin-right: 1em;}
+    input[type="radio"] + label {font-size: 1.4rem; margin-right: 0.8em;}
     .project-item {grid-template-columns: 1fr;}
 }
