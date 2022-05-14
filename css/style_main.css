@@ -143,9 +143,6 @@ footer img {
 }
 
 
-/* RESPONSIVE SIZE ***********************************/
-/*****************************************************/
-
 /* > 1680 */
 header .nav-bar {width: 1680px; padding: 0 8em;}
 header li {padding-left: 5em;}
