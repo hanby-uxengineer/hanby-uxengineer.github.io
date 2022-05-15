@@ -142,6 +142,8 @@ footer img {
     padding-right: 1em;
 }
 
+/* RESPONSIVE SIZE ***********************************/
+/*****************************************************/
 
 /* > 1680 */
 header .nav-bar {width: 1680px; padding: 0 8em;}
